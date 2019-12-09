@@ -31,11 +31,11 @@ public class OfficeOpenXMLConvertProcessor extends AbstractConvertProcessor {
             in = new PushbackInputStream(in, 8);
         }
         if (NPOIFSFileSystem.hasPOIFSHeader(in)) {
-            System.out.println("doc格式.....");
+            //System.out.println("doc格式.....");
             return Word2HtmlUtils.doc2Html(in);
         }
         if (POIXMLDocument.hasOOXMLHeader(in)) {
-            System.out.println("docx格式.....");
+            //System.out.println("docx格式.....");
             return Word2HtmlUtils.docx2Html(in);
         }
         throw new IllegalArgumentException("Your InputStream was neither an OLE2 stream, nor an OOXML stream");

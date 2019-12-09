@@ -41,7 +41,7 @@ public class EmlConvertProcessor extends AbstractConvertProcessor {
                 return "";
             }
             boundary = matcher.group().replaceAll("\"","");
-            System.out.println("boundary = " + boundary);
+            //System.out.println("boundary = " + boundary);
             if(text.indexOf("--" + boundary) != -1){
                 boundary = "--" + boundary;
             }

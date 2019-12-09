@@ -31,6 +31,4 @@ public class Education {
     @Label(keys ="描述")
     private String description;
 
-    public Education() {
-    }
 }

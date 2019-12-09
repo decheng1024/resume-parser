@@ -28,20 +28,26 @@ public class HtmlConverterTest extends BaseTest {
         File f = new File(basePath + "boss直聘何正宇3年.docx");
         converHtmlFile(f);
     }
+    @Test
+    public void oneGeneratorHtmlOnZhaopin() throws Exception {
+        File f = new File(basePath + "智联招聘_郭原汇_自动化测试工程师_中文_20191031_1572509741690.doc");
+        converHtmlFile(f);
+    }
 
     @Test
     public void batchTest() throws Exception {
-        Files.newDirectoryStream(Paths.get(basePath)).forEach(path -> {
-            File file = path.toFile();
-            System.out.println("file.getName() = " + file.getName());
-            if (!file.isDirectory()) {
+        String str = Thread.currentThread().getContextClassLoader().getResource("").getPath() + "resume/";
+        File file = new File(str);
+        File[] files = file.listFiles();
+        for (File f: files) {
+            if (!f.isDirectory()) {
                 try {
                     converHtmlFile(file);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
-        });
+        }
     }
 
     private void converHtmlFile(File f) throws Exception {

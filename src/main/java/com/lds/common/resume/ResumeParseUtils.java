@@ -40,7 +40,6 @@ public class ResumeParseUtils {
 
             String mediaType = parseMediaType(inputStreamCacher.getInputStream());
             String chartset = EncodingDetectUtils.detect(inputStreamCacher.getInputStream());
-            System.out.println(chartset);
             for (ConvertProcessor cp : conversions) {
                 if (cp.isSupport(mediaType)) {
                     return cp.convert(inputStreamCacher.getInputStream(), chartset);
@@ -90,6 +89,9 @@ public class ResumeParseUtils {
         //教育经历
         EducationParser educationParser = new EducationParser(content);
         List<Education> educations = educationParser.parse();
+        //技能
+        SkillsParser skillsParser = new SkillsParser(content);
+        List<Skills> skills = skillsParser.parse();
 
         Resume resume = new Resume();
         BeanUtils.copyProperties(basicInfo,resume);
@@ -97,6 +99,7 @@ public class ResumeParseUtils {
         resume.setEducations(educations);
         resume.setWorkExperiences(WorkExperiences);
         resume.setProjectExperiences(projectExperiences);
+        resume.setSkills(skills);
         System.out.println("cost times" + (System.currentTimeMillis() - startTime) + " ms.");
         return JSONObject.toJSONString(resume);
     }
@@ -109,7 +112,6 @@ public class ResumeParseUtils {
             Detector detector = config.getDetector();
             MediaType detect = detector.detect(tis, new Metadata());
             String mediaType = detect.getBaseType().toString();
-            System.out.println("detect = " + detect);
             return mediaType;
         } catch (Exception e) {
             log.error(e.getMessage(),e);
@@ -125,8 +127,6 @@ public class ResumeParseUtils {
         String pathStr = f.getAbsolutePath().substring(0, f.getAbsolutePath().lastIndexOf(File.separator));
         pathStr = pathStr + File.separator + "html" + File.separator + f.getName().substring(0, f.getName().indexOf(".")) + ".html";
 
-
-        //String chartset = EncodingDetectUtils.detect(inputStreamCacher.getInputStream());
         Word2HtmlUtils.writeFile(content, pathStr, null);
     }
 

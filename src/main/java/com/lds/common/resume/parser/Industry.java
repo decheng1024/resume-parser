@@ -61,6 +61,9 @@ public class Industry {
         industrys.add("移动互联网");
         industrys.add("网游");
         industrys.add("web前端开发工程师");
+        industrys.add("游戏测试");
+        industrys.add("软件测试");
+        industrys.add("系统测试");
     }
 
 }

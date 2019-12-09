@@ -41,7 +41,7 @@ public class BasicInfoParserTest extends BaseTest {
 
     @Test
     public void oneBaseInfoOnBoss() throws Exception {
-        File f = new File(basePath + "51job_全业萍(767697783).doc");
+        File f = new File(basePath + "boss直聘何正宇3年.docx");
         String html = converHtml(f);
         BasicInfoParser infoParser = new BasicInfoParser(html);
         BasicInfo parse = infoParser.parse();

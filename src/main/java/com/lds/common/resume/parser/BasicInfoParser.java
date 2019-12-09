@@ -1,6 +1,7 @@
 package com.lds.common.resume.parser;
 
 import com.lds.common.resume.domain.BasicInfo;
+import com.lds.common.resume.util.ChineseNumToArabicNumUtil;
 import com.lds.common.resume.util.StringUtils;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -99,7 +100,10 @@ public class BasicInfoParser extends BaseParser {
         workExperienceLimitRegEx = "工作经验：";
         Elements eles = root.getElementsMatchingOwnText(workExperienceLimitRegEx);
         if (eles.size() > 0) {
-            return eles.first().text().replace("工作经验：", "").replace("年", "");
+            workExperienceLimit = eles.first().text().replace("工作经验：", "").replace("年", "");
+            if(ChineseNumToArabicNumUtil.isChineseNum(workExperienceLimit)){
+                return String.valueOf(ChineseNumToArabicNumUtil.chineseNumToArabicNum(workExperienceLimit));
+            }
         }
         return workExperienceLimit;
     }

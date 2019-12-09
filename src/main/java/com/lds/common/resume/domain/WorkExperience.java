@@ -39,6 +39,4 @@ public class WorkExperience {
     @Label(keys ="详细描述")
     private String description;
 
-    public WorkExperience() {
-    }
 }

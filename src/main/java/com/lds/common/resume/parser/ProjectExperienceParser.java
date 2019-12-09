@@ -90,7 +90,6 @@ public class ProjectExperienceParser extends BaseParser {
                         }
                     }
                 });
-                System.out.println("projectExperience = " + projectExperience);
                 projectExperiences.add(projectExperience);
             });
         }

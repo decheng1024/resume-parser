@@ -46,4 +46,7 @@ public class Resume {
     //求职意向
     private CareerObjective careerObjective;
 
+    //技能
+    private List<Skills> skills;
+
 }

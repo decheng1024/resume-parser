@@ -2,7 +2,11 @@ package com.lds.common.resume.domain;
 
 
 import com.lds.common.resume.annatations.Label;
+import lombok.Data;
+import lombok.ToString;
 
+@Data
+@ToString
 public class CareerObjective {
 
     @Label(keys ="期望月薪")
@@ -18,54 +22,4 @@ public class CareerObjective {
     @Label(keys ="住房要求")
     private String requireApartment;
 
-    public CareerObjective() {
-    }
-
-    public String getExpectingSalary() {
-        return expectingSalary;
-    }
-
-    public void setExpectingSalary(String expectingSalary) {
-        this.expectingSalary = expectingSalary;
-    }
-
-    public String getExpectingIndustry() {
-        return expectingIndustry;
-    }
-
-    public void setExpectingIndustry(String expectingIndustry) {
-        this.expectingIndustry = expectingIndustry;
-    }
-
-    public String getExpectingPosition() {
-        return expectingPosition;
-    }
-
-    public void setExpectingPosition(String expectingPosition) {
-        this.expectingPosition = expectingPosition;
-    }
-
-    public String getExpectingLocation() {
-        return expectingLocation;
-    }
-
-    public void setExpectingLocation(String expectingLocation) {
-        this.expectingLocation = expectingLocation;
-    }
-
-    public String getHiredate() {
-        return hiredate;
-    }
-
-    public void setHiredate(String hiredate) {
-        this.hiredate = hiredate;
-    }
-
-    public String getRequireApartment() {
-        return requireApartment;
-    }
-
-    public void setRequireApartment(String requireApartment) {
-        this.requireApartment = requireApartment;
-    }
 }

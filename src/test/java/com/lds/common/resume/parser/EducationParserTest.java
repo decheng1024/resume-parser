@@ -1,10 +1,13 @@
 package com.lds.common.resume.parser;
 
 import com.lds.common.resume.BaseTest;
+import com.lds.common.resume.domain.BasicInfo;
+import com.lds.common.resume.domain.Education;
 import com.lds.common.resume.parser.EducationParser;
 import org.junit.Test;
 
 import java.io.File;
+import java.util.List;
 
 /**
  * @author wx
@@ -22,5 +25,15 @@ public class EducationParserTest extends BaseTest {
 
         EducationParser parser = new EducationParser(html);
         parser.parse();
+    }
+
+    @Test
+    public void oneBaseInfoOnBoss() throws Exception {
+        File f = new File(basePath + "boss直聘何正宇3年.docx");
+        String html = converHtml(f);
+        EducationParser parser = new EducationParser(html);
+        List<Education> educaton = parser.parse();
+
+        System.out.println("educaton = " + educaton);
     }
 }

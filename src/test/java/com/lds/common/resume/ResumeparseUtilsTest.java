@@ -29,13 +29,6 @@ public class ResumeparseUtilsTest extends BaseTest{
 
     @Test
     public void oneParseOn51Job1() throws Exception {
-        File f = new File(basePath + "51job_刘亚婕(425087044).doc");
-        String str = ResumeParseUtils.parseResume(new FileInputStream(f));
-        System.out.println("str = " + str);
-    }
-
-    @Test
-    public void oneParseOn51Job2() throws Exception {
         File f = new File(basePath + "51job_王维爱(492726471).doc");
         String str = ResumeParseUtils.parseResume(new FileInputStream(f));
         System.out.println("str = " + str);
@@ -43,8 +36,8 @@ public class ResumeparseUtilsTest extends BaseTest{
 
 
     @Test
-    public void oneParseOnzhaopin() throws Exception {
-        File f = new File(basePath + "智联招聘.doc");
+    public void oneParseOnZhaopin() throws Exception {
+        File f = new File(basePath + "智联招聘_胡程_软件测试工程师_中文_20191031_1572509741654.doc");
         String str = ResumeParseUtils.parseResume(f);
         System.out.println("str = " + str);
     }

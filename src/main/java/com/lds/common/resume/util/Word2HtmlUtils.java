@@ -51,7 +51,6 @@ public class Word2HtmlUtils {
             if (pics != null) {
                 for (int i = 0; i < pics.size(); i++) {
                     Picture pic = (Picture) pics.get(i);
-                    System.out.println();
                     try {
                         pic.writeImageContent(new FileOutputStream(tempPath + pic.suggestFullFileName()));
                     } catch (FileNotFoundException e) {
