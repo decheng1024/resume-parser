@@ -13,6 +13,7 @@ public class Job {
     static {
         jobTitles.put("Java开发工程师","Java");
         jobTitles.put("软件开发工程师","软件开发工程师");
+        jobTitles.put("测试工程师","测试工程师");
         jobTitles.put("软件测试工程师","测试工程师");
         jobTitles.put("UI设计","UI");
         jobTitles.put("商务助理","商务助理");

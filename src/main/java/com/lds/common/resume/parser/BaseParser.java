@@ -9,9 +9,14 @@ public abstract class BaseParser {
 
     protected String content;
 
+    protected SourceType sourceType;
+
     public BaseParser(String content) {
         this.content = content;
         this.root = Jsoup.parse(content);
+        if( content.contains("智联招聘")){
+            sourceType = SourceType.ZHAOPIN;
+        }
     }
 
     public String matchDegree(Element ele) {
@@ -41,3 +46,8 @@ public abstract class BaseParser {
         return "";
     }
 }
+
+enum SourceType{
+    BOSS,ZHAOPIN,JOB_51,CJOL
+}
+
