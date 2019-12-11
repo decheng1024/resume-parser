@@ -43,9 +43,7 @@ public class WorkExperienceParser extends BaseParser {
         if (workExperiencesElesByZhiLian.size() > 0) {
             Element workExperiencesParentEle = workExperiencesElesByZhiLian.get(0).parent().parent().nextElementSibling();
             while ("table".equals(workExperiencesParentEle.tagName())) {
-
                 workExperiences.add(getWorkExperienceByZhiLian(workExperiencesParentEle));
-                System.out.println("*");
                 workExperiencesParentEle = workExperiencesParentEle.nextElementSibling();
             }
 //            第一个工作经验
@@ -208,15 +206,29 @@ public class WorkExperienceParser extends BaseParser {
 
     private WorkExperience getWorkExperienceByZhiLian(Element workExperienceElement) {
         WorkExperience workExperience = new WorkExperience();
-        Elements  timeAndCompanyAndJobTitleAndSalary= workExperienceElement.getElementsByAttributeValue("style", "font-size:9.0pt;font-family:宋体;mso-ascii-font-family:\r\n  Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;\r\n  mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;\r\n  mso-hansi-theme-font:minor-latin");
-        String[] timeAndCompanyArr=timeAndCompanyAndJobTitleAndSalary.get(0).text().split(" ");
-        String[] jobTitleAndSalary=timeAndCompanyAndJobTitleAndSalary.get(1).text().split(" \\| ");
-
-        Elements currentIndustryAndDescription=workExperienceElement.getElementsByAttributeValue("style", "font-size:9.0pt;\r\n" +
-                        "  font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;\r\n" +
-                        "  mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:\r\n" +
-                        "  Calibri;mso-hansi-theme-font:minor-latin");
-        System.out.println(timeAndCompanyArr[2]);
+        Elements timeAndCompanyAndJobTitleAndSalary = workExperienceElement.getElementsByAttributeValue("style", "font-size:9.0pt;font-family:宋体;mso-ascii-font-family:\n" +
+                "  Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;\n" +
+                "  mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;\n" +
+                "  mso-hansi-theme-font:minor-latin");
+        if (timeAndCompanyAndJobTitleAndSalary.size() == 0) {
+            timeAndCompanyAndJobTitleAndSalary = workExperienceElement.getElementsByAttributeValue("style", "font-size:9.0pt;font-family:宋体;mso-ascii-font-family:\r\n" +
+                    "  Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;\r\n" +
+                    "  mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;\r\n" +
+                    "  mso-hansi-theme-font:minor-latin");
+        }
+        String[] timeAndCompanyArr = timeAndCompanyAndJobTitleAndSalary.get(0).text().split(" ");
+        String[] jobTitleAndSalary = timeAndCompanyAndJobTitleAndSalary.get(1).text().split(" \\| ");
+        Elements currentIndustryAndDescription = workExperienceElement.getElementsByAttributeValue("style", "font-size:9.0pt;\n" +
+                "  font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;\n" +
+                "  mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:\n" +
+                "  Calibri;mso-hansi-theme-font:minor-latin");
+//        部分简历解析换行符为/r/n
+        if (currentIndustryAndDescription.size() == 0) {
+            currentIndustryAndDescription = workExperienceElement.getElementsByAttributeValue("style", "font-size:9.0pt;\r\n" +
+                    "  font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;\r\n" +
+                    "  mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:\r\n" +
+                    "  Calibri;mso-hansi-theme-font:minor-latin");
+        }
         workExperience.setStartDate(timeAndCompanyArr[0]);
         workExperience.setEndDate(timeAndCompanyArr[2]);
         workExperience.setCompany(timeAndCompanyArr[3]);
