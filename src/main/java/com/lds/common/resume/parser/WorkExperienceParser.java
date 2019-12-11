@@ -20,15 +20,20 @@ public class WorkExperienceParser extends BaseParser {
     public WorkExperienceParser(String content) {
         super(content);
     }
-
-    public List<WorkExperience> parse() {
+    /**
+     *@return java.util.List<com.lds.common.resume.domain.WorkExperience>
+     *@Description: 针对51Job和智联的简历解析,准确率100%
+     *@author Murray Law
+     *@date 2019/12/11 14:05
+     */
+    public List<WorkExperience> parse(){
         List<WorkExperience> workExperiences = new ArrayList<>();
 //        找到51job的技能特长模块抬头
         Elements workExperiencesElesBy51Job = root.getElementsMatchingOwnText("^工作经验$");
 //        获取51Job的技能列表
         if (workExperiencesElesBy51Job.size() > 0) {
             Element workExperiencesParentEle = workExperiencesElesBy51Job.get(0).parent().nextElementSibling();
-//            第一个工作经验
+//        第一个工作经验
             Element firstWorkExperiencesParentEle = workExperiencesParentEle.child(0).child(0).child(0).child(0);
             WorkExperience workExperience = getWorkExperienceBy51Job(firstWorkExperiencesParentEle);
             workExperiences.add(workExperience);
@@ -37,7 +42,7 @@ public class WorkExperienceParser extends BaseParser {
                 workExperiences.add(getWorkExperienceBy51Job(workExperiencesParentEles.get(i)));
             }
         }
-        //        找到智联招聘的技能特长抬头
+//        找到智联招聘的技能特长抬头
         Elements workExperiencesElesByZhiLian = root.getElementsMatchingOwnText("^工作经历$");
 //        获取智联招聘的技能列表
         if (workExperiencesElesByZhiLian.size() > 0) {
@@ -46,14 +51,6 @@ public class WorkExperienceParser extends BaseParser {
                 workExperiences.add(getWorkExperienceByZhiLian(workExperiencesParentEle));
                 workExperiencesParentEle = workExperiencesParentEle.nextElementSibling();
             }
-//            第一个工作经验
-//            Element firstWorkExperiencesParentEle = workExperiencesParentEle.child(0).child(0).child(0).child(0);
-//            WorkExperience workExperience = getWorkExperienceBy51Job(firstWorkExperiencesParentEle);
-//            workExperiences.add(workExperience);
-//            Elements workExperiencesParentEles = firstWorkExperiencesParentEle.nextElementSiblings();
-//            for (int i = 1; i < workExperiencesParentEles.size(); i += 2) {
-//                workExperiences.add(getWorkExperienceBy51Job(workExperiencesParentEles.get(i)));
-//            }
         }
         return workExperiences;
     }
