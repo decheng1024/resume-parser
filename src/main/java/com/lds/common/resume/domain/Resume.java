@@ -48,5 +48,6 @@ public class Resume {
 
     //技能
     private List<Skills> skills;
-
+    //自我评价
+    private SelfEvaluation selfEvaluation;
 }

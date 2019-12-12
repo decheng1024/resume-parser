@@ -28,6 +28,7 @@ import java.util.List;
 public class ResumeParseUtils {
 
     static List<ConvertProcessor> conversions = new ArrayList<>();
+
     static {
         conversions.add(new StandardConvertProcessor());
         conversions.add(new OfficeOpenXMLConvertProcessor());
@@ -47,8 +48,8 @@ public class ResumeParseUtils {
             }
             log.error("不支持的格式");
             throw new ResumeParseException("不支持的格式！！！");
-        }catch (Exception e){
-            throw new ResumeParseException(e.getMessage(),e);
+        } catch (Exception e) {
+            throw new ResumeParseException(e.getMessage(), e);
         }
     }
 
@@ -69,7 +70,7 @@ public class ResumeParseUtils {
 
 
         } catch (Exception e) {
-            throw new ResumeParseException("简历转换异常,"+ e.getMessage(),e);
+            throw new ResumeParseException("简历转换异常," + e.getMessage(), e);
         }
         //基础信息
         BasicInfoParser infoParser = new BasicInfoParser(content);
@@ -92,14 +93,18 @@ public class ResumeParseUtils {
         //技能
         SkillsParser skillsParser = new SkillsParser(content);
         List<Skills> skills = skillsParser.parse();
+//技能
+        SelfEvaluationParser selfEvaluationParser = new SelfEvaluationParser(content);
+        SelfEvaluation selfEvaluation = selfEvaluationParser.parse();
 
         Resume resume = new Resume();
-        BeanUtils.copyProperties(basicInfo,resume);
+        BeanUtils.copyProperties(basicInfo, resume);
         resume.setCareerObjective(careerObjective);
         resume.setEducations(educations);
         resume.setWorkExperiences(WorkExperiences);
         resume.setProjectExperiences(projectExperiences);
         resume.setSkills(skills);
+        resume.setSelfEvaluation(selfEvaluation);
         System.out.println("cost times" + (System.currentTimeMillis() - startTime) + " ms.");
         return JSONObject.toJSONString(resume);
     }
@@ -114,7 +119,7 @@ public class ResumeParseUtils {
             String mediaType = detect.getBaseType().toString();
             return mediaType;
         } catch (Exception e) {
-            log.error(e.getMessage(),e);
+            log.error(e.getMessage(), e);
         }
         return null;
     }
