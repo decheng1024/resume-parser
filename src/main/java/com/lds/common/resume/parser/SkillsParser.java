@@ -21,24 +21,24 @@ public class SkillsParser extends BaseParser {
 
     public List<Skills> parse() {
         ArrayList<Skills> list = new ArrayList<>();
-//        找到51job的技能特长模块全部元素
+        //找到51job的技能特长模块全部元素
         Elements skills51Eles = root.getElementsMatchingOwnText("^技能特长$");
-//        找到智联证书模块全部元素
+        //找到智联证书模块全部元素
         Elements zhiLianCertificatCeEles = root.getElementsMatchingOwnText("^证书$");
-//        找到智联语言能力模块全部元素
+        //找到智联语言能力模块全部元素
         Elements zhiLianLanguageEles = root.getElementsMatchingOwnText("^语言能力$");
-//        找到智联专业技能模块全部元素
+        //找到智联专业技能模块全部元素
         Elements zhiLianSkillsEles = root.getElementsMatchingOwnText("^专业技能$");
-        //            获取智联证书说明的元素
-        if (zhiLianCertificatCeEles.size() > 0) {
+        //获取智联证书说明的元素
+        if (zhiLianCertificatCeEles.size() > 0&&"p".equals(zhiLianCertificatCeEles.get(0).parent().parent().tagName())) {
             zhiLianCertificatCeEles = zhiLianCertificatCeEles.get(0).parent().parent().nextElementSibling().getElementsByAttributeValue("style", "font-size:9.0pt;font-family:\n  宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:\n  宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;\n  mso-hansi-theme-font:minor-latin");
         }
-        //            获取智联语言说明的元素
-        if (zhiLianLanguageEles.size() > 0) {
+        //获取智联语言说明的元素
+        if (zhiLianLanguageEles.size() > 0&& "p".equals(zhiLianLanguageEles.get(0).parent().parent().tagName())) {
             zhiLianLanguageEles = zhiLianLanguageEles.get(0).parent().parent().nextElementSibling().getElementsByAttributeValue("style", "font-size:9.0pt;\n  font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;\n  mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:\n  Calibri;mso-hansi-theme-font:minor-latin");
         }
-        //            获取智联技能说明的元素
-        if (zhiLianSkillsEles.size() > 0) {
+        //获取智联技能说明的元素
+        if (zhiLianSkillsEles.size() > 0 && "p".equals(zhiLianSkillsEles.get(0).parent().parent().tagName())) {
             zhiLianSkillsEles = zhiLianSkillsEles.get(0).parent().parent().nextElementSibling().getElementsByTag("span");
         }
 //        获取51Job的技能列表
@@ -94,7 +94,9 @@ public class SkillsParser extends BaseParser {
                 String[] arr = zhiLianSkillsEles.get(i).text().split("：");
                 Skills skills = new Skills();
                 skills.setSkillOrCertificateName(arr[0]);
-                skills.setSkillProficiency(arr[1]);
+                if (arr.length > 1) {
+                    skills.setSkillProficiency(arr[1]);
+                }
                 list.add(skills);
             }
 

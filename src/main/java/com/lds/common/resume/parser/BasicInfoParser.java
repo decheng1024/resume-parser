@@ -37,7 +37,6 @@ public class BasicInfoParser extends BaseParser {
         basicInfo.setYearOfWorkExperience(matchWorkExperienceLimit());
         return basicInfo;
     }
-
     private String matchName() {
         //51job
         Elements nameElements = root.getElementsByClass("name");
@@ -57,14 +56,9 @@ public class BasicInfoParser extends BaseParser {
             return names.first().text().replace("姓名：", "");
         }
         //智联招聘
-        Elements tables = root.getElementsByTag("table");
-        if(tables.size() > 0){
-            String nameRegEx = "^[\\u4e00-\\u9fa5]{2,5}";
-            String firstText = tables.first().text();
-            Matcher matcher = Pattern.compile(nameRegEx).matcher(firstText);
-            if (matcher.find()) {
-                return matcher.group();
-            }
+        Elements zhiLianEles = root.getElementsByAttributeValue("style", "text-align:left;tab-stops:366.0pt");
+        if (zhiLianEles.size() > 0) {
+            return zhiLianEles.get(0).text();
         }
         return "";
     }
@@ -101,7 +95,7 @@ public class BasicInfoParser extends BaseParser {
         Elements eles = root.getElementsMatchingOwnText(workExperienceLimitRegEx);
         if (eles.size() > 0) {
             workExperienceLimit = eles.first().text().replace("工作经验：", "").replace("年", "");
-            if(ChineseNumToArabicNumUtil.isChineseNum(workExperienceLimit)){
+            if (ChineseNumToArabicNumUtil.isChineseNum(workExperienceLimit)) {
                 return String.valueOf(ChineseNumToArabicNumUtil.chineseNumToArabicNum(workExperienceLimit));
             }
         }
@@ -137,7 +131,7 @@ public class BasicInfoParser extends BaseParser {
             }
         }
         String location = Location.getAtMost3Location(content);
-        if(StringUtils.isNotBlank(location)){
+        if (StringUtils.isNotBlank(location)) {
             return location;
         }
         return "";
@@ -151,7 +145,7 @@ public class BasicInfoParser extends BaseParser {
         if (matcher.find()) {
             age = matcher.group();
             if (age.indexOf("岁") > -1) {
-                return age.replaceAll("岁", "").replace(" ","");
+                return age.replaceAll("岁", "").replace(" ", "");
             }
         }
         //boss
@@ -166,6 +160,11 @@ public class BasicInfoParser extends BaseParser {
         //51job
         String birthdayRegEx = "(\\d{4}年\\d{1,2}月\\d{1,2}日)";
         Matcher matcher = Pattern.compile(birthdayRegEx).matcher(content);
+        if (matcher.find()) {
+            return matcher.group();
+        }
+        birthdayRegEx = "(\\d{4}年\\d{1,2}月)";
+        matcher = Pattern.compile(birthdayRegEx).matcher(content);
         if (matcher.find()) {
             return matcher.group();
         }

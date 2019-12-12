@@ -25,10 +25,10 @@ public class EducationParser extends BaseParser {
 
     public List<Education> parse() {
         List<Education> educations = new ArrayList<>();
-        //51job
+        //51job和智联
         Elements educationEles = root.getElementsMatchingOwnText("^教育经历$");
         if (educationEles.size() > 0) {
-            return classOn51job(educationEles);
+            return classOn51jobAndZhiLian(educationEles);
         }
         //boos
         educationEles = root.getElementsMatchingOwnText("^教育背景$");
@@ -46,7 +46,7 @@ public class EducationParser extends BaseParser {
         while ((nextEle = nextEle.nextElementSibling()) != null) {
             Education education = null;
             Elements spanEles = nextEle.getElementsByTag("span");
-            for(Element span : spanEles){
+            for (Element span : spanEles) {
                 String text = span.text();
                 if (StringUtils.isNotBlank(text)) {
                     Matcher matcher = compile.matcher(text);
@@ -73,8 +73,8 @@ public class EducationParser extends BaseParser {
         }
     }
 
-    //51job
-    private List<Education> classOn51job(Elements educationEles) {
+    //51job和智联
+    private List<Education> classOn51jobAndZhiLian(Elements educationEles) {
         List<Education> educations = new ArrayList<>();
         Element educationEleParent = educationEles.first().parent().nextElementSibling();
         Elements educationEle = educationEleParent.getElementsByAttributeValue("class", "p15");
@@ -91,7 +91,7 @@ public class EducationParser extends BaseParser {
                             education.setStartDate(workTimeArr[0]);
                             education.setEndDate(workTimeArr[1]);
                         }
-                        if (text.contains("学院") || text.contains("大学")) {
+                        if (text.contains("学院") || text.contains("大学") || text.contains("学校")) {
                             education.setUniversity(text);
                         }
                         //学历
@@ -101,13 +101,37 @@ public class EducationParser extends BaseParser {
                         }
                         //专业
                         String major = Major.getMajor(text);
+                        Elements mojorEles = td.getElementsByAttributeValue("style", "padding-left:7px;");
+                        if (mojorEles.size() > 0) {
+                            major = mojorEles.get(0).text();
+                            education.setMajor(major);
+                        }
                         if (StringUtils.isNotBlank(major)) {
                             education.setMajor(major);
+                        }
+
+                        //专业描述
+                        if ("专业描述：".equals(td.text())) {
+                            education.setDescription(td.nextElementSibling().text());
                         }
                     });
                     educations.add(education);
                 }
-            });
+            }); return educations;
+        }
+        //智联
+        educationEleParent = educationEles.first().parent().parent().nextElementSibling();
+        educationEle = educationEleParent.getElementsByAttributeValue("width", "710");
+        if (educationEle.size() > 0) {
+            Education education = new Education();
+            String[] educationArr = educationEle.first().text().split(" ");
+            education.setStartDate(educationArr[0]);
+            education.setEndDate(educationArr[2]);
+            education.setUniversity(educationArr[3]);
+            education.setMajor(educationArr[4]);
+            education.setDegree(educationArr[5]);
+            educations.add(education);
+            return educations;
         }
         return educations;
     }

@@ -19,7 +19,7 @@ public class HtmlConverterTest extends BaseTest {
     public void oneGeneratorHtml() throws Exception {
         //D:\workspace\resume-parser\target\classes\resume\51job_全业萍(767697783).doc
         //D:\workspace\resume-parser\target\test-classes\resume\51job_全业萍(767697783).doc
-        File f = new File(basePath + "51job_全业萍(767697783).doc");
+        File f = new File(basePath + "51job_黄志崇(439114242).doc");
         converHtmlFile(f);
     }
 
@@ -30,7 +30,7 @@ public class HtmlConverterTest extends BaseTest {
     }
     @Test
     public void oneGeneratorHtmlOnZhaopin() throws Exception {
-        File f = new File(basePath + "智联招聘_郭原汇_自动化测试工程师_中文_20191031_1572509741690.doc");
+        File f = new File(basePath + "智联招聘_胡程_软件测试工程师_中文_20191031_1572509741654.doc");
         converHtmlFile(f);
     }
 

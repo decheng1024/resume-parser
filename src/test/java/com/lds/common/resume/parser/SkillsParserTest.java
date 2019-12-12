@@ -25,7 +25,17 @@ public class SkillsParserTest extends BaseTest {
                 }
         );
     }
+    @Test
+    public void oneEducationParseZhiLian0() throws Exception {
+        File f = new File(basePath + "智联招聘_温琦生_项目运营总监_中文_20191105_1572919559195.doc");
+        String html = converHtml(f);
 
+        SkillsParser parser = new SkillsParser(html);
+        parser.parse().forEach(skills -> {
+                    System.out.println(skills.toString());
+                }
+        );
+    }
     @Test
     public void oneEducationParse51Job() throws Exception {
         System.out.println("\n"+"*********************************************************************************************************************************************************************"+"\n");

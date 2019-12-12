@@ -12,7 +12,7 @@ import java.io.FileInputStream;
  * @description TODO
  * @date 2019/12/6 16:49
  */
-public class ResumeparseUtilsTest extends BaseTest{
+public class ResumeparseUtilsTest extends BaseTest {
 
     @Test
     public void oneParseOnBoss() throws Exception {
@@ -20,6 +20,7 @@ public class ResumeparseUtilsTest extends BaseTest{
         String str = ResumeParseUtils.parseResume(new FileInputStream(f));
         System.out.println("str = " + str);
     }
+
     @Test
     public void oneParseOn51Job() throws Exception {
         File f = new File(basePath + "51job_凌梦之(23234904).doc");
