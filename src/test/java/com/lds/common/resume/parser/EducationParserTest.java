@@ -19,7 +19,7 @@ import java.util.List;
 public class EducationParserTest extends BaseTest {
 
     @Test
-    public void oneEducationParse0() throws Exception {
+    public void oneEducationParseBy51Job() throws Exception {
         File f = new File(basePath + "51job_黄志崇(439114242).doc");
         String html = converHtml(f);
         EducationParser parser = new EducationParser(html);
@@ -27,7 +27,7 @@ public class EducationParserTest extends BaseTest {
     }
 
     @Test
-    public void oneEducationParse1() throws Exception {
+    public void oneEducationParseBy51Job1() throws Exception {
         File f = new File(basePath + "51job_简兆坚(57768818).doc");
         String html = converHtml(f);
 
@@ -37,7 +37,7 @@ public class EducationParserTest extends BaseTest {
     }
 
     @Test
-    public void oneEducationParse2() throws Exception {
+    public void oneEducationParseBy51Job2() throws Exception {
         File f = new File(basePath + "51job_黄子欣(492361147).doc");
         String html = converHtml(f);
 
@@ -62,7 +62,82 @@ public class EducationParserTest extends BaseTest {
         EducationParser parser = new EducationParser(html);
         System.out.println(parser.parse().toString());
     }
+    @Test
+    public void matchExpectingInsuatryByZhuoPin() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文_()_20191127 (4).doc");
+//        转换html
+        String html = converHtml(f);
+//        信息解析器
+        EducationParser parser = new EducationParser(html);
 
+        System.out.println("parse = " + parser.parse().toString());
+    }
+
+    @Test
+    public void matchExpectingInsuatryByZhuoPin1() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文_()_20191127 (3).doc");
+//        转换html
+        String html = converHtml(f);
+//        信息解析器
+        EducationParser parser = new EducationParser(html);
+
+        System.out.println("parse = " + parser.parse().toString());
+    }
+
+    @Test
+    public void matchExpectingInsuatryByZhuoPin2() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文_()_20191127 (7).doc");
+//        转换html
+        String html = converHtml(f);
+//        信息解析器
+        EducationParser parser = new EducationParser(html);
+
+        System.out.println("parse = " + parser.parse().toString());
+    }
+
+    @Test
+    public void matchExpectingInsuatryByZhuoPin3() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文_()_20191127 (9).doc");
+//        转换html
+        String html = converHtml(f);
+//        信息解析器
+        EducationParser parser = new EducationParser(html);
+
+        System.out.println("parse = " + parser.parse().toString());
+    }
+
+    @Test
+    public void matchExpectingInsuatryByZhuoPin4() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文__20191127 (4).doc");
+//        转换html
+        String html = converHtml(f);
+//        信息解析器
+        EducationParser parser = new EducationParser(html);
+
+        System.out.println("parse = " + parser.parse().toString());
+    }
+
+    @Test
+    public void matchExpectingInsuatryByZhuoPin5() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文_()_20191101 (16).doc");
+//        转换html
+        String html = converHtml(f);
+//        信息解析器
+        EducationParser parser = new EducationParser(html);
+
+        System.out.println("parse = " + parser.parse().toString());
+    }
+
+    @Test
+    public void matchExpectingInsuatryByZhuoPin6() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文20191101.doc");
+//        转换html
+        String html = converHtml(f);
+//        信息解析器
+        EducationParser parser = new EducationParser(html);
+
+        System.out.println("parse = " + parser.parse().toString());
+    }
     @Test
     public void oneBaseInfoOnBoss() throws Exception {
         File f = new File(basePath + "boss直聘何正宇3年.docx");

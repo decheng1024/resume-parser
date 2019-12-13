@@ -111,5 +111,41 @@ public class WorkExperienceTest extends BaseTest {
         for (WorkExperience wep : wps) {
             System.out.println("wep = " + wep);
         }
+    }@Test
+    public void workExperienceOnZhuoPin() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文_()_20191127 (3).doc");
+        String html = converHtml(f);
+        WorkExperienceParser parser = new WorkExperienceParser(html);
+        List<WorkExperience> wps = parser.parse();
+        for (WorkExperience wep : wps) {
+            System.out.println("wep = " + wep);
+        }
+    }@Test
+    public void workExperienceOnZhuoPin1() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文_()_20191127 (4).doc");
+        String html = converHtml(f);
+        WorkExperienceParser parser = new WorkExperienceParser(html);
+        List<WorkExperience> wps = parser.parse();
+        for (WorkExperience wep : wps) {
+            System.out.println("wep = " + wep);
+        }
+    }@Test
+    public void workExperienceOnZhuoPin2() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文20191101.doc");
+        String html = converHtml(f);
+        WorkExperienceParser parser = new WorkExperienceParser(html);
+        List<WorkExperience> wps = parser.parse();
+        for (WorkExperience wep : wps) {
+            System.out.println("wep = " + wep);
+        }
+    }@Test
+    public void workExperienceOnZhuoPin3() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文_()_20191127 (9).doc");
+        String html = converHtml(f);
+        WorkExperienceParser parser = new WorkExperienceParser(html);
+        List<WorkExperience> wps = parser.parse();
+        for (WorkExperience wep : wps) {
+            System.out.println("wep = " + wep);
+        }
     }
 }

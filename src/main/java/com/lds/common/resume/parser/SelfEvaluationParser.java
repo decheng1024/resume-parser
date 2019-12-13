@@ -27,8 +27,20 @@ public class SelfEvaluationParser extends BaseParser {
                 "Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:\n" +
                 "minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;\n" +
                 "background:#D9D9D9;mso-shading:white;mso-pattern:gray-15 auto";
+        //智联
         if (selfEvaluation.size() > 0 && (selfEvaluation.first().getElementsByAttributeValue("style", sytle)).size() > 0) {
             return selfEvaluation.get(0).parent().parent().nextElementSibling().text();
+        }
+        //卓聘
+        if (selfEvaluation.size() > 0 && (selfEvaluation.first().getElementsByAttributeValue("style", "font-size: 14px;")).size() > 0) {
+            return selfEvaluation.get(0).parent().parent().parent().parent().parent().nextElementSibling().text();
+        }
+        //51Job
+        selfEvaluation = root.getElementsMatchingOwnText("^自我评价：$");
+        if (selfEvaluation.size() > 0) {
+            if (selfEvaluation.first().getElementsByAttributeValue("class", "keys").size() > 0) {
+                return selfEvaluation.next().text();
+            }
         }
         return "";
     }

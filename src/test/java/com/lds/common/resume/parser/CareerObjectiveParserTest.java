@@ -27,8 +27,139 @@ public class CareerObjectiveParserTest extends BaseTest {
 
     @Test
     public void matchExpectingInsuatryByZhiLian() throws Exception {
-        System.out.println("\n" + "*********************************************************************************************************************************************************************" + "\n");
-        File f = new File(basePath + "智联招聘_胡程_软件测试工程师_中文_20191031_1572509741654.doc");
+        File f = new File(basePath + "智联招聘_奚钰格_运营专员_中文_20191108_1573202487643.doc");
+//        转换html
+        String html = converHtml(f);
+//        信息解析器
+        CareerObjectiveParser careerObjectiveParser = new CareerObjectiveParser(html);
+        CareerObjective parse = careerObjectiveParser.parse();
+
+        System.out.println("parse = " + parse.toString());
+    }
+
+    @Test
+    public void matchExpectingInsuatryByZhiLian1() throws Exception {
+        File f = new File(basePath + "智联招聘_郗文丽_数据分析BI方向_中文_20191108_1573193615159.doc");
+//        转换html
+        String html = converHtml(f);
+//        信息解析器
+        CareerObjectiveParser careerObjectiveParser = new CareerObjectiveParser(html);
+        CareerObjective parse = careerObjectiveParser.parse();
+
+        System.out.println("parse = " + parse.toString());
+    }
+
+    @Test
+    public void matchExpectingInsuatryByZhiLian2() throws Exception {
+        File f = new File(basePath + "智联招聘_温绍勇_Java研发工程师_中文_20191111_1573438920974.doc");
+//        转换html
+        String html = converHtml(f);
+//        信息解析器
+        CareerObjectiveParser careerObjectiveParser = new CareerObjectiveParser(html);
+        CareerObjective parse = careerObjectiveParser.parse();
+
+        System.out.println("parse = " + parse.toString());
+    }
+
+    @Test
+    public void matchExpectingInsuatryByZhiLian3() throws Exception {
+        File f = new File(basePath + "智联招聘_温琦生_项目运营总监_中文_20191105_1572919559195.doc");
+//        转换html
+        String html = converHtml(f);
+//        信息解析器
+        CareerObjectiveParser careerObjectiveParser = new CareerObjectiveParser(html);
+        CareerObjective parse = careerObjectiveParser.parse();
+
+        System.out.println("parse = " + parse.toString());
+    }
+
+    @Test
+    public void matchExpectingInsuatryByZhiLian4() throws Exception {
+        File f = new File(basePath + "智联招聘_席蒙_中级java开发工程师_中文_20191108_1573202626819.doc");
+//        转换html
+        String html = converHtml(f);
+//        信息解析器
+        CareerObjectiveParser careerObjectiveParser = new CareerObjectiveParser(html);
+        CareerObjective parse = careerObjectiveParser.parse();
+
+        System.out.println("parse = " + parse.toString());
+    }
+
+    @Test
+    public void matchExpectingInsuatryByZhuoPin() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文_()_20191127 (4).doc");
+//        转换html
+        String html = converHtml(f);
+//        信息解析器
+        CareerObjectiveParser careerObjectiveParser = new CareerObjectiveParser(html);
+        CareerObjective parse = careerObjectiveParser.parse();
+
+        System.out.println("parse = " + parse.toString());
+    }
+
+    @Test
+    public void matchExpectingInsuatryByZhuoPin1() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文_()_20191127 (3).doc");
+//        转换html
+        String html = converHtml(f);
+//        信息解析器
+        CareerObjectiveParser careerObjectiveParser = new CareerObjectiveParser(html);
+        CareerObjective parse = careerObjectiveParser.parse();
+
+        System.out.println("parse = " + parse.toString());
+    }
+
+    @Test
+    public void matchExpectingInsuatryByZhuoPin2() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文_()_20191127 (7).doc");
+//        转换html
+        String html = converHtml(f);
+//        信息解析器
+        CareerObjectiveParser careerObjectiveParser = new CareerObjectiveParser(html);
+        CareerObjective parse = careerObjectiveParser.parse();
+
+        System.out.println("parse = " + parse.toString());
+    }
+
+    @Test
+    public void matchExpectingInsuatryByZhuoPin3() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文_()_20191127 (9).doc");
+//        转换html
+        String html = converHtml(f);
+//        信息解析器
+        CareerObjectiveParser careerObjectiveParser = new CareerObjectiveParser(html);
+        CareerObjective parse = careerObjectiveParser.parse();
+
+        System.out.println("parse = " + parse.toString());
+    }
+
+    @Test
+    public void matchExpectingInsuatryByZhuoPin4() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文__20191127 (4).doc");
+//        转换html
+        String html = converHtml(f);
+//        信息解析器
+        CareerObjectiveParser careerObjectiveParser = new CareerObjectiveParser(html);
+        CareerObjective parse = careerObjectiveParser.parse();
+
+        System.out.println("parse = " + parse.toString());
+    }
+
+    @Test
+    public void matchExpectingInsuatryByZhuoPin5() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文_()_20191101 (16).doc");
+//        转换html
+        String html = converHtml(f);
+//        信息解析器
+        CareerObjectiveParser careerObjectiveParser = new CareerObjectiveParser(html);
+        CareerObjective parse = careerObjectiveParser.parse();
+
+        System.out.println("parse = " + parse.toString());
+    }
+
+    @Test
+    public void matchExpectingInsuatryByZhuoPin6() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文20191101.doc");
 //        转换html
         String html = converHtml(f);
 //        信息解析器

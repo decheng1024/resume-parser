@@ -30,17 +30,42 @@ public class EducationParser extends BaseParser {
         if (educationEles.size() > 0) {
             return classOn51jobAndZhiLian(educationEles);
         }
-        //boos
+
+        //boss
         educationEles = root.getElementsMatchingOwnText("^教育背景$");
         if (educationEles.size() > 0) {
-            paragraphOnBoss(educations, educationEles);
+            paragraphOZhuoPinAndBoss(educations, educationEles);
         }
         return educations;
     }
 
     //boss
-    private void paragraphOnBoss(List<Education> educations, Elements educationEles) {
-        Element nextEle = educationEles.first();
+    private void paragraphOZhuoPinAndBoss(List<Education> educations, Elements educationEles) {
+        Element nextEle;
+        //卓聘
+        if (educationEles.get(0).getElementsByAttributeValue("style", "font-size: 14px;").size() > 0) {
+            Education education = new Education();
+            Elements nextEles = educationEles.get(0).parent().parent().parent().parent().parent().nextElementSiblings();
+            for (Element nextEleByZhuoPin : nextEles) {
+                String[] arr = nextEleByZhuoPin.text().split(" \\| ");
+                if (arr.length < 4) {
+                    return;
+                }
+                String[] arr1 = arr[0].split(" -- ");
+                education.setStartDate(arr1[0]);
+                education.setEndDate(arr1[1]);
+                education.setUniversity(arr[1]);
+                education.setMajor(arr[2]);
+                education.setDegree(arr[3]);
+                if (arr.length > 4) {
+                    education.setDescription(arr[4]);
+                }
+                educations.add(education);
+            }
+        }
+
+        //boss
+        nextEle = educationEles.first();
         Pattern compile = Pattern.compile("\\d{2,4}.\\d{1,2}-\\d{2,4}.\\d{1,2}");
 
         while ((nextEle = nextEle.nextElementSibling()) != null) {
@@ -101,14 +126,15 @@ public class EducationParser extends BaseParser {
                         }
                         //专业
                         String major = Major.getMajor(text);
-                        Elements mojorEles = td.getElementsByAttributeValue("style", "padding-left:7px;");
-                        if (mojorEles.size() > 0) {
-                            major = mojorEles.get(0).text();
-                            education.setMajor(major);
-                        }
                         if (StringUtils.isNotBlank(major)) {
                             education.setMajor(major);
                         }
+                        Elements mojorEles = td.getElementsByAttributeValue("style", "padding-left:7px;");
+                        if (mojorEles.size() > 0) {
+                            major = mojorEles.first().text();
+                            education.setMajor(major.split("\\|")[1]);
+                        }
+
 
                         //专业描述
                         if ("专业描述：".equals(td.text())) {
@@ -117,7 +143,8 @@ public class EducationParser extends BaseParser {
                     });
                     educations.add(education);
                 }
-            }); return educations;
+            });
+            return educations;
         }
         //智联
         educationEleParent = educationEles.first().parent().parent().nextElementSibling();
