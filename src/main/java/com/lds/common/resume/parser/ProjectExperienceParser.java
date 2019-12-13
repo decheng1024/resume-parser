@@ -24,11 +24,19 @@ public class ProjectExperienceParser extends BaseParser {
         List<ProjectExperience> projectExperiences = new ArrayList<>();
         Elements proectExperienceTag = root.getElementsMatchingOwnText("^项目经验$");
         Element proectExperiencesParent = null;
+        //51Job和卓聘
         if (proectExperienceTag.size() > 0) {
-            //51job: 获取项目经验标签的下一个元素
-            proectExperiencesParent = proectExperienceTag.first().parent().nextElementSibling();
-            if (null != proectExperiencesParent) {
-                return classParseFor51job(proectExperiencesParent);
+            //51Job
+            if (proectExperienceTag.attr("class", "plate1").size() > 0) {
+                //获取项目经验标签的下一个元素
+                proectExperiencesParent = proectExperienceTag.first().parent().nextElementSibling();
+                if (null != proectExperiencesParent) {
+                    return classParseFor51job(projectExperiences, proectExperiencesParent);
+                }
+            }
+            if (proectExperienceTag.attr("style", "font-size: 14px;").size() > 0) {
+                proectExperiencesParent = proectExperienceTag.first().parent().parent().parent().parent().parent();
+                return classParseForZhuoPin(projectExperiences, proectExperiencesParent);
             }
 
             Elements peEles = proectExperienceTag.first().nextElementSiblings();
@@ -47,19 +55,22 @@ public class ProjectExperienceParser extends BaseParser {
                 }
             }
         }
+        //智联
         proectExperienceTag = root.getElementsMatchingOwnText("^项目经历$");
-        if (proectExperienceTag.size() > 0) {
+        if (proectExperienceTag.size() > 0 && proectExperienceTag.attr("style", "font-size:15.0pt;font-family:宋体;mso-ascii-font-family:\n" +
+                "Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:\n" +
+                "minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;\n" +
+                "background:#D9D9D9;mso-shading:white;mso-pattern:gray-15 auto").size() > 0) {
             //智联: 获取项目经验标签的下一个元素
             proectExperiencesParent = proectExperienceTag.first().parent().parent().nextElementSibling();
             if (null != proectExperiencesParent) {
-                return classParseForZhiLian(proectExperiencesParent);
+                return classParseForZhiLian(projectExperiences, proectExperiencesParent);
             }
         }
         return projectExperiences;
     }
 
-    private List<ProjectExperience> classParseFor51job(Element proectExperiencesParent) {
-        List<ProjectExperience> projectExperiences = new ArrayList<>();
+    private List<ProjectExperience> classParseFor51job(List<ProjectExperience> projectExperiences, Element proectExperiencesParent) {
         Elements tba = proectExperiencesParent.getElementsByAttributeValue("class", "tba");
         if (tba.size() > 0) {
             tba.stream().forEach(ptd -> {
@@ -107,12 +118,11 @@ public class ProjectExperienceParser extends BaseParser {
     /**
      * @return java.util.List<com.lds.common.resume.domain.ProjectExperience>
      * @Param [proectExperiencesParent]
-     * @Description:
+     * @Description: 智联的类解析
      * @author Murray Law
      * @date 2019/12/11 19:56
      */
-    private List<ProjectExperience> classParseForZhiLian(Element proectExperiencesParent) {
-        List<ProjectExperience> projectExperiences = new ArrayList<>();
+    private List<ProjectExperience> classParseForZhiLian(List<ProjectExperience> projectExperiences, Element proectExperiencesParent) {
         Elements trs = proectExperiencesParent.child(0).children();
         ProjectExperience projectExperience = new ProjectExperience();
         for (Element tr : trs) {
@@ -141,6 +151,41 @@ public class ProjectExperienceParser extends BaseParser {
 //                }
             }
         }
+        return projectExperiences;
+    }
+
+    //卓聘
+    private List<ProjectExperience> classParseForZhuoPin(List<ProjectExperience> projectExperiences, Element proectExperiencesParent) {
+        ProjectExperience projectExperience = new ProjectExperience();
+        //第一个项目经验描述
+        Element elementsByZhuoPin = proectExperiencesParent.nextElementSibling();
+        //遍历符合条件的项目经验
+        while (elementsByZhuoPin.getElementsByAttributeValue("style", "height: 30px; line-height: 30px; font-size: 14px; width: 710px;").size() == 0) {
+            Elements dateAndName = elementsByZhuoPin.getElementsByAttributeValue("style", "font-weight: bold; font-size: 12px;");
+            if (dateAndName.size() > 0) {
+                String[] arr = dateAndName.text().split(" ");
+                String[] arr1 = dateAndName.text().split(" \\| ");
+                projectExperience.setBeginDate(arr[0]);
+                projectExperience.setEndDate(arr[2]);
+                projectExperience.setProjectName(arr1[1]);
+            } else {
+                ProjectExperience projectExperienceCopy = new ProjectExperience();
+                Elements elements = elementsByZhuoPin.getElementsMatchingOwnText("^项目描述：$");
+                if (elements.size() > 0) {
+                    projectExperienceCopy.setProjectDescription(elements.first().parent().nextElementSibling().text());
+                }
+                elements = elementsByZhuoPin.getElementsMatchingOwnText("^项目职责：$");
+                if (elements.size() > 0) {
+                    projectExperienceCopy.setDutyDescription(elements.first().parent().nextElementSibling().text());
+                }
+                projectExperienceCopy.setBeginDate(projectExperience.getBeginDate());
+                projectExperienceCopy.setEndDate(projectExperience.getEndDate());
+                projectExperienceCopy.setProjectName(projectExperience.getProjectName());
+                projectExperiences.add(projectExperienceCopy);
+            }
+            elementsByZhuoPin = elementsByZhuoPin.nextElementSibling();
+        }
+//            projectExperience.
         return projectExperiences;
     }
 }

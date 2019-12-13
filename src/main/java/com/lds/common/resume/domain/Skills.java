@@ -17,6 +17,6 @@ public class Skills {
     private String skillProficiency;
     //    证书日期
     private String certificateDate;
-    //    培训时间
-//    private String trainingTime;
+    //    使用时间
+    private String usageTime;
 }

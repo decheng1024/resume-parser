@@ -75,4 +75,37 @@ public class SelfEvaluationParserTest extends BaseTest {
 
         System.out.println("parse = " + parse);
     }
+    @Test
+    public void oneBaseInfoOnZhuoPin() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文_()_20191127 (3).doc");
+        String html = converHtml(f);
+        SelfEvaluationParser infoParser = new SelfEvaluationParser(html);
+        SelfEvaluation parse = infoParser.parse();
+
+        System.out.println("parse = " + parse);
+    }@Test
+    public void oneBaseInfoOnZhuoPin1() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文_()_20191127 (4).doc");
+        String html = converHtml(f);
+        SelfEvaluationParser infoParser = new SelfEvaluationParser(html);
+        SelfEvaluation parse = infoParser.parse();
+
+        System.out.println("parse = " + parse);
+    }@Test
+    public void oneBaseInfoOnZhuoPin2() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文_()_20191127 (9).doc");
+        String html = converHtml(f);
+        SelfEvaluationParser infoParser = new SelfEvaluationParser(html);
+        SelfEvaluation parse = infoParser.parse();
+
+        System.out.println("parse = " + parse);
+    }@Test
+    public void oneBaseInfoOnZhuoPin3() throws Exception {
+        File f = new File(basePath + "智联卓聘_中文20191101.doc");
+        String html = converHtml(f);
+        SelfEvaluationParser infoParser = new SelfEvaluationParser(html);
+        SelfEvaluation parse = infoParser.parse();
+
+        System.out.println("parse = " + parse);
+    }
 }

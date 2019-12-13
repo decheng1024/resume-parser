@@ -32,6 +32,10 @@ public class HtmlConverterTest extends BaseTest {
     public void oneGeneratorHtmlOnZhaopin() throws Exception {
         File f = new File(basePath + "智联招聘_胡程_软件测试工程师_中文_20191031_1572509741654.doc");
         converHtmlFile(f);
+    }@Test
+    public void oneGeneratorHtmlOnZhuopin() throws Exception {
+        File f = new File(basePath + "智联招聘_温琦生_项目运营总监_中文_20191105_1572919559195.doc");
+        converHtmlFile(f);
     }
 
     @Test
