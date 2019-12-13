@@ -1,0 +1,602 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="http://image4.highpin.cn/Css/Seeker/reset.min.css?version=20191125125251" rel="stylesheet"/>
+
+    <link href="http://image5.highpin.cn/Css/Seeker/detail-new.css?version=20191125125251" rel="stylesheet"/>
+
+
+    <link href="http://image1.highpin.cn/css/seeker/footer.css?version=20191125125251" rel="stylesheet"/>
+
+    <link href="http://image2.highpin.cn/css/shared/suggestion.css?version=20191125125251" rel="stylesheet"/>
+
+    <link href="http://image3.highpin.cn/css/shared/layer/customlayer.css?version=20191125125251" rel="stylesheet"/>
+
+    <link href="http://image4.highpin.cn/css/Shared/grade.css?version=20191125125251" rel="stylesheet"/>
+
+</head>
+<body>
+    <table width="710" align="center" style="font-size: 12px; word-break: break-all; margin-top: -40px;">
+        <!--个人简历-->
+        <tr>
+            <td>
+                <img src="http://image5.highpin.cn/Image/Shared/downresume/top.jpg"  style="border: none; display: block;" /></td>
+        </tr>
+        <!--个人信息-->
+        <tr>
+            <td style="padding: 2px 0 16px 16px; border-bottom: 1px dotted #d2d2d2;">
+                <table width="694">
+                    <tr>
+                        <td width="582">
+                            <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                <tr>
+                                    <td style="font-size: 24px; line-height: 44px; font-family: SimHei">
+吴强华                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>男 | 36岁 | 1983年11月 |  
+                                        11 年工作经验 | 本科 </td>
+                                </tr>
+                                <tr>
+                                    <td>广东  深圳
+                                    </td>
+                                </tr>
+
+
+                                                                
+                                <tr>
+                                    <td>手机：18682302773</td>
+                                </tr>
+                                <tr>
+                                    <td>邮箱：wuqianghua@163.com</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            
+                            <img src="http://image4.highpin.cn/image/seeker/resumeview/head-picture.jpg" width="70" height="100" style="display: block; width: 70px; height: 100px; padding: 3px; border: 1px solid #f0f0f0; overflow:hidden;" />
+                            
+                           
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!--目前状态-->
+            <tr>
+                <td>
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px;">
+                        <tr>
+                            <td width="18">
+                                <img src="http://image1.highpin.cn/Image/Shared/downresume/red-square.jpg"  /></td>
+                            <td style="font-size: 14px; padding-top: 5px;">目前状态</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 5px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                        <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                            <tr>
+                                <td width="110" style="vertical-align: top; line-height: 18px;">目前状态：</td>
+                                <td>我目前在职，正考虑换个新环境（如有合适的工作机会，到岗时间一个月左右）</td>
+                            </tr>
+                                <tr>
+                                    <td width="110" style="vertical-align: top; line-height: 18px;">期望薪资：</td>
+                                    <td>保密</td>
+                                </tr>
+                        </table>
+                </td>
+            </tr>
+                    <!--职业意向-->
+            <tr>
+                <td style="font-size: 14px; line-height: 28px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px;">
+                        <tr>
+                            <td width="18">
+                                <img src="http://image2.highpin.cn/Image/Shared/downresume/red-square.jpg" /></td>
+                            <td style="font-size: 14px;">职业意向</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 5px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                        <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                <tr>
+                                    <td width="110" style="vertical-align: top; line-height: 18px;">期望行业：</td>
+                                    <td>互联网/移动互联网/电子商务,IT服务（系统/数据/维护）,金融/银行/投资/基金/证券/期货</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="vertical-align: top; line-height: 18px;">期望职位：</td>
+                                    <td>数据分析-数据分析,咨询/顾问-管理咨询项目经理</td>
+                                </tr>
+                            <tr>
+                                <td style="vertical-align: top; line-height: 18px;">工作地点：</td>
+                                <td>广东-深圳,广东-广州,湖北-武汉</td>
+                            </tr>
+                                <tr>
+                                    <td style="vertical-align: top; line-height: 18px;">期望薪资（税前）：</td>
+                                    <td>25000RMB/Month</td>
+                                </tr>
+                                                    </table>
+                </td>
+            </tr>
+                            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image3.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">工作经验</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image4.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">2015年11月&nbsp;&nbsp;--&nbsp;&nbsp;至今 | 中软国际技术有限公司 |  
+                                BA</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：IT服务（系统/数据/维护）</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+25000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>负责华为BI系统-方案与解决项目，负责区域系统不下的新需求分析设计</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image5.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">2012年8月&nbsp;&nbsp;--&nbsp;&nbsp;2015年11月 | 北京宇信易诚科技有限公司 |  
+                                项目经理/项目主管</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+公司性质：民营;
+                                    |
+
+公司规模：1000-9999人
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：IT服务（系统/数据/维护）</td>
+                        </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+15000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>银行风险类数据集市项目的集市设计、代码开发和优化，参加项目： <br/>（2015-2至今）风险监测系统产品化——架构设计<br/>（2014-11至2015-2）内部评级系统产品研发——架构设计、模型开发<br/>（2014-7至2015-11）上海银行零售信贷项目—— 数据集市模型设计、开发<br/>（2013-12 至 2014-7）鄞州银行风险数据平台—— 数据集市模型设计、开发 <br/>（2013-4 至 1013-12）徽商银行零售内评项目—— 数据集市模型设计、开发 数据SAS分析、建立评级、违约率、损失率等模型<br/>（2013-2 至 2013-4）邮储客户风险监管报表—— 个贷块的ETL、报表分析开发，SQL优化 <br/>（2013-1 至 2013-2）中信银行对公信息平台项目 —— 报表开发，SQL优化 <br/>（2012-9 至 2013-1）深发展数据稽核项目 —— ETL，SQL优化</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image1.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">2011年11月&nbsp;&nbsp;--&nbsp;&nbsp;2012年8月 | 中科软科技股份有限公司 |  
+                                需求工程师</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+公司性质：上市公司;
+                                    |
+
+公司规模：1000-9999人
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：IT服务（系统/数据/维护）</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：计算机/网络技术-需求工程师</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+8000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>保险类报表设计开发与应用，参加项目： <br/>（2012-3 至 2012-8）日本财产保险集市与报表平台—— 模型设计、ETL设计开发、报表设计开发 ，SAS 数据建模分析<br/>（2011-11 至 2012-3）财产保险监控报表—— 报表开发，SQL优化，SPSS数据模型分析</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image2.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">2008年11月&nbsp;&nbsp;--&nbsp;&nbsp;2011年11月 | 北京东方国信 |  
+                                数据工程师</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+公司性质：上市公司;
+                                    |
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：IT服务（系统/数据/维护）</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：计算机/网络技术-信息技术经理/主管</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+6000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>数据分析，主要给中国联通做专题分析，BI系统建设；数据处理，模型建设<br/>（2011-6 至 2011—11）中国联通黑龙江分公司经营分析系统——经营分析系统数据集市、ETL的设计开发，报表的设计开发，总部监控指标开发报送<br/>(2011-1 至 2011-6) 中国联通经营分析系统—— 运用数据挖掘的方法对经营的各类指标进行统计、分析，用户感受，离网，套餐定价等等进行分析建议，主要工具SPSS和Clementine，SQL语言 <br/>（2008-11 至 2010-12）中国联通云南分公司经营分析系统——利用统计分析技术、数据挖掘技术，主要oracle数据库，分析工具SPSS</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+
+            <!--项目经历-->
+            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image3.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">项目经验</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image4.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:8px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2015年11月&nbsp;&nbsp;--&nbsp;&nbsp;至今 | 华为RC项目</td>
+
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                                                            <tr>
+                                <td>项目描述：</td>
+                            </tr>
+                            <tr>
+                                <td>传统的财经BI项目，建立数据集市为全球业务提供各种纬度的财务数据</td>
+
+                            </tr>
+                                                                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image5.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:8px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2015年2月&nbsp;&nbsp;--&nbsp;&nbsp;2015年11月 | 风险监测系统产品研发</td>
+
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                                                            <tr>
+                                <td>项目描述：</td>
+                            </tr>
+                            <tr>
+                                <td>银行信贷风险、流动性风险、操作风险监控</td>
+
+                            </tr>
+                                                    <tr>
+                                <td>项目职责：</td>
+                            </tr>
+                            <tr>
+                                <td>项目经理：整体架构设计、集市模型设计、开发进度管理 </td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image1.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:8px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2014年11月&nbsp;&nbsp;--&nbsp;&nbsp;2015年2月 | 内评系统产品研发</td>
+
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                                                            <tr>
+                                <td>项目描述：</td>
+                            </tr>
+                            <tr>
+                                <td>基于巴萨尔新资本协议对银行信贷客户进行内部评级，主要有客户申请评分模块、客户行为评分模块、债项评级评级模块、催收评分模块，计算信贷EDA/RWA/PD/LGD</td>
+
+                            </tr>
+                                                    <tr>
+                                <td>项目职责：</td>
+                            </tr>
+                            <tr>
+                                <td>技术经理：内评系统整体架构设计、数据集市设计、评分模型开发与设计 </td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image2.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:8px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2014年7月&nbsp;&nbsp;--&nbsp;&nbsp;2014年11月 | 上海银行零售信贷项目</td>
+
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                                                            <tr>
+                                <td>项目描述：</td>
+                            </tr>
+                            <tr>
+                                <td>上海银行零售审批决策系统与各个应用及核心系统数据交互</td>
+
+                            </tr>
+                                                    <tr>
+                                <td>项目职责：</td>
+                            </tr>
+                            <tr>
+                                <td>数据集市架构设计 </td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image3.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:8px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2013年12月&nbsp;&nbsp;--&nbsp;&nbsp;2014年7月 | 鄞州银行风险数据平台</td>
+
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                                                            <tr>
+                                <td>项目描述：</td>
+                            </tr>
+                            <tr>
+                                <td>对信贷、核心等数据进行抽取模型设计，对银行的操作分析、流动风险、信誉风险等进行识别</td>
+
+                            </tr>
+                                                    <tr>
+                                <td>项目职责：</td>
+                            </tr>
+                            <tr>
+                                <td>数据集市架构模型设计<br/><br/>主要对监会发布的商业银行资本管理办法中涵盖的市场风险、信用风险、操作风险、流动风险标准法和内部模型级需求数据需求的确认，集市架构模型的设计与实施验证<br/>分析银行数据是否满足现有需求，和将来对新资本协议的要求。<br/> </td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image4.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:8px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2013年4月&nbsp;&nbsp;--&nbsp;&nbsp;2013年12月 | 徽商银行零售内评项目</td>
+
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                                                            <tr>
+                                <td>项目描述：</td>
+                            </tr>
+                            <tr>
+                                <td>零售类风险资产的债项违约率、违约损失率、风险加权资产、风险暴露等进行统计</td>
+
+                            </tr>
+                                                    <tr>
+                                <td>项目职责：</td>
+                            </tr>
+                            <tr>
+                                <td>数据集市模型设计<br/><br/>基于巴塞尔新资本协议为支柱的银行零售内部评级模型的运用SAS进行验证，主要看模型在样本数据建立后对数据的解释程度和偏差程度，并对模型的估计参数进行调整。<br/>          零售风险数据集市的整体架构和模型的设计、实施、验证。<br/> </td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>
+
+            <!--教育背景-->
+            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image5.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">教育背景</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 26px; padding-top: 8px; padding-bottom: 4px;">
+                    <table style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image1.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2005年9月&nbsp;&nbsp;--&nbsp;&nbsp;2009年7月 | 云南大学 | 统计学 | 本科
+</td>
+                        </tr>
+                    </table>
+
+
+                </td>
+            </tr>
+
+
+            <!--其他能力-->
+            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image2.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">其他能力</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size:12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image3.highpin.cn/Image/Shared/downresume/gray-square.jpg"   style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold;font-size:12px;">语言能力</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table style="font-size: 12px; line-height: 18px; word-break: break-all;" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>语种：英语 | 听说能力：一般 | 读写能力：一般 </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>  
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size:12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image4.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;" /></td>
+                            <td style="font-weight: bold;font-size:12px;">计算机/IT技能</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="line-height: 18px; padding-left: 19px; font-size: 12px; padding-bottom: 8px;">
+                    <table style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                            <tr>
+                                <td>专业技能：SAS/SPSS | 使用时间：70 个月 | 掌握程度：良好 </td>
+                            </tr>
+                    </table>
+                </td>
+            </tr>
+
+
+
+    </table>
+    <script src="http://image5.highpin.cn/js/shared/common/sea.js?version=20191125125251"></script>
+
+    <script src="http://image1.highpin.cn/js/modules/common/base_init.js?version=20191125125251"></script>
+
+</body>
+</html>
