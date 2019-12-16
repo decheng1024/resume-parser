@@ -1,5 +1,6 @@
 package com.lds.common.resume.parser;
 
+import com.lds.common.resume.domain.ProjectExperience;
 import com.lds.common.resume.domain.WorkExperience;
 import com.lds.common.resume.util.StringUtils;
 import org.jsoup.Jsoup;
@@ -23,15 +24,15 @@ public class WorkExperienceParser extends BaseParser {
 
     /**
      * @return java.util.List<com.lds.common.resume.domain.WorkExperience>
-     * @Description: 针对51Job和智联的简历解析, 准确率100%
+     * @Description: 针对51Job和智联的简历解析
      * @author Murray Law
      * @date 2019/12/11 14:05
      */
     public List<WorkExperience> parse() {
         List<WorkExperience> workExperiences = new ArrayList<>();
-        //找到51job的技能特长模块抬头
+        //找到51job的工作经验模块抬头
         Elements workExperiencesElesBy51Job = root.getElementsMatchingOwnText("^工作经验$");
-        //获取51Job的技能列表
+        //获取51Job的工作经验列表
         if (workExperiencesElesBy51Job.size() > 0 && workExperiencesElesBy51Job.first().getElementsByAttributeValue("class", "plate1").size() > 0) {
             Element workExperiencesParentEle = workExperiencesElesBy51Job.get(0).parent().nextElementSibling();
             //第一个工作经验
@@ -42,50 +43,38 @@ public class WorkExperienceParser extends BaseParser {
             for (int i = 1; i < workExperiencesParentEles.size(); i += 2) {
                 workExperiences.add(getWorkExperienceBy51Job(workExperiencesParentEles.get(i)));
             }
+            return workExperiences;
         }
-        //找到智联招聘的技能特长抬头
+        //找到智联招聘的工作经验抬头
         Elements workExperiencesElesByZhiLian = root.getElementsMatchingOwnText("^工作经历$");
-        //获取智联招聘的技能列表
+        //获取智联招聘的工作经验列表
         if (workExperiencesElesByZhiLian.size() > 0) {
-            Element workExperiencesParentEle = workExperiencesElesByZhiLian.get(0).parent().parent().nextElementSibling();
-            while ("table".equals(workExperiencesParentEle.tagName())) {
-                workExperiences.add(getWorkExperienceByZhiLian(workExperiencesParentEle));
-                workExperiencesParentEle = workExperiencesParentEle.nextElementSibling();
+            if (workExperiencesElesByZhiLian.first().getElementsByAttributeValue("style", "font-size:15.0pt;font-family:宋体;mso-ascii-font-family:\n" +
+                    "Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:\n" +
+                    "minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;\n" +
+                    "background:#D9D9D9;mso-shading:white;mso-pattern:gray-15 auto").size() > 0 || workExperiencesElesByZhiLian.first().getElementsByAttributeValue("style", "font-size:15.0pt;font-family:宋体;mso-ascii-font-family:\r\n" +
+                    "Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:\r\n" +
+                    "minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;\r\n" +
+                    "background:#D9D9D9;mso-shading:white;mso-pattern:gray-15 auto").size() > 0) {
+                Element workExperiencesParentEle = workExperiencesElesByZhiLian.get(0).parent().parent().nextElementSibling();
+                while ("table".equals(workExperiencesParentEle.tagName())) {
+                    workExperiences.add(getWorkExperienceByZhiLian(workExperiencesParentEle));
+                    workExperiencesParentEle = workExperiencesParentEle.nextElementSibling();
+                }
+                return workExperiences;
+            }
+            //找到人才热线的工作经验模块抬头
+            if (workExperiencesElesByZhiLian.first().getElementsByAttributeValue("style", "font:12px/20px Arial; color:#ffffff; padding:0 25px; height:20px;").size() > 0) {
+                Elements workExperiencesTablesByRenCai = workExperiencesElesByZhiLian.first().parent().nextElementSibling().child(0).children();
+                return getWorkExperienceByRenCai(workExperiences, workExperiencesTablesByRenCai);
             }
         }
-        //找到卓聘的技能特长模块抬头
+        //找到卓聘的工作经验模块抬头
         Elements workExperiencesElesByZhuoPin = root.getElementsMatchingOwnText("^工作经验$");
         if (workExperiencesElesByZhuoPin.size() > 0 && workExperiencesElesByZhuoPin.first().getElementsByAttributeValue("style", "font-size: 14px;").size() > 0) {
             WorkExperience workExperience = new WorkExperience();
             Element webzp = workExperiencesElesByZhuoPin.first().parent().parent().parent().parent().parent().nextElementSibling();
-            Elements dateAndName = webzp.getElementsByAttributeValue("style", "font-weight: bold; font-size: 12px");
-            Elements description = webzp.getElementsByAttributeValue("style", "font-size: 12px; line-height: 18px; word-break: break-all;");
-
-            while (dateAndName.size() > 0 || description.size() > 0) {
-                if (dateAndName.size() > 0) {
-                    String[] arr = dateAndName.text().split(" \\| ");
-                    String[] arr1 = arr[0].split(" -- ");
-                    workExperience.setStartDate(arr1[0]);
-                    workExperience.setEndDate(arr1[1]);
-                    workExperience.setCompany(arr[1]);
-                    workExperience.setJobTitle(arr[2]);
-                } else {
-                    description.first().child(0).children().stream().forEach(desc -> {
-                        Elements currentIndustry = desc.getElementsMatchingOwnText("行业类别：");
-                        if (currentIndustry.size() > 0) {
-                            workExperience.setCurrentIndustry(currentIndustry.text());
-
-
-                            WorkExperience workExperienceCopy = new WorkExperience();
-                            workExperiences.add(workExperienceCopy);
-                        }
-                    });
-                }
-                webzp = webzp.nextElementSibling();
-                dateAndName = webzp.getElementsByAttributeValue("style", "font-weight: bold; font-size: 12px");
-                description = webzp.getElementsByAttributeValue("style", "font-size: 12px; line-height: 18px; word-break: break-all;");
-
-            }
+            return getWorkExperienceByZhuoPin(workExperiences, webzp);
         }
         return workExperiences;
     }
@@ -270,6 +259,74 @@ public class WorkExperienceParser extends BaseParser {
         workExperience.setDescription(currentIndustryAndDescription.get(2).text());
 
         return workExperience;
+    }
+
+    private List<WorkExperience> getWorkExperienceByZhuoPin(List<WorkExperience> workExperiences, Element webzp) {
+        Elements dateAndName = webzp.getElementsByAttributeValue("style", "font-weight: bold; font-size: 12px");
+        Elements descriptions = webzp.getElementsByAttributeValue("style", "font-size: 12px; line-height: 18px; word-break: break-all;");
+        WorkExperience workExperience = new WorkExperience();
+        while (dateAndName.size() > 0 || descriptions.size() > 0) {
+            if (dateAndName.size() > 0) {
+                String[] arr = dateAndName.text().split(" \\| ");
+                String[] arr1 = arr[0].split(" -- ");
+                workExperience.setStartDate(arr1[0]);
+                workExperience.setEndDate(arr1[1]);
+                workExperience.setCompany(arr[1]);
+                workExperience.setJobTitle(arr[2]);
+            } else {
+                Elements descs = descriptions.first().child(0).children();
+                WorkExperience workExperienceCopy = new WorkExperience();
+                for (Element desc : descs) {
+                    Elements currentIndustry = desc.getElementsMatchingOwnText("行业类别：");
+                    if (currentIndustry.size() > 0) {
+                        workExperienceCopy.setCurrentIndustry(currentIndustry.text().split("：")[1]);
+                    }
+                    Elements jobFunction = desc.getElementsMatchingOwnText("职位类别：");
+                    if (jobFunction.size() > 0) {
+                        workExperienceCopy.setJobFunction(jobFunction.text().split("：")[1]);
+                    }
+                    Elements salary = desc.getElementsMatchingOwnText("税前收入（税前）： ");
+                    if (salary.size() > 0) {
+                        workExperienceCopy.setSalary(salary.text().split("： ")[1]);
+                    }
+                    Elements description = desc.getElementsMatchingOwnText("^工作描述：$");
+                    if (description.size() > 0) {
+                        workExperienceCopy.setDescription(description.first().parent().nextElementSibling().text());
+                    }
+                }
+                workExperienceCopy.setStartDate(workExperience.getStartDate());
+                workExperienceCopy.setEndDate(workExperience.getEndDate());
+                workExperienceCopy.setJobTitle(workExperience.getJobTitle());
+                workExperienceCopy.setCompany(workExperience.getCompany());
+                workExperiences.add(workExperienceCopy);
+            }
+            webzp = webzp.nextElementSibling();
+            dateAndName = webzp.getElementsByAttributeValue("style", "font-weight: bold; font-size: 12px");
+            descriptions = webzp.getElementsByAttributeValue("style", "font-size: 12px; line-height: 18px; word-break: break-all;");
+        }
+        return workExperiences;
+
+    }
+
+    private List<WorkExperience> getWorkExperienceByRenCai(List<WorkExperience> workExperiences, Elements workExperiencesTablesByRenCai) {
+        workExperiencesTablesByRenCai.stream().forEach(workExperiencesTable -> {
+            if (!"".equals(workExperiencesTable.text())) {
+                WorkExperience workExperience = new WorkExperience();
+                workExperience.setCompany(workExperiencesTable.getElementsByTag("strong").text());
+                Elements workExperiencesTableHead = workExperiencesTable.getElementsByAttributeValue("style", "padding:0 30px 0 0;");
+                workExperience.setJobTitle(workExperiencesTableHead.get(1).text());
+                String[] arr = workExperiencesTableHead.get(2).text().split("至");
+                workExperience.setStartDate(arr[0]);
+                workExperience.setEndDate(arr[1].split(" ")[0]);
+                workExperience.setSalary(workExperiencesTableHead.get(3).text());
+                Elements elements = workExperiencesTable.getElementsByAttributeValue("style", "font:12px/20px Arial; color:#333333;");
+                workExperience.setJobFunction(elements.get(2).text());
+                workExperience.setCurrentIndustry(elements.get(3).text());
+                workExperience.setDescription(workExperiencesTable.getElementsByAttributeValue("style", "font:12px/20px Arial; color:#333333; padding:10px 0 0;").first().text());
+                workExperiences.add(workExperience);
+            }
+        });
+        return workExperiences;
     }
 }
 

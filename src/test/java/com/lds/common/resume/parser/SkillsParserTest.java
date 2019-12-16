@@ -97,4 +97,16 @@ public class SkillsParserTest extends BaseTest {
                 }
         );
     }
+
+    @Test
+    public void oneSkillsParseRenCai() throws Exception {
+        File f = new File(basePath + "运维工程师杜旭升(J3547848).doc");
+        String html = converHtml(f);
+
+        SkillsParser parser = new SkillsParser(html);
+        parser.parse().forEach(skills -> {
+                    System.out.println(skills.toString());
+                }
+        );
+    }
 }

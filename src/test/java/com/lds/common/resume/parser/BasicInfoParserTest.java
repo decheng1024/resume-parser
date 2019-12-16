@@ -78,7 +78,9 @@ public class BasicInfoParserTest extends BaseTest {
         BasicInfo parse = infoParser.parse();
 
         System.out.println("parse = " + parse);
-    }@Test
+    }
+
+    @Test
     public void oneBaseInfoOnZhuoPin() throws Exception {
         File f = new File(basePath + "智联卓聘_中文_()_20191127 (7).doc");
         String html = converHtml(f);
@@ -86,7 +88,9 @@ public class BasicInfoParserTest extends BaseTest {
         BasicInfo parse = infoParser.parse();
 
         System.out.println("parse = " + parse);
-    }@Test
+    }
+
+    @Test
     public void oneBaseInfoOnZhuoPin1() throws Exception {
         File f = new File(basePath + "智联卓聘_中文_()_20191127 (4).doc");
         String html = converHtml(f);
@@ -94,9 +98,41 @@ public class BasicInfoParserTest extends BaseTest {
         BasicInfo parse = infoParser.parse();
 
         System.out.println("parse = " + parse);
-    }@Test
+    }
+
+    @Test
     public void oneBaseInfoOnZhuoPin2() throws Exception {
         File f = new File(basePath + "智联卓聘_中文_()_20191127 (3).doc");
+        String html = converHtml(f);
+        BasicInfoParser infoParser = new BasicInfoParser(html);
+        BasicInfo parse = infoParser.parse();
+
+        System.out.println("parse = " + parse);
+    }
+
+    @Test
+    public void oneBaseInfoOnRenCai() throws Exception {
+        File f = new File(basePath + "运营专员张雅花(J9972636).doc");
+        String html = converHtml(f);
+        BasicInfoParser infoParser = new BasicInfoParser(html);
+        BasicInfo parse = infoParser.parse();
+
+        System.out.println("parse = " + parse);
+    }
+
+    @Test
+    public void oneBaseInfoOnRenCai1() throws Exception {
+        File f = new File(basePath + "高级.NET工程师余正伟(J4511083).doc");
+        String html = converHtml(f);
+        BasicInfoParser infoParser = new BasicInfoParser(html);
+        BasicInfo parse = infoParser.parse();
+
+        System.out.println("parse = " + parse);
+    }
+
+    @Test
+    public void oneBaseInfoOnRenCai2() throws Exception {
+        File f = new File(basePath + "高级软件工程师吴财圣(J9982025).doc");
         String html = converHtml(f);
         BasicInfoParser infoParser = new BasicInfoParser(html);
         BasicInfo parse = infoParser.parse();

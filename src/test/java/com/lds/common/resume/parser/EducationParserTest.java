@@ -139,6 +139,39 @@ public class EducationParserTest extends BaseTest {
         System.out.println("parse = " + parser.parse().toString());
     }
     @Test
+    public void oneBaseInfoOnRenCai() throws Exception {
+        File f = new File(basePath + "高级.NET工程师余正伟(J4511083).doc");
+        String html = converHtml(f);
+        EducationParser parser = new EducationParser(html);
+        List<Education> educaton = parser.parse();
+
+        System.out.println("educaton = " + educaton);
+    } @Test
+    public void oneBaseInfoOnRenCai1() throws Exception {
+        File f = new File(basePath + "运营专员张雅花(J9972636).doc");
+        String html = converHtml(f);
+        EducationParser parser = new EducationParser(html);
+        List<Education> educaton = parser.parse();
+
+        System.out.println("educaton = " + educaton);
+    } @Test
+    public void oneBaseInfoOnRenCai2() throws Exception {
+        File f = new File(basePath + "软件测试工程师安文卿(J9981160).doc");
+        String html = converHtml(f);
+        EducationParser parser = new EducationParser(html);
+        List<Education> educaton = parser.parse();
+
+        System.out.println("educaton = " + educaton);
+    } @Test
+    public void oneBaseInfoOnRenCai3() throws Exception {
+        File f = new File(basePath + "运维工程师杜旭升(J3547848).doc");
+        String html = converHtml(f);
+        EducationParser parser = new EducationParser(html);
+        List<Education> educaton = parser.parse();
+
+        System.out.println("educaton = " + educaton);
+    }
+    @Test
     public void oneBaseInfoOnBoss() throws Exception {
         File f = new File(basePath + "boss直聘何正宇3年.docx");
         String html = converHtml(f);

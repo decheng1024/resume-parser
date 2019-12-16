@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="http://image4.highpin.cn/Css/Seeker/reset.min.css?version=20191125125251" rel="stylesheet"/>
+
+    <link href="http://image5.highpin.cn/Css/Seeker/detail-new.css?version=20191125125251" rel="stylesheet"/>
+
+
+    <link href="http://image1.highpin.cn/css/seeker/footer.css?version=20191125125251" rel="stylesheet"/>
+
+    <link href="http://image2.highpin.cn/css/shared/suggestion.css?version=20191125125251" rel="stylesheet"/>
+
+    <link href="http://image3.highpin.cn/css/shared/layer/customlayer.css?version=20191125125251" rel="stylesheet"/>
+
+    <link href="http://image4.highpin.cn/css/Shared/grade.css?version=20191125125251" rel="stylesheet"/>
+
+</head>
+<body>
+    <table width="710" align="center" style="font-size: 12px; word-break: break-all; margin-top: -40px;">
+        <!--个人简历-->
+        <tr>
+            <td>
+                <img src="http://image5.highpin.cn/Image/Shared/downresume/top.jpg"  style="border: none; display: block;" /></td>
+        </tr>
+        <!--个人信息-->
+        <tr>
+            <td style="padding: 2px 0 16px 16px; border-bottom: 1px dotted #d2d2d2;">
+                <table width="694">
+                    <tr>
+                        <td width="582">
+                            <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                <tr>
+                                    <td style="font-size: 24px; line-height: 44px; font-family: SimHei">
+岸达                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>男 | 31岁 | 1988年2月 |  
+未婚                                        7 年工作经验 | 本科 </td>
+                                </tr>
+                                <tr>
+                                    <td>广东  深圳
+                                    </td>
+                                </tr>
+
+
+                                                                
+                                <tr>
+                                    <td>手机：18826557054</td>
+                                </tr>
+                                <tr>
+                                    <td>邮箱：wuandayouxiang@163.com</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            
+                            <img src="http://image4.highpin.cn/image/seeker/resumeview/head-picture.jpg" width="70" height="100" style="display: block; width: 70px; height: 100px; padding: 3px; border: 1px solid #f0f0f0; overflow:hidden;" />
+                            
+                           
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!--目前状态-->
+            <tr>
+                <td>
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px;">
+                        <tr>
+                            <td width="18">
+                                <img src="http://image1.highpin.cn/Image/Shared/downresume/red-square.jpg"  /></td>
+                            <td style="font-size: 14px; padding-top: 5px;">目前状态</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 5px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                        <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                            <tr>
+                                <td width="110" style="vertical-align: top; line-height: 18px;">目前状态：</td>
+                                <td>我目前处于离职状态，可立即上岗</td>
+                            </tr>
+                                <tr>
+                                    <td width="110" style="vertical-align: top; line-height: 18px;">期望薪资：</td>
+                                    <td>保密</td>
+                                </tr>
+                        </table>
+                </td>
+            </tr>
+                    <!--职业意向-->
+            <tr>
+                <td style="font-size: 14px; line-height: 28px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px;">
+                        <tr>
+                            <td width="18">
+                                <img src="http://image2.highpin.cn/Image/Shared/downresume/red-square.jpg" /></td>
+                            <td style="font-size: 14px;">职业意向</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 5px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                        <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                <tr>
+                                    <td width="110" style="vertical-align: top; line-height: 18px;">期望行业：</td>
+                                    <td>通信/电信（设备/运营/增值）,互联网/移动互联网/电子商务</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="vertical-align: top; line-height: 18px;">期望职位：</td>
+                                    <td>高级管理-合伙人,计算机/网络技术-网站运营管理,高级管理-副总裁/副总经理</td>
+                                </tr>
+                            <tr>
+                                <td style="vertical-align: top; line-height: 18px;">工作地点：</td>
+                                <td>广东-深圳</td>
+                            </tr>
+                                <tr>
+                                    <td style="vertical-align: top; line-height: 18px;">期望薪资（税前）：</td>
+                                    <td>15000RMB/Month</td>
+                                </tr>
+                                                    </table>
+                </td>
+            </tr>
+                            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image3.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">工作经验</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image4.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">2019年7月&nbsp;&nbsp;--&nbsp;&nbsp;至今 | 深圳华章教育服务有限公司 |  
+                                运营总监</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：互联网/移动互联网/电子商务</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：计算机/网络技术-网站运营管理</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+15000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>1、根据公司整体发展战略和目标，制定地面市场活动营销方案，新媒体运营方案、公司社群运营方案、网盟百度360竞价和官网优化方案、制定洪桥教育App运营方案、制定所有部门考核岗位职责等<br/>2、通过公司现有的资源，包括官网、市场需求、微博、微信矩阵营销、公司客户群、洪桥教育APP等，通过SEO搜索引擎优化及网络渠道推广，品牌营销活动策划，社群营销推广等方式，提高公司品牌对外的知名度，和学习MBA学员的获客量及销售目标<br/>3、建设网络推广营销平台、社群运营部、App运营小组、管理付费推广、和新媒体部，执行并监督完成客户推广目标，营销活动推广，粉丝推广增长目标，新增获客目标及所有部门运营流程和品牌营销及推广方案<br/>4、对网络和付费推广渠道、社群运营方式，新媒体矩阵推广，市场营销活动的、效果跟踪统计、分析，发现问题，根据数据分析结果持续优化<br/>5、负责收集同行及分析整个行业最新趋势，每月推出优化过，新的营销运营模式，以提高品牌知名度，获客数量，粉丝数量活跃量，线下市场销售额的增长<br/>6、对所有运营费用，人员，推广，活动等等，费用做出规划计划。凡事有人做，事事责任到个人<br/>7、负责管理第三方；网络推广系统和app开发中存在的问题，进行监督，指导（原型指导，技术交互指导等等），保证开发进度<br/>8、负责制定部门的年度市场计划，包括市场营销计划，广告宣传、发展计划等工作<br/>9、负责市场营销开拓包括与销售渠道建立，拓展公司的市场份额，以及市场营销进度管理工作<br/>10、负责公司市场部组织体系的搭建工作，负责完善和编制部门制度和流程规范；<br/>11、负责组织公司VI系统的建立、提升和完善工作，以及后期的监督与实施<br/>12、负责组织建立并完善品牌形象、品牌推广、品牌维护、品牌安全、危机处理等制度及标准</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image5.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">2017年10月&nbsp;&nbsp;--&nbsp;&nbsp;2019年6月 | 天鹰集团 菁度健康 |  
+                                运营总监</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：互联网/移动互联网/电子商务</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：银行-风险控制</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+25000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>1、与董事长建设整体项目，战略发展方向，商业模式，盈利模式，服务流程<br/>2、协助集团总经理，确定市场营销策略，细分市场，拓展方式，确定市场激励方式，及对用户的营销策略<br/>4、平台产品架构设定和推广系统交互模型的建设，及平台产品原型图<br/>5、负责搭建，管理，运营，技术，电商，推广团队等等<br/>6、制定所有工作岗位运营流程、业绩考核、内部课程培训<br/>7、负责产品线上活动方案和实体店活动策划方案，落地执行。 招商会讲解，会务负责<br/>8、品牌推广负责：新媒体，SEO推广，博客，微博，百度推广等，增加用户倒流和用户活跃度<br/>9、对平台新增数据，留存数据，复购数据，销售数据，转化数据等等进行审核监督<br/>10、制定公司品牌管理策略，维护公司品牌形象，建立品牌管理和新闻传播体系<br/>11、完善市场部门工作流程以及制度规范，制定公司整体公关策略及危机公关的应对处理<br/>12、制定市场推广费用预算及市场部全年整体财务预算制定、控制以及完善激励考核制度<br/>13、参与公司企业文化的建立和完善，并管理市场团队，对团队成员和相关部门进行市场培训和指导</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image1.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">2012年6月&nbsp;&nbsp;--&nbsp;&nbsp;2017年6月 | 上海市信息股份 |  
+                                运营副总</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+公司性质：合资;
+                                    |
+
+公司规模：20-99人
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：互联网/移动互联网/电子商务</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：高级管理-副总裁/副总经理</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+25000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>岗位职责：<br/>1、负责公司运营中心计划的制定并监督实施，确保完成公司下达的各项任务<br/>2、制定运营中心各部门的战略发展和业务计划，监督、指导、考核、评估下属部门各项工作，提高工作效率<br/>3、根据项目产品发展规划，制定市场营销战略方向方法和实施计划，完成公司的营销目标<br/>4、建立规范的运营管理标准体系并监督实施，确保公司的所有标准统一<br/>5、制定及执行公司日常营运相关的制度，业务流程，阶段性对制定及相关工作流程进行评审改进<br/>6、建立、维护运营中心关键岗位人才库管理，重点跟进关键人才培训进度和工作状态<br/>7、负责公司重大项目的商谈和年度营销活动的制定<br/>8、根据企业规定，建立并完善标准化、规范化、系统化的营运流程<br/>9、统筹企业总体营运设计方案、经营投资预算方案，并负责组织实施<br/><br/><br/><br/>【市场案列】<br/>美团外卖拓展项目<br/>1、建设团队，制定招商话术，文件培训<br/>2、区域管理市场，制定小组拜访目标，成交目标<br/>3、制定每日奖励，每日分享流程，每日会议召开<br/>4、负责与成都客服部对接，用户新增需求和其他问题<br/><br/>【大型平台及APP】帮游网，美乐乐平台等等<br/>1、负责大型项目整体战略发展运营计划，平台架构和APP产品的开发流程设定以及初期对优化用户体验流程和交互功能提出预案需求<br/>2、负责搭建运营团队、市场团队，技术团队，客服团队，电商团队，推广团队等等<br/>3、制定所有工作流程、业绩考核、和制度规范，并进行培训，目标制定、费用预算管理与执行<br/>4、负责产品线上活动方案的组织策划、大型活动方案撰写、活动流程制定<br/>5、推广大多以围绕节假日，当下大事件，制定活动运营策略，对活动进行跟踪、评估和统计分析，负责用户增长和活动运营<br/>6、负责平台网站，App平台推广的日常运营管理、用活动策划方案，热点和话题，通过新媒体，SEO推广，博客，微博，百度推广等，增加下载量，浏览量，和新用户增加，提高覆盖营销人数面积<br/>7、对平台整体构建反馈数据分析，用户数据分析，流量数据分析，市场业绩数据分析，财务表数据分析，行业动态分析，调整合作期间，整体运营发展方向，平台活动方向，用户体验流程，推广策略等等<br/><br/>五个月完成平台7大部门所有培训，制度，考核，人才建设工作。成功转型互联网平台计划<br/><br/>【电商项目】优秀案例：英菲克，保罗马克，<br/>1、建设天猫，淘宝，京东门店总体规划、产品策略、推广策略，销售业绩计划等 <br/>2、负责电商的日常流量数据、点击率、转化率、复购率等，并做好每日表格记录<br/>3、通过数据库挖掘和市场分析，对用户进行分类，调整针对的推广方式和策略<br/>4、负责所有部门流程、业绩考核，培训计划，晋升计划设定，培养人才目标计划建设<br/>5、负责在线店铺促销活动策划、制定和执行，以数据为标准对方案不断进行优化<br/>6、优化产品关键词、库存和产品线，并根据实际情况调整经营方向。<br/>7、负责团队销售业绩、毛利率成不，和费用产出比控制<br/>8、制定执行品牌运营战术，不断完善升级品牌战略<br/>9、推广部拓展各种在线渠道、社交运营渠道，各种文案、热点事件提高引流数据<br/><br/>【微商和app项目】 INcoco集团<br/>业务操作流程：<br/>1、微商城功能设定，分销结构设定，app交互流程设置<br/>2、微信推广，群推广，群培训流程设定制定<br/>3、微信运营流程设定，增加用户，转换率，提高购买率<br/>4、优化用户体验流程，不断调整市场政策<br/>5、策划视频营销，直播推广，微群运营</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+
+            <!--项目经历-->
+            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image2.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">项目经验</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image3.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:8px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2010年2月&nbsp;&nbsp;--&nbsp;&nbsp;至今 | 项目经验</td>
+
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                                                            <tr>
+                                <td>项目描述：</td>
+                            </tr>
+                            <tr>
+                                <td>业绩；标记在简历下方</td>
+
+                            </tr>
+                                                    <tr>
+                                <td>项目职责：</td>
+                            </tr>
+                            <tr>
+                                <td>带运营过90个以上项目；<br/>      对母婴，化妆品，皮具，金融，区域服装门店，家具，旅游，线上教育，养生行业熟悉精通 </td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>
+
+            <!--教育背景-->
+            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image4.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">教育背景</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 26px; padding-top: 8px; padding-bottom: 4px;">
+                    <table style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image5.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2013年4月&nbsp;&nbsp;--&nbsp;&nbsp;至今 | 华东理工大学（自考） | 工商管理 | 本科
+</td>
+                        </tr>
+                    </table>
+
+
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 26px; padding-top: 8px; padding-bottom: 4px;">
+                    <table style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image1.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2004年1月&nbsp;&nbsp;--&nbsp;&nbsp;2006年1月 | 计算机函数学院 | 电子信息科学与技术 | 大专
+</td>
+                        </tr>
+                    </table>
+
+
+                </td>
+            </tr>
+
+            <!--培训经历 模块-->
+            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image2.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">培训经历</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image3.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2008年6月&nbsp;&nbsp;--&nbsp;&nbsp;2017年8月 | 企业管理，成本控制，市场营销策划，品牌战略，金牌讲师等等等等</td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+            <tr>
+                <td style="line-height: 18px; padding-left: 19px; font-size: 12px; padding-bottom: 10px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>培训机构：培训公司</td>
+                        </tr>
+                                                    <tr>
+                                <td>详细描述：</td>
+                            </tr>
+                            <tr>
+                                <td>不管学历高低，不断学习，不断卓越，是一生中唯一要坚持做的事！</td>
+                            </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!--其他能力-->
+            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image4.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">其他能力</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size:12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image5.highpin.cn/Image/Shared/downresume/gray-square.jpg"   style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold;font-size:12px;">语言能力</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table style="font-size: 12px; line-height: 18px; word-break: break-all;" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>语种：英语 | 听说能力：一般 | 读写能力：一般 </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>  
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size:12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image1.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;" /></td>
+                            <td style="font-weight: bold;font-size:12px;">计算机/IT技能</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="line-height: 18px; padding-left: 19px; font-size: 12px; padding-bottom: 8px;">
+                    <table style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                            <tr>
+                                <td>专业技能：计算机／IT | 使用时间：120 个月 | 掌握程度：精通 </td>
+                            </tr>
+                    </table>
+                </td>
+            </tr>
+
+
+            <!--补充信息-->
+            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px; margin-top: 8px;">
+                    <table style="font-size: 14px; line-height: 18px; word-break: break-all;" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <img src="http://image2.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size:14px;">补充信息</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size:12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image3.highpin.cn/Image/Shared/downresume/gray-square.jpg"   style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold;font-size:12px">兴趣爱好</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>电影， 音乐，交响乐，武术，吉他，小提琴。</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+    </table>
+    <script src="http://image4.highpin.cn/js/shared/common/sea.js?version=20191125125251"></script>
+
+    <script src="http://image5.highpin.cn/js/modules/common/base_init.js?version=20191125125251"></script>
+
+</body>
+</html>

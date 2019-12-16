@@ -28,13 +28,34 @@ public class HtmlConverterTest extends BaseTest {
         File f = new File(basePath + "boss直聘何正宇3年.docx");
         converHtmlFile(f);
     }
+
     @Test
     public void oneGeneratorHtmlOnZhaopin() throws Exception {
-        File f = new File(basePath + "智联招聘_胡程_软件测试工程师_中文_20191031_1572509741654.doc");
+        File f = new File(basePath + "智联招聘_武静芳_ui设计师_中文_20191104_1572837406504.doc");
         converHtmlFile(f);
-    }@Test
+    }
+
+    @Test
     public void oneGeneratorHtmlOnZhuopin() throws Exception {
-        File f = new File(basePath + "智联招聘_温琦生_项目运营总监_中文_20191105_1572919559195.doc");
+        File f = new File(basePath + "智联卓聘_中文20191101.doc");
+        converHtmlFile(f);
+    }
+
+    @Test
+    public void oneGeneratorHtmlOnRenCai() throws Exception {
+        File f = new File(basePath + "高级.NET工程师余正伟(J4511083).doc");
+        converHtmlFile(f);
+    }
+
+    @Test
+    public void oneGeneratorHtmlOnRenCai1() throws Exception {
+        File f = new File(basePath + "运营专员张雅花(J9972636).doc");
+        converHtmlFile(f);
+    }
+
+    @Test
+    public void oneGeneratorHtmlOnRenCai12() throws Exception {
+        File f = new File(basePath + "软件测试工程师安文卿(J9981160).doc");
         converHtmlFile(f);
     }
 
@@ -43,7 +64,7 @@ public class HtmlConverterTest extends BaseTest {
         String str = Thread.currentThread().getContextClassLoader().getResource("").getPath() + "resume/";
         File file = new File(str);
         File[] files = file.listFiles();
-        for (File f: files) {
+        for (File f : files) {
             if (!f.isDirectory()) {
                 try {
                     converHtmlFile(file);
@@ -63,9 +84,9 @@ public class HtmlConverterTest extends BaseTest {
         pathStr = pathStr + File.separator + "html" + File.separator + f.getName().substring(0, f.getName().indexOf(".")) + ".html";
 
 
-       //String chartset = EncodingDetectUtils.detect(inputStreamCacher.getInputStream());
+        //String chartset = EncodingDetectUtils.detect(inputStreamCacher.getInputStream());
         Word2HtmlUtils.writeFile(content, pathStr, null);
     }
-    
+
 
 }

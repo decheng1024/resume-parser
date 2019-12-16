@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="http://image3.highpin.cn/Css/Seeker/reset.min.css?version=20191125125251" rel="stylesheet"/>
+
+    <link href="http://image4.highpin.cn/Css/Seeker/detail-new.css?version=20191125125251" rel="stylesheet"/>
+
+
+    <link href="http://image5.highpin.cn/css/seeker/footer.css?version=20191125125251" rel="stylesheet"/>
+
+    <link href="http://image1.highpin.cn/css/shared/suggestion.css?version=20191125125251" rel="stylesheet"/>
+
+    <link href="http://image2.highpin.cn/css/shared/layer/customlayer.css?version=20191125125251" rel="stylesheet"/>
+
+    <link href="http://image3.highpin.cn/css/Shared/grade.css?version=20191125125251" rel="stylesheet"/>
+
+</head>
+<body>
+    <table width="710" align="center" style="font-size: 12px; word-break: break-all; margin-top: -40px;">
+        <!--个人简历-->
+        <tr>
+            <td>
+                <img src="http://image4.highpin.cn/Image/Shared/downresume/top.jpg"  style="border: none; display: block;" /></td>
+        </tr>
+        <!--个人信息-->
+        <tr>
+            <td style="padding: 2px 0 16px 16px; border-bottom: 1px dotted #d2d2d2;">
+                <table width="694">
+                    <tr>
+                        <td width="582">
+                            <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                <tr>
+                                    <td style="font-size: 24px; line-height: 44px; font-family: SimHei">
+周林 常居京津深三地                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>男 | 45岁 | 1974年12月 |  
+已婚                                        22 年工作经验 | 本科 </td>
+                                </tr>
+                                <tr>
+                                    <td>北京
+                                    </td>
+                                </tr>
+
+
+                                                                
+                                <tr>
+                                    <td>手机：18902830407</td>
+                                </tr>
+                                <tr>
+                                    <td>邮箱：18902830407@189.cn</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            
+                            <img src="http://image4.highpin.cn/image/seeker/resumeview/head-picture.jpg" width="70" height="100" style="display: block; width: 70px; height: 100px; padding: 3px; border: 1px solid #f0f0f0; overflow:hidden;" />
+                            
+                           
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!--目前状态-->
+            <tr>
+                <td>
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px;">
+                        <tr>
+                            <td width="18">
+                                <img src="http://image5.highpin.cn/Image/Shared/downresume/red-square.jpg"  /></td>
+                            <td style="font-size: 14px; padding-top: 5px;">目前状态</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 5px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                        <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                            <tr>
+                                <td width="110" style="vertical-align: top; line-height: 18px;">目前状态：</td>
+                                <td>我目前处于离职状态，可立即上岗</td>
+                            </tr>
+                                <tr>
+                                    <td width="110" style="vertical-align: top; line-height: 18px;">期望薪资：</td>
+                                    <td>保密</td>
+                                </tr>
+                        </table>
+                </td>
+            </tr>
+                    <!--职业意向-->
+            <tr>
+                <td style="font-size: 14px; line-height: 28px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px;">
+                        <tr>
+                            <td width="18">
+                                <img src="http://image1.highpin.cn/Image/Shared/downresume/red-square.jpg" /></td>
+                            <td style="font-size: 14px;">职业意向</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 5px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                        <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                <tr>
+                                    <td width="110" style="vertical-align: top; line-height: 18px;">期望行业：</td>
+                                    <td>教育/培训/院校,零售/批发,互联网/移动互联网/电子商务</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="vertical-align: top; line-height: 18px;">期望职位：</td>
+                                    <td>销售管理/支持-销售总监,高级管理-首席执行官CEO/总裁/总经理,计算机/网络技术-网站运营管理</td>
+                                </tr>
+                            <tr>
+                                <td style="vertical-align: top; line-height: 18px;">工作地点：</td>
+                                <td>北京,广东-深圳,天津</td>
+                            </tr>
+                                <tr>
+                                    <td style="vertical-align: top; line-height: 18px;">期望薪资（税前）：</td>
+                                    <td>35000RMB/Month</td>
+                                </tr>
+                                                    </table>
+                </td>
+            </tr>
+                            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image2.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">工作经验</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image3.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">2010年1月&nbsp;&nbsp;--&nbsp;&nbsp;至今 | 国内著名教育集团 |  
+                                常务副总裁（主管市场、运营）、战略负责人(主管战略规划、信息系统工程)、上市项目负责人、下属企业法人</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+
+公司规模：1000-9999人
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：教育/培训/院校</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：高级管理-首席执行官CEO/总裁/总经理</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+35000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>企业经营管理与战略研究专家、渠道营销与零售专家、教育培训专家、信息系统集成与应用专家、品牌营销与市场企划专家。<br/><br/>现任某上市教育集团公司常务副总裁（主管市场、运营）、兼战略负责人(主管战略规划、信息系统工程)、上市项目负责人、下属企业法人；期间还曾兼任国内规模最大档次最高的儿童文化艺术教育培训基地校长、北京排名前十的园际幼儿园园长；<br/><br/>工作描述：<br/>我曾于三方面使得一家上市公司在“企业管控水平”与“系统运行效率”上绝对领先于竞争对手，年销售收入从十几亿元平稳快速增长至数百亿元，顺利上市并实现高溢价，国企500强排名逐年攀升。（时任集团与股份公司总裁助理，另在兼任分公司总经理的一年期间，使一个业绩排名长期全国倒数第一的分公司提升至前五，并改赊销为预收，销量一度全面超越辖区内所有竞争对手）<br/><br/>一、将总计数百万字的上千个制度浓缩凝练为一张纸（命名为《管理事项审批流程、标准与分权体系表》），整个企业（总部及下属分支机构，各部门、岗位）所有“需管理事项”及相关处理流程、标准一览无遗（其后固化在OA、ERP、CRM等软件中）。<br/>起初那家公司的年销售额仅十几亿时，就有近千项制度文件，达此规模后仍在急剧增长中……一些文件中错别字连篇或通篇不知所云，一些规章欠缺同时还有一些存在多个版本（总部各部门所持、驻外各分支机构留存各不相同），或有多项制度涉及同一事务，但处置方法各不相同甚至彼此矛盾……数以万计的员工分布在广袤的地域空间（全国设有三十来个分公司，一百多个办事处），根据各自对那纷繁芜杂规章制度所构成庞大运营管理体系的片面认知制订、下发或接收、执行每日可能多达数十条市场、营销、财务、人事、行政方面的指令，公司刚成立几年因急剧膨胀已处于管理失控的边缘。<br/>同期美国蜂星（或译施乐事达，昔日全球最大移动电话分销和零售商）中国分部的销售额刚刚逾百亿，但很快年年下滑连连亏损清盘，审计报告称其“管理存在缺陷和疏漏……”实际已彻底失控，种种问题集中爆发失却一切挽救的可能——若企业管控与系统效率不能再上台阶，百亿规模可能就是当年移动电话分销商及未来其它行业企业所能到达的极限：在港上市的中国长远未及百亿也已崩盘（数千人的营销队伍被裁撤至几百，年营业额仅余数亿元），此外众多国内外手机厂商亦如昙花一现，联想虽然再次涅磐重生（08年将手机制造业务卖掉09年又买回来，其实之前还有一次重大挫折，从联想分拆出来的神州数码——全盘继承联想起家“贸、工、技”当中的“贸”易业务，可算是国内最早的以及顶级的电子产品代理商、分销商，同样因为不会玩，玩不转，03年放弃了手机分销业务），也不能说它现在就已经理顺了、站稳了；赫赫有名的台湾联强国际登陆大陆市场后，表现却盛名难副，远不及《通路霸业》一书中说的神奇。<br/>后来当那家公司上市时，我前期所做规范化、制度化、流程化、系统化、信息化、科学化管理工作为其节省了大量时间与费用，恰逢最好的时机。<br/><br/>二、为试运行失败的ERP系统（后升级为CRM）重新设计数据结构与流程，良好包容当时所有业务与数据及留下未来拓展的余地。<br/>那家公司的ERP为国内分销行业最高水平（每年通过该系统行销的商品数千万台，以及实时监控着全国范围内数万家零售店的进销存），软件本身现已价值上亿元，为总（部）分（公司、办事处）式全业务（包括产品及物料管理，客户管理，销售计划与政策，订单与物流管理，资金及信用管理，零售店管理，市场预算、政策及促销活动管理，售后服务等功能模块）分支机构与营销人员遍布全国城乡的网络型营销管理平台；该系统及派生出来的其它软件良好地解决了一些大型商贸企业如苏宁、国美、京东系统架构与流程设计中曾经存在过的一些不足导致的功能性缺失或严重影响效率的问题，两度荣膺“中国企业信息化500强入选企业”奖项。而在我重新为它设计数据结构与流程之前，该系统根本就无法投入实用，前期花耗的巨大人力物力资金及时间成本差点化为流水。<br/><br/>三、在其它全国性营销企业的总部尚只能以省或分公司（约30来个）为单位进行销售任务分解与考核时，我已直接对全国每一个地市（约300多个）乃至区县（约3000多个）的市场潜力及实际销售状况进行分析评估（即便是那些总体销量排行前列的省或分公司，辖区内其实还有一些地市、区县的销售状况并不理想甚至为0或为负，仍有待开拓与持续增长的余地，至于排名靠后的分公司，以往除了训斥之外总部其实也没什么能立竿见影的提升办法可予指点）、追踪分析每一个基层业务人员（全国范围内约数千名）及每一个零售店（全国范围内约数万家）的任务与达成；对长期表现优异的局部区域、个人或单位进行经验总结推广，而对长期落后于平均水平情况严重的提醒相关部门或分支机构予以关注迅速改善。<br/><br/>近十年就职于知名教育集团，任常务副总裁（主管市场与运营），兼战略负责人(主管战略规划、信息系统工程)、上市项目负责人、下属企业法人。推进解决行业性难题（分布于全国各地的直营尤其是特许、加盟机构，包括各类培训学校、幼儿园、早教中心等往往难以管控，服务不周，师资不足……），建立集大数据营销体系、支持服务体系（含金融服务）与集采配送体系于一体的网络化平台。<br/>另曾兼任国内规模最大档次最高的一个儿童文化艺术教育培训基地（一节45分钟的标准课时平均收费1500元）校长及北京排行前十的一所国际幼儿园（月均收费1.5万元以上）园长。<br/><br/>在后期工作过的每一企业兼任首席信息官或总体架构设计师，承担所有经营管理软件、电子商务网站的数据架构设计及工作流程规划。</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image4.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">2000年3月&nbsp;&nbsp;--&nbsp;&nbsp;2008年12月 | 神州通（集团）投资有限公司/深圳市爱施德股份有限公司SZ002416 |  
+                                常务总裁助理、曾兼任分公司总经理</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+公司性质：民营;
+                                    |
+
+公司规模：1000-9999人
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：通信/电信（设备/运营/增值）</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：高级管理-总监/部门经理</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+25000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>神州通（集团）投资有限公司/深圳市爱施德股份有限公司（证券代码002416，为国内手机分销业前三强，设有省级分公司三十多个，办事处一百多个；手机商品年销量达数千万台，营业额数百亿元，国企500强） <br/><br/>常务总裁助理 <br/>1、企业战略规划、集团及下属机构年度经营计划编制、组织发展与人力规划 <br/>2、规范化、精细化管理推进与组织变革<br/>3、企业管理信息系统（ERP/CEM、OA）架构与流程设计 <br/>4、投资项目技术经济分析（集团其它产业） <br/>5、全国范围内零售业务管理及处置 <br/>6、渠道与终端管理 <br/>a)全国零售店普查及全面零售店管理推进 <br/>b)全直供与FD模式研究及试点 <br/>c)网上销售 <br/>另，企业近千个制度、流程、规范、表格及相关标准文件，均由我重新进行审定，通过流程优化，实现管理规范化与信息化，提高企业运作效能；通过《企业战略规划》（三年滚动编制）、《年度经营计划》对企业资源进行优化配置，及通过计划与协调、跟踪与考核确保企业经营目标的实现与成长，内部管理良性循环。 <br/><br/>分公司总经理： <br/>1、问题下属机构重建（业绩排名从长期全国倒数第一到前五，销量全面超越主要竞争对手） <br/>2、逐步解决纷繁复杂的历史遗留问题，在客户当中建立起良好的公司形象与合作关系 <br/>3、在回收前期巨大拖欠款后采用现金出货，成为全国唯一应收账款为零的分公司 <br/>4、借助运营商活动（不仅仅是争取我们所代理产品的入围，更重要的是能争取到特殊的政策）清空一款高利润滞销产品全国库存 <br/>5、通过全面细致的市场活动促进终端零售销量稳步上扬，确保渠道销售的良性增长</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image5.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">1997年3月&nbsp;&nbsp;--&nbsp;&nbsp;2000年3月 | 深圳开发科技股份有限公司 |  
+                                高级工程师</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+公司性质：国企;
+                                    |
+
+公司规模：1000-9999人
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：计算机硬件及网络设备</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：生产/加工/制造-其他</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+8000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td><br/>1、生产管理、物流计划、品质监督、ISO9000：94版认证 <br/>2、工程（技改）项目管理：高等级净化车间、精细电镀线建设；设备引进、改造、维修 <br/>3、动力系统运行管理：配电站、空调空压设备及水处理系统</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image1.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">1994年7月&nbsp;&nbsp;--&nbsp;&nbsp;1997年3月 | 华菱钢铁集团有限公司 |  
+                                工程师</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+公司性质：国企;
+                                    |
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：加工制造（原料加工/模具）</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：工程机械-机械工程师</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+2000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>回厂工作后赴美国斯特克公司参与大型冶金设备改造工程设计。<br/><br/>在任一曾经工作过的企业，于管理及技术改进方面所做贡献，效益均在数千万元之上。 <br/>对于管理学，首先我侧重于“管理信息系统”建设，毕业前曾随导师在上海、深圳等地开发商场、酒店管理信息系统，在华钢参与计算机中央集成制造系统开发。 <br/>在计算机应用技术领域：曾在几无任何软件方面的投资，差不多所有设备都自行安装的低成本下我为某公司建成了计算机管理信息系统，可即时获取下属企业产、销、存数据与重大经营情况汇报，及下达各种工作指令。在此平台上同时运行着公文处理系统、财务系统、结算系统、人力资源管理系统、分布式资料管理系统、国内及国外电子报税、报关系统…… <br/>然后转向了“企业审核能力”课题研究：企业的价值估量并非“设计能力”或“现实能力”，而是“审核能力”──把握企业现有设备技术参数所有的细节，产品市场状况，国内外行业发展最新动态，有效地移植高新技术，及以先进管理思想、策略对企业进行优化组合再构造，得以发掘出巨大潜能与效益。 <br/><br/>熟悉企业生产管理及现代高新技术： <br/>我曾参与大型冶金设备（自德国引进）技术改造设计，改进后的连铸单流能力由不足5万吨/年提高到了10万吨，铸机产量的提高实现了与转炉生产能力的匹配，解决了生产调度的瓶颈问题，使全厂零落的设备（在不同时期分别引进而缺少总体规划）形成一条结构较为合理的生产线，能持续均衡地生产，产量稳步提高。在设计中经反复测算我提出，通过移位得以再利用一系列废弃的设备及库存备件，减少费用逾百万元。 <br/>深科技曾是国内唯一生产计算机硬盘磁头及盘片的高科技公司，最初几乎所有设备都自国外引进，在逐步进行零部件国产化替代、维修方式改进及不间断的局部技术改造后，年维护费用以10~20%的幅度下降，故障停机时间减少，成品及优质品率稳步上升。我曾在内地国企工作，对国内设备供应厂商较为熟悉，在满足同等技术条件下，一些国产零部件价格不及自国外购买之十分之一，而该公司技术人员以往因不太熟悉进口设备性能（即使能绘制出图样，亦无法标注出正确的技术性能参数及设计加工工艺流程）及国内供应厂商情况而不敢轻易进行国产化替代，采购人员历来只跟国外供应商打过交道倒反而不熟悉国内渠道，宁愿进口更为省事；一些外籍员工习惯将损坏的零部件进行更换而非修理，我要求先更换以赢得时间，随后再将更换下的零部件修复，以备再次利用。 <br/>近年曾指导一家生产制造型企业开发使用“柔性生产控制系统”，将人、财、物、信息全面整合为一条类自动化的“柔性生产线”。<br/><br/>擅长企业战略规划、项目投资技术经济分析工作： <br/>98-00年，《汽车租赁》及《报废汽车回收》项目方案使某公司在汽车业务上形成一个完整的闭环，在自身所熟悉的行业进行投资将最大限度地规避风险及获得最大边际投资效益。 <br/><br/>熟悉技术贸易过程及对外谈判： <br/>自美、德引进技术装备数百万美元。 <br/>因设备及工程质量问题向香港、新加坡承建商索赔，为国内企业挽回损失近千万港币。 <br/><br/>善于获取技术信息资料：毕业前及工作后我到过全国各大钢及其它行业一些著名企业。德国罗克普、美国斯特克都是仅只数十个人的小公司，然而在其计算机图库中，全世界所有类型冶金设备图纸与最新研究资料应有尽有。我有类似习好，每到一处都能利用当地有限资源建立一个较小规模的现代化企业技术与信息资料库，为工作带来无穷便利及创造巨大效益。</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+
+
+            <!--教育背景-->
+            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image2.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">教育背景</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 26px; padding-top: 8px; padding-bottom: 4px;">
+                    <table style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image3.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">1993年9月&nbsp;&nbsp;--&nbsp;&nbsp;1994年7月 | 中南大学研究生院（进修） | 信息管理与信息系统 | 其他(大专以下)
+</td>
+                        </tr>
+                    </table>
+
+
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 26px; padding-top: 8px; padding-bottom: 4px;">
+                    <table style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image4.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">1989年10月&nbsp;&nbsp;--&nbsp;&nbsp;1993年7月 | 中南大学 | 机械设计制造及其自动化 | 本科
+</td>
+                        </tr>
+                    </table>
+
+
+                </td>
+            </tr>
+
+            <!--培训经历 模块-->
+            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image5.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">培训经历</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image1.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2016年9月&nbsp;&nbsp;--&nbsp;&nbsp;2017年7月 | 高级国际财务管理师（SIFM）</td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+            <tr>
+                <td style="line-height: 18px; padding-left: 19px; font-size: 12px; padding-bottom: 10px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>培训机构：国际财务管理协会（IFMA）</td>
+                        </tr>
+                                            </table>
+                </td>
+            </tr>
+
+            <!--其他能力-->
+            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image2.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">其他能力</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size:12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image3.highpin.cn/Image/Shared/downresume/gray-square.jpg"   style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold;font-size:12px;">语言能力</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table style="font-size: 12px; line-height: 18px; word-break: break-all;" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>语种：英语 | 听说能力：熟练 | 读写能力：精通 </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>  
+
+
+
+    </table>
+    <script src="http://image4.highpin.cn/js/shared/common/sea.js?version=20191125125251"></script>
+
+    <script src="http://image5.highpin.cn/js/modules/common/base_init.js?version=20191125125251"></script>
+
+</body>
+</html>
