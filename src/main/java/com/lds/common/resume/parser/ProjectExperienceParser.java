@@ -26,19 +26,27 @@ public class ProjectExperienceParser extends BaseParser {
         Element proectExperiencesParent = null;
         //51Job和卓聘
         if (proectExperienceTag.size() > 0) {
+
             //51Job
-            if (proectExperienceTag.attr("class", "plate1").size() > 0) {
+            if (proectExperienceTag.first().getElementsByAttributeValue("class", "plate1").size() > 0) {
                 //获取项目经验标签的下一个元素
                 proectExperiencesParent = proectExperienceTag.first().parent().nextElementSibling();
                 if (null != proectExperiencesParent) {
                     return classParseFor51job(projectExperiences, proectExperiencesParent);
                 }
             }
-            if (proectExperienceTag.attr("style", "font-size: 14px;").size() > 0) {
+            //卓聘
+            if (proectExperienceTag.first().getElementsByAttributeValue("style", "font-size: 14px;").size() > 0) {
                 proectExperiencesParent = proectExperienceTag.first().parent().parent().parent().parent().parent();
                 return classParseForZhuoPin(projectExperiences, proectExperiencesParent);
             }
+            //人才热线
 
+            if (proectExperienceTag.first().getElementsByAttributeValue("style", "font:12px/20px Arial; color:#ffffff; padding:0 25px; height:20px;").size() > 0) {
+                proectExperiencesParent = proectExperienceTag.first().parent().nextElementSibling().child(0);
+                return classParseForRenCai(projectExperiences, proectExperiencesParent);
+
+            }
             Elements peEles = proectExperienceTag.first().nextElementSiblings();
             ProjectExperience pe = null;
             for (Element ele : peEles) {
@@ -57,20 +65,28 @@ public class ProjectExperienceParser extends BaseParser {
         }
         //智联
         proectExperienceTag = root.getElementsMatchingOwnText("^项目经历$");
-        if (proectExperienceTag.size() > 0 && proectExperienceTag.attr("style", "font-size:15.0pt;font-family:宋体;mso-ascii-font-family:\n" +
-                "Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:\n" +
-                "minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;\n" +
-                "background:#D9D9D9;mso-shading:white;mso-pattern:gray-15 auto").size() > 0) {
-            //智联: 获取项目经验标签的下一个元素
-            proectExperiencesParent = proectExperienceTag.first().parent().parent().nextElementSibling();
-            if (null != proectExperiencesParent) {
-                return classParseForZhiLian(projectExperiences, proectExperiencesParent);
+        if (proectExperienceTag.size() > 0) {
+            if (proectExperienceTag.first().getElementsByAttributeValue("style", "font-size:15.0pt;font-family:宋体;mso-ascii-font-family:\n" +
+                    "Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:\n" +
+                    "minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;\n" +
+                    "background:#D9D9D9;mso-shading:white;mso-pattern:gray-15 auto").size() > 0 || proectExperienceTag.first().getElementsByAttributeValue("style", "font-size:15.0pt;font-family:宋体;mso-ascii-font-family:\r\n" +
+                    "Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:\r\n" +
+                    "minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;\r\n" +
+                    "background:#D9D9D9;mso-shading:white;mso-pattern:gray-15 auto").size() > 0) {
+                //智联: 获取项目经验标签的下一个元素
+                proectExperiencesParent = proectExperienceTag.first().parent().parent().nextElementSibling();
+                if (null != proectExperiencesParent) {
+                    return classParseForZhiLian(projectExperiences, proectExperiencesParent);
+                }
             }
+
         }
+
         return projectExperiences;
     }
 
-    private List<ProjectExperience> classParseFor51job(List<ProjectExperience> projectExperiences, Element proectExperiencesParent) {
+    private List<ProjectExperience> classParseFor51job(List<ProjectExperience> projectExperiences, Element
+            proectExperiencesParent) {
         Elements tba = proectExperiencesParent.getElementsByAttributeValue("class", "tba");
         if (tba.size() > 0) {
             tba.stream().forEach(ptd -> {
@@ -122,7 +138,8 @@ public class ProjectExperienceParser extends BaseParser {
      * @author Murray Law
      * @date 2019/12/11 19:56
      */
-    private List<ProjectExperience> classParseForZhiLian(List<ProjectExperience> projectExperiences, Element proectExperiencesParent) {
+    private List<ProjectExperience> classParseForZhiLian(List<ProjectExperience> projectExperiences, Element
+            proectExperiencesParent) {
         Elements trs = proectExperiencesParent.child(0).children();
         ProjectExperience projectExperience = new ProjectExperience();
         for (Element tr : trs) {
@@ -185,7 +202,29 @@ public class ProjectExperienceParser extends BaseParser {
             }
             elementsByZhuoPin = elementsByZhuoPin.nextElementSibling();
         }
-//            projectExperience.
+        return projectExperiences;
+
+    }
+
+    private List<ProjectExperience> classParseForRenCai(List<ProjectExperience> projectExperiences, Element proectExperiencesParent) {
+        proectExperiencesParent.children().stream().forEach(proectExperiencEle -> {
+            if (!"".equals(proectExperiencEle.text())) {
+                ProjectExperience projectExperience = new ProjectExperience();
+                projectExperience.setProjectName(proectExperiencEle.getElementsByTag("strong").text());
+                String[] arr = proectExperiencEle.getElementsByTag("span").text().split("至");
+                projectExperience.setBeginDate(arr[0]);
+                projectExperience.setEndDate(arr[1]);
+                Elements dutyDescription = proectExperiencEle.getElementsMatchingOwnText("^项目职责：$");
+                if (dutyDescription.size() > 0) {
+                    projectExperience.setDutyDescription(dutyDescription.first().nextElementSibling().text());
+                }
+                Elements projectDescription = proectExperiencEle.getElementsMatchingOwnText("^项目描述：$");
+                if (projectDescription.size() > 0) {
+                    projectExperience.setProjectDescription(projectDescription.first().nextElementSibling().text());
+                }
+                projectExperiences.add(projectExperience);
+            }
+        });
         return projectExperiences;
     }
 }

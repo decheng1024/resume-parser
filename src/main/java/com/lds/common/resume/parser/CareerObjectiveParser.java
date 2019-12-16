@@ -39,7 +39,7 @@ public class CareerObjectiveParser extends BaseParser {
         careerObjective.setExpectingLocation(matchExpectingLocation());
         careerObjective.setHireDate(matchHireDate());
         careerObjective.setJobType(matchJobType());
-
+        careerObjective.setRequireApartment(matchRequireApartment());
 
         return careerObjective;
     }
@@ -93,10 +93,15 @@ public class CareerObjectiveParser extends BaseParser {
      * @date 2019/12/6 14:00
      */
     private String matchExpectingSalary() {
-        //卓聘,这段判断代码需要写在51之前
+        //卓聘
         Elements expectedSalaryElementsByZhuoPin = root.getElementsMatchingOwnText("^期望薪资（税前）：$");
         if (expectedSalaryElementsByZhuoPin.size() > 0) {
             return expectedSalaryElementsByZhuoPin.get(0).nextElementSibling().text();
+        }
+        //人才热线
+        Elements renCaiEle = root.getElementsByAttributeValue("style", "font:14px/20px Arial; color:#333333;");
+        if (renCaiEle.size() > 0) {
+            return renCaiEle.first().text();
         }
         //51和部分卓聘
         Elements expectedSalaryElementsBy51Job = root.getElementsMatchingOwnText("^期望薪资：$");
@@ -134,17 +139,22 @@ public class CareerObjectiveParser extends BaseParser {
         //51
         Elements expectingPositionElementsBy51Job = root.getElementsMatchingOwnText("^职能/职位：$");
         if (expectingPositionElementsBy51Job.size() > 0) {
-            return expectingPositionElementsBy51Job.get(0).nextElementSibling().text();
+            return expectingPositionElementsBy51Job.first().nextElementSibling().text();
         }
         //智联
         Elements expectingPositionElementsByZhiLian = root.getElementsMatchingOwnText("^期望从事职业：$");
         if (expectingPositionElementsByZhiLian.size() > 0) {
-            return expectingPositionElementsByZhiLian.get(0).parent().parent().nextElementSibling().text();
+            return expectingPositionElementsByZhiLian.first().parent().parent().nextElementSibling().text();
         }
         //卓聘
         Elements expectingPositionElementsByZhuoPin = root.getElementsMatchingOwnText("^期望职位：$");
         if (expectingPositionElementsByZhuoPin.size() > 0) {
-            return expectingPositionElementsByZhuoPin.get(0).nextElementSibling().text();
+            return expectingPositionElementsByZhuoPin.first().nextElementSibling().text();
+        }
+        //人才热线
+        Elements expectingPositionElementsByRenCai = root.getElementsMatchingOwnText("^意向岗位：$");
+        if (expectingPositionElementsByRenCai.size() > 0) {
+            return expectingPositionElementsByRenCai.first().nextElementSibling().text();
         }
         return Job.getJobTitles(content);
     }
@@ -185,13 +195,20 @@ public class CareerObjectiveParser extends BaseParser {
      * @date 2019/12/8 22:12
      */
     private String matchHireDate() {
+        //51Job
         Elements hireDateElementsBy51Job = root.getElementsMatchingOwnText("^到岗时间：$");
         if (hireDateElementsBy51Job.size() > 0) {
-            return hireDateElementsBy51Job.get(0).nextElementSibling().text();
+            return hireDateElementsBy51Job.first().nextElementSibling().text();
         }
+        //智联
         Elements hireDateElementsByZhiLian = root.getElementsMatchingOwnText("^目前状况：$");
         if (hireDateElementsByZhiLian.size() > 0) {
-            return hireDateElementsByZhiLian.get(0).parent().parent().nextElementSibling().text();
+            return hireDateElementsByZhiLian.first().parent().parent().nextElementSibling().text();
+        }
+        //人才热线
+        Elements hireDateElementsByRenCai = root.getElementsMatchingOwnText("^可到岗时间：$");
+        if (hireDateElementsByRenCai.size() > 0) {
+            return hireDateElementsByRenCai.first().nextElementSibling().text();
         }
         return "";
     }
@@ -199,20 +216,32 @@ public class CareerObjectiveParser extends BaseParser {
     /**
      * @return java.lang.String
      * @Param []
-     * @Description: // 返回期望工作类型
+     * @Description: // 匹配期望工作类型
      * @author Murray Law
      * @date 2019/12/8 22:57
      */
     private String matchJobType() {
+        //51Job
         Elements JobTypeEementsBy51 = root.getElementsMatchingOwnText("^工作类型：$");
         if (JobTypeEementsBy51.size() > 0) {
-            return JobTypeEementsBy51.get(0).nextElementSibling().text();
+            return JobTypeEementsBy51.first().nextElementSibling().text();
         }
+        //智联
         Elements JobTypeEementsByZhiLian = root.getElementsMatchingOwnText("^期望工作性质：$");
         if (JobTypeEementsByZhiLian.size() > 0) {
-            return JobTypeEementsByZhiLian.get(0).parent().parent().nextElementSibling().text();
+            return JobTypeEementsByZhiLian.first().parent().parent().nextElementSibling().text();
+        }
+        return "全职";
+    }
+
+    private String matchRequireApartment() {
+        //人才热线
+        Elements requireApartmentElesByRenCai = root.getElementsMatchingOwnText("^提供住房：$");
+        if (requireApartmentElesByRenCai.size() > 0) {
+            return requireApartmentElesByRenCai.first().nextElementSibling().text();
         }
         return "";
     }
-
 }
+
+

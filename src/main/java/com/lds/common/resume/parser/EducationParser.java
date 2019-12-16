@@ -31,17 +31,16 @@ public class EducationParser extends BaseParser {
             return classOn51jobAndZhiLian(educationEles);
         }
 
-        //boss
+        //boss\卓聘\人才热线
         educationEles = root.getElementsMatchingOwnText("^教育背景$");
         if (educationEles.size() > 0) {
-            paragraphOZhuoPinAndBoss(educations, educationEles);
+            paragraphOZhuoPinAndRenCaiAndBoss(educations, educationEles);
         }
         return educations;
     }
 
-    //boss
-    private void paragraphOZhuoPinAndBoss(List<Education> educations, Elements educationEles) {
-        Element nextEle;
+    //boss\卓聘\人才热线
+    private List<Education> paragraphOZhuoPinAndRenCaiAndBoss(List<Education> educations, Elements educationEles) {
         //卓聘
         if (educationEles.get(0).getElementsByAttributeValue("style", "font-size: 14px;").size() > 0) {
             Education education = new Education();
@@ -49,7 +48,7 @@ public class EducationParser extends BaseParser {
             for (Element nextEleByZhuoPin : nextEles) {
                 String[] arr = nextEleByZhuoPin.text().split(" \\| ");
                 if (arr.length < 4) {
-                    return;
+                    break;
                 }
                 String[] arr1 = arr[0].split(" -- ");
                 education.setStartDate(arr1[0]);
@@ -62,9 +61,31 @@ public class EducationParser extends BaseParser {
                 }
                 educations.add(education);
             }
+            return educations;
         }
-
+        //人才热线
+        Element educationEle = educationEles.first();
+        if (educationEle.getElementsByAttributeValue("style", "font:12px/20px Arial; color:#ffffff; padding:0 25px; height:20px;").size() > 0) {
+            Elements educationChildrenEles = educationEle.parent().nextElementSibling().child(0).children();
+            educationChildrenEles.stream().forEach(educationChildrenEle -> {
+                if (!"".equals(educationChildrenEle.text())) {
+                    Element educationGrandsonEles = educationChildrenEle.child(0);
+                    Education education = new Education();
+                    Element schoolAndDegreeAndTime = educationGrandsonEles.child(0).child(0);
+                    education.setUniversity(schoolAndDegreeAndTime.child(0).text());
+                    education.setDegree(schoolAndDegreeAndTime.child(1).text());
+                    String[] arr = schoolAndDegreeAndTime.child(2).text().split("至");
+                    education.setStartDate(arr[0]);
+                    education.setEndDate(arr[1]);
+                    education.setMajor(educationGrandsonEles.child(1).text());
+                    education.setDescription(educationGrandsonEles.child(2).text());
+                    educations.add(education);
+                }
+            });
+            return educations;
+        }
         //boss
+        Element nextEle;
         nextEle = educationEles.first();
         Pattern compile = Pattern.compile("\\d{2,4}.\\d{1,2}-\\d{2,4}.\\d{1,2}");
 
@@ -96,6 +117,7 @@ public class EducationParser extends BaseParser {
                 }
             }
         }
+        return educations;
     }
 
     //51job和智联

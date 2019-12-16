@@ -73,6 +73,7 @@ public class ProjectExperienceParserTest extends BaseTest {
                 }
         );
     }
+
     @Test
     public void oneEducationParseZhuoPin1() throws Exception {
         File f = new File(basePath + "智联卓聘_中文_()_20191127 (4).doc");
@@ -83,7 +84,9 @@ public class ProjectExperienceParserTest extends BaseTest {
                     System.out.println(projectExperience.toString());
                 }
         );
-    }@Test
+    }
+
+    @Test
     public void oneEducationParseZhuoPin2() throws Exception {
         File f = new File(basePath + "智联卓聘_中文_()_20191127 (7).doc");
         String html = converHtml(f);
@@ -93,9 +96,52 @@ public class ProjectExperienceParserTest extends BaseTest {
                     System.out.println(projectExperience.toString());
                 }
         );
-    }@Test
+    }
+
+    @Test
     public void oneEducationParseZhuoPin3() throws Exception {
         File f = new File(basePath + "智联卓聘_中文_()_20191127 (9).doc");
+        String html = converHtml(f);
+
+        ProjectExperienceParser parser = new ProjectExperienceParser(html);
+        parser.parse().forEach(projectExperience -> {
+                    System.out.println(projectExperience.toString());
+                }
+        );
+    }
+    @Test
+    public void oneEducationParseRenCai() throws Exception {
+        File f = new File(basePath + "高级软件工程师吴财圣(J9982025).doc");
+        String html = converHtml(f);
+
+        ProjectExperienceParser parser = new ProjectExperienceParser(html);
+        parser.parse().forEach(projectExperience -> {
+                    System.out.println(projectExperience.toString());
+                }
+        );
+    }@Test
+    public void oneEducationParseRenCai1() throws Exception {
+        File f = new File(basePath + "运营专员张雅花(J9972636).doc");
+        String html = converHtml(f);
+
+        ProjectExperienceParser parser = new ProjectExperienceParser(html);
+        parser.parse().forEach(projectExperience -> {
+                    System.out.println(projectExperience.toString());
+                }
+        );
+    }@Test
+    public void oneEducationParseRenCai2() throws Exception {
+        File f = new File(basePath + "软件测试工程师安文卿(J9981160).doc");
+        String html = converHtml(f);
+
+        ProjectExperienceParser parser = new ProjectExperienceParser(html);
+        parser.parse().forEach(projectExperience -> {
+                    System.out.println(projectExperience.toString());
+                }
+        );
+    }@Test
+    public void oneEducationParseRenCai3() throws Exception {
+        File f = new File(basePath + "高级.NET工程师余正伟(J4511083).doc");
         String html = converHtml(f);
 
         ProjectExperienceParser parser = new ProjectExperienceParser(html);

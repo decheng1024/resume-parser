@@ -31,7 +31,10 @@ public class SkillsParser extends BaseParser {
         Elements zhiLianSkillsEles = root.getElementsMatchingOwnText("^专业技能$");
         //找到卓聘语言能力的抬头
         Elements zhuoPinLanguageEles = root.getElementsMatchingOwnText("^语言能力$");
+        //找到卓聘专业技能模块全部元素
         Elements zhuoPinSkillsEles = root.getElementsMatchingOwnText("^计算机/IT技能$");
+        //找到人才热线的专业技能模块全部元素
+        Elements renCaiSkillsEles = root.getElementsMatchingOwnText("^技能专长$");
 
         //获取智联和卓聘的证书列表
         if (zhiLianCertificatCeEles.size() > 0) {
@@ -113,6 +116,18 @@ public class SkillsParser extends BaseParser {
                     list.add(skills);
                 });
             }
+            //人才热线
+            if (zhuoPinLanguageEles.first().getElementsByAttributeValue("style", "font:12px/20px Arial; color:#ffffff; padding:0 25px; height:20px;").size() > 0) {
+                Elements elements = zhuoPinLanguageEles.first().parent().nextElementSibling().child(0).child(0).child(0).children();
+                elements.stream().forEach(element -> {
+                    Skills skills = new Skills();
+                    String[] arr = element.text().split(" ");
+                    skills.setSkillOrCertificateName(arr[0]);
+                    skills.setSkillProficiency(arr[1] + "/" + arr[2]);
+                    list.add(skills);
+                });
+
+            }
         }
 
 
@@ -171,7 +186,8 @@ public class SkillsParser extends BaseParser {
                     });
                 }
             }
-        }//获取卓聘的技能列表
+        }
+        //获取卓聘的技能列表
         if (zhuoPinSkillsEles.size() > 0) {
             if (zhuoPinSkillsEles.first().getElementsByAttributeValue("style", "font-weight: bold;font-size:12px;").size() > 0) {
                 Element zhuoPinSkillsEle = zhuoPinSkillsEles.first().parent().parent().parent().parent().parent().nextElementSibling();
@@ -185,6 +201,17 @@ public class SkillsParser extends BaseParser {
                     skills.setUsageTime(arr1[3]);
                     list.add(skills);
                 });
+            }
+        }
+        //获取人才热线的技能列表
+        if (renCaiSkillsEles.size() > 0 && renCaiSkillsEles.first().getElementsByAttributeValue("style", "font:12px/20px Arial; color:#ffffff; padding:0 25px; height:20px;").size() > 0) {
+            Element renCaiSkillsEle = renCaiSkillsEles.first().parent().nextElementSibling();
+            String[] arr = renCaiSkillsEle.getElementsByAttributeValue("style", "font:12px/20px Arial; color:#333333;").first().html().split("<br>");
+            for (int i = 0; i < arr.length; i++) {
+                Skills skills = new Skills();
+                skills.setSkillOrCertificateName(arr[i]);
+                list.add(skills);
+
             }
         }
         return list;

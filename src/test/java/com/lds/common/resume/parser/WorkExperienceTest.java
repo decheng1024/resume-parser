@@ -75,11 +75,12 @@ public class WorkExperienceTest extends BaseTest {
             System.out.println("wep = " + wep);
         }
     }
-/**
- *@Description: 该解析的简历需要\r\n换行
- *@author Murray Law
- *@date 2019/12/11 13:44
- */
+
+    /**
+     * @Description: 该解析的简历需要\r\n换行
+     * @author Murray Law
+     * @date 2019/12/11 13:44
+     */
     @Test
     public void oneWorkExperienceOnZhilianzhaopin3() throws Exception {
         File f = new File(basePath + "智联招聘_胡程_软件测试工程师_中文_20191031_1572509741654.doc");
@@ -111,7 +112,53 @@ public class WorkExperienceTest extends BaseTest {
         for (WorkExperience wep : wps) {
             System.out.println("wep = " + wep);
         }
-    }@Test
+    }
+
+    @Test
+    public void workExperienceOnRenCai() throws Exception {
+        File f = new File(basePath + "运营专员张雅花(J9972636).doc");
+        String html = converHtml(f);
+        WorkExperienceParser parser = new WorkExperienceParser(html);
+        List<WorkExperience> wps = parser.parse();
+        for (WorkExperience wep : wps) {
+            System.out.println("wep = " + wep);
+        }
+    }
+
+    @Test
+    public void workExperienceOnRenCai1() throws Exception {
+        File f = new File(basePath + "高级软件工程师吴财圣(J9982025).doc");
+        String html = converHtml(f);
+        WorkExperienceParser parser = new WorkExperienceParser(html);
+        List<WorkExperience> wps = parser.parse();
+        for (WorkExperience wep : wps) {
+            System.out.println("wep = " + wep);
+        }
+    }
+
+    @Test
+    public void workExperienceOnRenCai2() throws Exception {
+        File f = new File(basePath + "高级.NET工程师余正伟(J4511083).doc");
+        String html = converHtml(f);
+        WorkExperienceParser parser = new WorkExperienceParser(html);
+        List<WorkExperience> wps = parser.parse();
+        for (WorkExperience wep : wps) {
+            System.out.println("wep = " + wep);
+        }
+    }
+
+    @Test
+    public void workExperienceOnRenCai3() throws Exception {
+        File f = new File(basePath + "软件测试工程师安文卿(J9981160).doc");
+        String html = converHtml(f);
+        WorkExperienceParser parser = new WorkExperienceParser(html);
+        List<WorkExperience> wps = parser.parse();
+        for (WorkExperience wep : wps) {
+            System.out.println("wep = " + wep);
+        }
+    }
+
+    @Test
     public void workExperienceOnZhuoPin() throws Exception {
         File f = new File(basePath + "智联卓聘_中文_()_20191127 (3).doc");
         String html = converHtml(f);
@@ -120,7 +167,9 @@ public class WorkExperienceTest extends BaseTest {
         for (WorkExperience wep : wps) {
             System.out.println("wep = " + wep);
         }
-    }@Test
+    }
+
+    @Test
     public void workExperienceOnZhuoPin1() throws Exception {
         File f = new File(basePath + "智联卓聘_中文_()_20191127 (4).doc");
         String html = converHtml(f);
@@ -129,16 +178,20 @@ public class WorkExperienceTest extends BaseTest {
         for (WorkExperience wep : wps) {
             System.out.println("wep = " + wep);
         }
-    }@Test
+    }
+
+    @Test
     public void workExperienceOnZhuoPin2() throws Exception {
-        File f = new File(basePath + "智联卓聘_中文20191101.doc");
+        File f = new File(basePath + "智联卓聘_中文_()_20191127 (7).doc");
         String html = converHtml(f);
         WorkExperienceParser parser = new WorkExperienceParser(html);
         List<WorkExperience> wps = parser.parse();
         for (WorkExperience wep : wps) {
             System.out.println("wep = " + wep);
         }
-    }@Test
+    }
+
+    @Test
     public void workExperienceOnZhuoPin3() throws Exception {
         File f = new File(basePath + "智联卓聘_中文_()_20191127 (9).doc");
         String html = converHtml(f);

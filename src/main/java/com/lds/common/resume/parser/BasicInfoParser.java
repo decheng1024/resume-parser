@@ -78,6 +78,11 @@ public class BasicInfoParser extends BaseParser {
         if (zhiLianEles.size() > 0) {
             return zhiLianEles.get(0).text();
         }
+        //人才热线
+        Elements RenCaiEles = root.getElementsByAttributeValue("style", "padding:10px 0 10px 25px; font:24px/20px Arial; color:#333333;");
+        if (RenCaiEles.size() > 0) {
+            return RenCaiEles.get(0).text();
+        }
         //boss
         Elements names = root.getElementsMatchingOwnText("姓名：");
         if (names.size() > 0) {
@@ -133,6 +138,10 @@ public class BasicInfoParser extends BaseParser {
             if (ChineseNumToArabicNumUtil.isChineseNum(workExperienceLimit)) {
                 return String.valueOf(ChineseNumToArabicNumUtil.chineseNumToArabicNum(workExperienceLimit));
             }
+        }
+        Elements renCaiEle = root.getElementsByAttributeValue("style", "font:14px/20px Arial; color:#333333;");
+        if (renCaiEle.size() > 0) {
+            return renCaiEle.last().text();
         }
         return workExperienceLimit;
     }

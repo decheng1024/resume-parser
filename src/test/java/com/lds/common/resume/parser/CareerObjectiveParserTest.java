@@ -160,9 +160,31 @@ public class CareerObjectiveParserTest extends BaseTest {
     @Test
     public void matchExpectingInsuatryByZhuoPin6() throws Exception {
         File f = new File(basePath + "智联卓聘_中文20191101.doc");
-//        转换html
         String html = converHtml(f);
-//        信息解析器
+        CareerObjectiveParser careerObjectiveParser = new CareerObjectiveParser(html);
+        CareerObjective parse = careerObjectiveParser.parse();
+
+        System.out.println("parse = " + parse.toString());
+    }@Test
+    public void matchExpectingInsuatryByRenCai() throws Exception {
+        File f = new File(basePath + "高级.NET工程师余正伟(J4511083).doc");
+        String html = converHtml(f);
+        CareerObjectiveParser careerObjectiveParser = new CareerObjectiveParser(html);
+        CareerObjective parse = careerObjectiveParser.parse();
+
+        System.out.println("parse = " + parse.toString());
+    }@Test
+    public void matchExpectingInsuatryByRenCai1() throws Exception {
+        File f = new File(basePath + "运营专员张雅花(J9972636).doc");
+        String html = converHtml(f);
+        CareerObjectiveParser careerObjectiveParser = new CareerObjectiveParser(html);
+        CareerObjective parse = careerObjectiveParser.parse();
+
+        System.out.println("parse = " + parse.toString());
+    }@Test
+    public void matchExpectingInsuatryByRenCai2() throws Exception {
+        File f = new File(basePath + "高级软件工程师吴财圣(J9982025).doc");
+        String html = converHtml(f);
         CareerObjectiveParser careerObjectiveParser = new CareerObjectiveParser(html);
         CareerObjective parse = careerObjectiveParser.parse();
 

@@ -29,11 +29,15 @@ public class SelfEvaluationParser extends BaseParser {
                 "background:#D9D9D9;mso-shading:white;mso-pattern:gray-15 auto";
         //智联
         if (selfEvaluation.size() > 0 && (selfEvaluation.first().getElementsByAttributeValue("style", sytle)).size() > 0) {
-            return selfEvaluation.get(0).parent().parent().nextElementSibling().text();
+            return selfEvaluation.first().parent().parent().nextElementSibling().text();
         }
         //卓聘
         if (selfEvaluation.size() > 0 && (selfEvaluation.first().getElementsByAttributeValue("style", "font-size: 14px;")).size() > 0) {
-            return selfEvaluation.get(0).parent().parent().parent().parent().parent().nextElementSibling().text();
+            return selfEvaluation.first().parent().parent().parent().parent().parent().nextElementSibling().text();
+        }
+        //人才热线
+        if (selfEvaluation.size() > 0 && (selfEvaluation.first().getElementsByAttributeValue("style", "font:12px/20px Arial; color:#ffffff; padding:0 25px; height:20px;")).size() > 0) {
+            return selfEvaluation.first().parent().nextElementSibling().text();
         }
         //51Job
         selfEvaluation = root.getElementsMatchingOwnText("^自我评价：$");
