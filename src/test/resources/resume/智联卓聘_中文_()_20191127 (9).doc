@@ -1,0 +1,504 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="http://image1.highpin.cn/Css/Seeker/reset.min.css?version=20191125125251" rel="stylesheet"/>
+
+    <link href="http://image2.highpin.cn/Css/Seeker/detail-new.css?version=20191125125251" rel="stylesheet"/>
+
+
+    <link href="http://image3.highpin.cn/css/seeker/footer.css?version=20191125125251" rel="stylesheet"/>
+
+    <link href="http://image4.highpin.cn/css/shared/suggestion.css?version=20191125125251" rel="stylesheet"/>
+
+    <link href="http://image5.highpin.cn/css/shared/layer/customlayer.css?version=20191125125251" rel="stylesheet"/>
+
+    <link href="http://image1.highpin.cn/css/Shared/grade.css?version=20191125125251" rel="stylesheet"/>
+
+</head>
+<body>
+    <table width="710" align="center" style="font-size: 12px; word-break: break-all; margin-top: -40px;">
+        <!--个人简历-->
+        <tr>
+            <td>
+                <img src="http://image2.highpin.cn/Image/Shared/downresume/top.jpg"  style="border: none; display: block;" /></td>
+        </tr>
+        <!--个人信息-->
+        <tr>
+            <td style="padding: 2px 0 16px 16px; border-bottom: 1px dotted #d2d2d2;">
+                <table width="694">
+                    <tr>
+                        <td width="582">
+                            <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                <tr>
+                                    <td style="font-size: 24px; line-height: 44px; font-family: SimHei">
+黄官银                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>男 | 47岁 | 1972年12月 |  
+已婚                                        23 年工作经验 | 本科 </td>
+                                </tr>
+                                <tr>
+                                    <td>广东  深圳
+                                    </td>
+                                </tr>
+
+
+                                                                
+                                <tr>
+                                    <td>手机：18320865115</td>
+                                </tr>
+                                <tr>
+                                    <td>邮箱：huangguanyin@hotmail.com</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            
+                            <img src="http://image4.highpin.cn/image/seeker/resumeview/head-picture.jpg" width="70" height="100" style="display: block; width: 70px; height: 100px; padding: 3px; border: 1px solid #f0f0f0; overflow:hidden;" />
+                            
+                           
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!--目前状态-->
+            <tr>
+                <td>
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px;">
+                        <tr>
+                            <td width="18">
+                                <img src="http://image3.highpin.cn/Image/Shared/downresume/red-square.jpg"  /></td>
+                            <td style="font-size: 14px; padding-top: 5px;">目前状态</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 5px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                        <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                            <tr>
+                                <td width="110" style="vertical-align: top; line-height: 18px;">目前状态：</td>
+                                <td>我目前在职，正考虑换个新环境（如有合适的工作机会，到岗时间一个月左右）</td>
+                            </tr>
+                                <tr>
+                                    <td width="110" style="vertical-align: top; line-height: 18px;">期望薪资：</td>
+                                    <td>保密</td>
+                                </tr>
+                        </table>
+                </td>
+            </tr>
+                    <!--职业意向-->
+            <tr>
+                <td style="font-size: 14px; line-height: 28px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px;">
+                        <tr>
+                            <td width="18">
+                                <img src="http://image4.highpin.cn/Image/Shared/downresume/red-square.jpg" /></td>
+                            <td style="font-size: 14px;">职业意向</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 5px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                        <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                <tr>
+                                    <td width="110" style="vertical-align: top; line-height: 18px;">期望行业：</td>
+                                    <td>计算机软件,互联网/移动互联网/电子商务,IT服务（系统/数据/维护）</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="vertical-align: top; line-height: 18px;">期望职位：</td>
+                                    <td>计算机/网络技术,金融/证券/期货/投资,银行</td>
+                                </tr>
+                            <tr>
+                                <td style="vertical-align: top; line-height: 18px;">工作地点：</td>
+                                <td>广东-深圳</td>
+                            </tr>
+                                <tr>
+                                    <td style="vertical-align: top; line-height: 18px;">期望薪资（税前）：</td>
+                                    <td>25000RMB/Month</td>
+                                </tr>
+                                                    </table>
+                </td>
+            </tr>
+                    <!--自我评价-->
+            <tr>
+                <td>
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px;">
+                        <tr>
+                            <td width="18">
+                                <img src="http://image5.highpin.cn/Image/Shared/downresume/red-square.jpg"  /></td>
+                            <td style="font-size: 14px;">自我评价</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 8px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>拥有二十年年以上的IT工作经验、十三年以上的软件测试经验以及长达10年的金融行业经验。长期从事软件行业、安防行业、金融行业等软硬件产品和信息系统的测试及质量管理工作，对于软件系统测试和质量保证有较深的理解。在测试流程规范体系建设、测试人员培养、大型测试项目实施、软件自动化测试和软硬件开发质量管理等方面具有丰富的经验。精通移动端/服务端性能测试、自动化测试、接口测试、硬件可靠性测试等、APP及小程序测试、云平台测试等，熟悉前沿测试理论方法。熟悉大型软件架构、操作系统和数据库（如Oracle、MySQL），具备丰富的大型复杂系统的测试经验。熟悉软件工程、软件测试流程，精通敏捷开发测试。熟悉流行的开源测试工具和框架，能指导团队进行二次开发。熟悉Python、Ruby等常用脚本语言，熟悉liunx内核的嵌入式系统的测试方法。</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+                    <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image1.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">工作经验</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image2.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">2016年5月&nbsp;&nbsp;--&nbsp;&nbsp;至今 | 深圳市同为科技有限公司 |  
+                                测试总监</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：互联网/移动互联网/电子商务</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：质量管理/安全防护-质量管理/测试经理(QA/QC经理)</td>
+                            </tr>
+                        <tr>
+                                <td>
+                                    下属人数：
+                                        30 人
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+1000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>主管公司产品的软硬件测试工作。测试部门40人左右，分为6个测试组<br/><br/>1.优化完善安防产品测试规范体系，建立从可靠性测试、兼容性测试到产品特性测试、性能测试以及交付测试的完整的测试体系，全面保障交付产品的质量，并建立客户反馈问题的分析跟踪机制，全面提升产品测试方法，提升客户满意度。 <br/>2.组建测试技术部，构建自动化框架、编写测试脚本，培养自动化测试工程师，优化测试流程与规范、开发必要的测试工具，开展技术培训等，研究并推动软硬件自动化测试技术在测试工作中的应用，提升测试工作效率。<br/>3.建立符合安防行业的软件硬件测试管理体系，不断优化员工结构，培养了一支能打硬仗的测试队伍。从员在一年内从15人左右增至40人左右，零基础建立了硬件测试部门，在硬件测试、软件测试设计、自动化测试、兼容性测试等方面有了长足的进步。 <br/>4. 在公司内率先建立以量化指标考核为基础，季度考核淘汰为手段的日常考核体系，其中70%考核指标来自于客观数据，每季末实行末位淘汰制，明确员工的晋升路线和标准，极大地激发了员工的工作热情。<br/>5.除承接公司产品的各个环节的测试工作外，另承担了客诉问题的研发接口、生产体系的对接、市场与技术支持人员的培养等职责，在保障公司产品质量的基础上，更好地完成了衍生任务。</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image3.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">2011年11月&nbsp;&nbsp;--&nbsp;&nbsp;2016年4月 | 深圳国泰安教育技术股份有限公司 |  
+                                测试总监</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+公司性质：股份制企业;
+                                    |
+
+公司规模：500-999人
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：计算机软件</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：高级管理-总监/部门经理</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+1000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>主管研发管理中心与测试中心 <br/>1.研发管理中心、测试部门和质量管理部门的日常运作管理与发展规划。 <br/>2.研发人员的绩效管理的策划与实施 、项目运行管理与资源调配等等。 <br/>3.组织项目组，承接公司产品的测试工作，包括测试需求分析、测试方案设计、测试计划的编写及评审工作，并指导相关测试人员进行测试用例编写，为测试执行提供技术支持。 <br/>4. 组建测试技术部门，负责构建自动化框架、提供脚本，内部自动化人才培养，优化测试流程与规范，提供性能测试技术支持、开发必要的测试工具，开展技术培训等，提升测试线的工作效率。 <br/>5.建立相关产品的管理流程、QA管理、配置管理流程等。 <br/>6.组织公司产品的研发规划、可行性分析、架构技术论证等工作。 <br/>7.公司CMMI体系建设与过程改进，量化管理及绩效等工作。</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image4.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">2007年4月&nbsp;&nbsp;--&nbsp;&nbsp;2011年10月 | 吉贝克信息技术有限公司 |  
+                                测试总监</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+公司性质：外商独资;
+                                    |
+
+公司规模：500-999人
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：IT服务（系统/数据/维护）</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：高级管理-总监/部门经理</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+1000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>1.主要致力于金融行业开展专业的测试外包服务，培养技术优秀人才，打造一支优秀测试团队，从入公司以来的10人左右发展到目前100人左右； <br/>2.负责测试部门发展规划，制订长期目标，落实发展路线，创造测试业务发展辉煌，从3年前一个地域2个项目发展到现在北京、上海、福州、成都、深圳等多个地区多个项目同时进行。 <br/>3.以测试业务，开拓与带动公司其他业务发展，作为公司研发业务进军金融行业新领域的排头军，发挥了巨大作用。<br/>4.作为项目总监，调配测试资源，同时负责几个并行测试项目的实施管理，寻求服务质量与投入成本的平衡点，在满足客户需求的基础上，实现客户满意与公司利润的双丰收。<br/>5.进行测试技术积累，形成公司测试技术体系。组织开发测试工具，对测试团队进行培训工作。以实际项目实施经验为基础，编写出一整套培训教材，不但对内进行测试培训，而且对外提供专业的金融软件测试培训。</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image5.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">2000年8月&nbsp;&nbsp;--&nbsp;&nbsp;2007年4月 | 中国软件评测中心 |  
+                                测试经理</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+公司性质：国企;
+                                    |
+
+公司规模：100-499人
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：IT服务（系统/数据/维护）</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：计算机/网络技术-软件测试</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+1000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>	2000年6月－2001年1月，中国软件评测中心，软件测试工师<br/>	2001年2月－2001年10月，中国软件评测中心，项目经理<br/>	2001年11月－2002年3月，中国软件评测中心应用测试实验室主任<br/>	2002年4月－2003年6月，中国软件评测中心信息系统监理部主任<br/>	2003年7月－2004年1月，北京赛迪信息工程监理有限公司副总经理<br/>	2004年1月－2005年11月，北京赛迪信息技术评测有限公司副总经理<br/>	2005年11月－今，中国软件评测中心军工测试部主任<br/><br/>	近期项目和工作经验<br/><br/><br/>	2005年－2006年<br/>1.按照GJB2725A国家军用标准及其他相关的军用标准，建立中国软件评测中心军工测试体系，编写质量手册、程序文件、作业指导书、质量记录表等质量体系文件，并按照本体系组织了若干军工项目的测试，经过数次修改，使体系日趋完善，将于2007年进行专家评审，通过后将获得军工测试的准入资格。<br/>2.29所某军工项目的部件测试<br/>该项目主要采用白盒测试，其中利用Logiscope白盒测试工具对所有的函数进行了代码检查、静态结构分析、质量度量等静态测试，利用Numega白盒测试工具进行了函数功能测试、函数性能测试、内存测试等动态测试，测试小组4人，历时1个半月，共完成了8万余行代码的测试，其中在进行动态测试过程中还开发了一个专项测试工具。<br/>3.信息工程学院某信息管理系统测试。<br/>该项目采用黑盒测试，主要进行了功能、性能、安全性测试。测试小组3人，历时2周。<br/>4.空军五所某项目配置项测试。<br/>该项目采用黑盒测试与白盒测试相结合的方式，分别进行了功能测试、性能测试、代码走查、静态结构分析等测试。<br/>5.作为讲师参加了十几个软件测试工程师的培训工作，主要讲授“白盒测试”课程，并负责课件的开发、实习课指导等。</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image1.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">1996年7月&nbsp;&nbsp;--&nbsp;&nbsp;2000年7月 | 湖北省人民银行 |  
+                                软件工程师</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+公司性质：国家机关;
+                                    |
+
+公司规模：100-499人
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：金融/银行/投资/基金/证券/期货</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：计算机/网络技术-研发工程师</td>
+                            </tr>
+                        
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>开发软件，软件维护，网络维护</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+
+            <!--项目经历-->
+            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image2.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">项目经验</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image3.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:8px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2016年5月&nbsp;&nbsp;--&nbsp;&nbsp;至今 | DVR/NVR产品测试</td>
+
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                                                            <tr>
+                                <td>项目描述：</td>
+                            </tr>
+                            <tr>
+                                <td>项目描述：	DVR和NVR是公司的两类后端主打产品，各有数十个不同的型号，每年都会有新的型号、软件版本更新和新的功能特性开发，测试包括硬件测试、可靠性测试、软件功能测试、性能测试、画质测试、集成测试、兼容性测试、版本发布测试等等。另外还要处理生产问题、客诉问题、安全问题的测试验证等</td>
+
+                            </tr>
+                                                    <tr>
+                                <td>项目职责：</td>
+                            </tr>
+                            <tr>
+                                <td>项目职责：	作为测试负责人，负责参与新产品的需求论证，测试资源协调，测试任务分配，组织进行测试用例的编写，实施可靠性测试、功能测试、性能测试、集成测试、发布测试等，组织进行产品研发测试的总结。开展自动化测试脚本的编写，开发小工具实现专项测试的自动化执行，提升测试试验的效率，提高产品的可靠性。<br/>项目业绩：	建立了从硬件测试到可靠性测试、功能测试、发布测试的一系列规范，提高了自动化测试的覆盖面，保障了每一款新研发产品或更新换代产品的顺利发布。 </td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image4.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:8px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2013年9月&nbsp;&nbsp;--&nbsp;&nbsp;2015年3月 | 智慧校园（2013/09–2015/03）</td>
+
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                                                            <tr>
+                                <td>项目描述：</td>
+                            </tr>
+                            <tr>
+                                <td>项目描述：	智慧校园产品线以“面向服务”覆盖校园中的管理、教学、生活、文化等各个方面，建设以不同类型用户为中心的业务管理信息平台，打破传统以管理部门为中心的管理思维，构建“智慧教学、感知校园、平安校园、移动校园、开放校园、科技校园、健康校园、绿色校园“，多功能模块化地实现智慧管理、教学、生活、服务综合体系，创建与社会、城市、社区相融为一体，充分满足校园用户个性化需求，辐射和服务社区的智慧校园的环境。 <br/>功能模块：（１）一体化平台：以“大教育观”的思维，构建开放式、具有区域特色智慧教育体系、创新传承校园文化的智慧校园综合一体化设计大平台。（６）六个易系统：易管理：智能管理与科学决策功能；易教学：智慧教学与人才培养功能；易科研：协同科研与成果转换功能；易生活：智慧生活与信息服务功能；易文化：校本特色文化传承与创新；易服务：面向社会开放与服务功能。（N）”N”个主题系列校园 ：虚拟校园、感知校园、绿色校园、开放校园、科技校园、平安校园、移动校园和健康校园。 <br/>特色亮点：标准：遵循国家级资源、应用、数据及安全标准，对接智慧城市；创新：创新设计“1+6+N”体系，个性化定制学校主题智慧校园；开放：平台接口开放，兼容已有业务系统，扩展未来业务系统；全面：模块化设计，全面涵盖学校业务，主动提供场景式服务；智能：运用云计算、大数据等先进技术，智能化分析决策预判；贴身：为每一所学校配备一个专业的当地信息化运维服务团队。</td>
+
+                            </tr>
+                                                    <tr>
+                                <td>项目职责：</td>
+                            </tr>
+                            <tr>
+                                <td>项目职责：	作为测试负责人，全面负责项目的质量管控和产品的测试。参与研发全过程的人员一百多人，仅测试就有42人参与，子系统繁多，时间周期跨度长，测试的统筹安排和管理要求有严格的规划，对测试协调也有挑战性。从技术层面，其中一些具有高难度的功能点，如智能排课、排考等，对功能测试的场景设计、性能测试、负载测试要求较高，测试组充分发挥技术钻研，迎难而上的精神，自主开发了若干小工具，在保证测试质量的基础上，大大优化了测试效率，全面保障项目的顺利实施<br/>项目业绩：	从项目立项之始参与论证，从测试的角度对需求进行验证，保证软件系统的可测性。组织测试团队编写测试用例5千余条，自主编写测试小工具若干个，引入开源自动化框架，主程序的主要功能的80%实现自动化测试，大大提升了版本更迭中的回归测试的效率。项目最终陆续推出，产品质量得到了用户的普遍好评。 </td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>
+
+            <!--教育背景-->
+            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image5.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">教育背景</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 26px; padding-top: 8px; padding-bottom: 4px;">
+                    <table style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image1.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">1991年9月&nbsp;&nbsp;--&nbsp;&nbsp;1996年7月 | 中国科技大学 | 其他 | 本科
+                                     | 全日制统招
+</td>
+                        </tr>
+                    </table>
+
+
+                </td>
+            </tr>
+
+
+
+
+
+    </table>
+    <script src="http://image2.highpin.cn/js/shared/common/sea.js?version=20191125125251"></script>
+
+    <script src="http://image3.highpin.cn/js/modules/common/base_init.js?version=20191125125251"></script>
+
+</body>
+</html>

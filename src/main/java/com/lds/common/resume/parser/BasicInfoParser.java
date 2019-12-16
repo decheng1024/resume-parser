@@ -23,7 +23,9 @@ public class BasicInfoParser extends BaseParser {
     }
 
     public BasicInfo parse() {
+
         BasicInfo basicInfo = new BasicInfo();
+
         basicInfo.setName(matchName());
         basicInfo.setMail(matchEmail());
         basicInfo.setPhone(matchPhone());
@@ -35,9 +37,29 @@ public class BasicInfoParser extends BaseParser {
         basicInfo.setDegree(matchDegree(root));
         basicInfo.setMaritalStatus(matchMaritalStatus());
         basicInfo.setYearOfWorkExperience(matchWorkExperienceLimit());
+        //卓聘
+        Elements zhuoPinEles = root.getElementsByAttributeValue("width", "582");
+        if (zhuoPinEles.size() > 0) {
+            basicInfo.setName(getBasicInfoByZhuoPin(zhuoPinEles, 0));
+            String[] arr = getBasicInfoByZhuoPin(zhuoPinEles, 1).split(" \\| ");
+
+            String[] arr1 = arr[3].split(" ");
+            if (arr1[1].contains("年工作经验")) {
+                basicInfo.setYearOfWorkExperience(arr1[0]);
+            } else {
+                basicInfo.setYearOfWorkExperience(arr1[1]);
+            }
+
+        }
         return basicInfo;
     }
 
+    /**
+     * @return java.lang.String
+     * @Description: 匹配姓名
+     * @author Murray Law
+     * @date 2019/12/12 15:35
+     */
     private String matchName() {
         //51job
         Elements nameElements = root.getElementsByClass("name");
@@ -51,24 +73,30 @@ public class BasicInfoParser extends BaseParser {
                 return nameElement.text();
             }
         }
+        //智联招聘
+        Elements zhiLianEles = root.getElementsByAttributeValue("style", "text-align:left;tab-stops:366.0pt");
+        if (zhiLianEles.size() > 0) {
+            return zhiLianEles.get(0).text();
+        }
+        //人才热线
+        Elements RenCaiEles = root.getElementsByAttributeValue("style", "padding:10px 0 10px 25px; font:24px/20px Arial; color:#333333;");
+        if (RenCaiEles.size() > 0) {
+            return RenCaiEles.get(0).text();
+        }
         //boss
         Elements names = root.getElementsMatchingOwnText("姓名：");
         if (names.size() > 0) {
             return names.first().text().replace("姓名：", "");
         }
-        //智联招聘
-        Elements tables = root.getElementsByTag("table");
-        if(tables.size() > 0){
-            String nameRegEx = "^[\\u4e00-\\u9fa5]{2,5}";
-            String firstText = tables.first().text();
-            Matcher matcher = Pattern.compile(nameRegEx).matcher(firstText);
-            if (matcher.find()) {
-                return matcher.group();
-            }
-        }
         return "";
     }
 
+    /**
+     * @return java.lang.String
+     * @Description: 匹配电话号码
+     * @author Murray Law
+     * @date 2019/12/12 15:35
+     */
     private String matchPhone() {
         String phone = "";
         String phoneRegEx = "1[3-9]{2}((\\d{8})|(\\*\\*\\*\\*\\d{4}))";
@@ -90,6 +118,12 @@ public class BasicInfoParser extends BaseParser {
         return email;
     }
 
+    /**
+     * @return java.lang.String
+     * @Description: 匹配工作经验
+     * @author Murray Law
+     * @date 2019/12/12 15:36
+     */
     private String matchWorkExperienceLimit() {
         String workExperienceLimit = "";
         String workExperienceLimitRegEx = "(\\d{1,2})(年工作经验|年 年工作经验)";
@@ -101,9 +135,13 @@ public class BasicInfoParser extends BaseParser {
         Elements eles = root.getElementsMatchingOwnText(workExperienceLimitRegEx);
         if (eles.size() > 0) {
             workExperienceLimit = eles.first().text().replace("工作经验：", "").replace("年", "");
-            if(ChineseNumToArabicNumUtil.isChineseNum(workExperienceLimit)){
+            if (ChineseNumToArabicNumUtil.isChineseNum(workExperienceLimit)) {
                 return String.valueOf(ChineseNumToArabicNumUtil.chineseNumToArabicNum(workExperienceLimit));
             }
+        }
+        Elements renCaiEle = root.getElementsByAttributeValue("style", "font:14px/20px Arial; color:#333333;");
+        if (renCaiEle.size() > 0) {
+            return renCaiEle.last().text();
         }
         return workExperienceLimit;
     }
@@ -114,6 +152,15 @@ public class BasicInfoParser extends BaseParser {
         }
         if (root.getElementsMatchingOwnText("未婚").size() > 0) {
             return "未婚";
+        }
+        if (root.getElementsMatchingOwnText("离婚").size() > 0) {
+            return "离婚";
+        }
+        if (root.getElementsMatchingOwnText("离异").size() > 0) {
+            return "离异";
+        }
+        if (root.getElementsMatchingOwnText("丧偶").size() > 0) {
+            return "丧偶";
         }
         return "--";
     }
@@ -137,7 +184,7 @@ public class BasicInfoParser extends BaseParser {
             }
         }
         String location = Location.getAtMost3Location(content);
-        if(StringUtils.isNotBlank(location)){
+        if (StringUtils.isNotBlank(location)) {
             return location;
         }
         return "";
@@ -151,7 +198,7 @@ public class BasicInfoParser extends BaseParser {
         if (matcher.find()) {
             age = matcher.group();
             if (age.indexOf("岁") > -1) {
-                return age.replaceAll("岁", "").replace(" ","");
+                return age.replaceAll("岁", "").replace(" ", "");
             }
         }
         //boss
@@ -169,6 +216,11 @@ public class BasicInfoParser extends BaseParser {
         if (matcher.find()) {
             return matcher.group();
         }
+        birthdayRegEx = "(\\d{4}年\\d{1,2}月)";
+        matcher = Pattern.compile(birthdayRegEx).matcher(content);
+        if (matcher.find()) {
+            return matcher.group();
+        }
         return "";
     }
 
@@ -180,5 +232,17 @@ public class BasicInfoParser extends BaseParser {
             return "女";
         }
         return "男";
+    }
+
+    /**
+     * @return org.jsoup.nodes.Element
+     * @Description: 根据子信息的索引[i]从卓聘个人信息模板elements中获取子信息文本
+     * @Param [i]
+     * @author Murray Law
+     * @date 2019/12/12 15:50
+     */
+    private String getBasicInfoByZhuoPin(Elements elements, int i) {
+        return elements.get(0).child(0).child(0).child(i).text();
+
     }
 }

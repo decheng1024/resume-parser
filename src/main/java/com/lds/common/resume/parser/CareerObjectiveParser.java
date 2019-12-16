@@ -5,9 +5,6 @@ import com.lds.common.resume.util.StringUtils;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.util.Objects;
-import java.util.Set;
-import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -15,7 +12,6 @@ import java.util.regex.Pattern;
  * 职业目标分析器继承基础类
  */
 public class CareerObjectiveParser extends BaseParser {
-
     /**
      * @return
      * @Param [content]
@@ -28,35 +24,36 @@ public class CareerObjectiveParser extends BaseParser {
     }
 
     /**
+     * @return com.lds.common.resume.domain.CareerObjective
      * @Param []
-     * @Description 求职意向
+     * @Description:
      * @author Murray Law
      * @date 2019/12/5 17:56
-     * @return com.lds.common.resume.domain.CareerObjective
      */
     public CareerObjective parse() {
-        //职业目标
+//        职业目标
         CareerObjective careerObjective = new CareerObjective();
-        //意向行业
         careerObjective.setExpectingIndustry(matchExpectingInsuatry());
         careerObjective.setExpectingSalary(matchExpectingSalary());
         careerObjective.setExpectingPosition(matchExpectingPosition());
         careerObjective.setExpectingLocation(matchExpectingLocation());
-        careerObjective.setHiredate(matchHiredate());
+        careerObjective.setHireDate(matchHireDate());
+        careerObjective.setJobType(matchJobType());
+        careerObjective.setRequireApartment(matchRequireApartment());
 
         return careerObjective;
     }
 
     /**
-     * @Description 意向行业
+     * @return java.lang.String
+     * @Description: 匹配期望职能
      * @author Murray Law
      * @date 2019/12/6 14:01
-     * @return java.lang.String
      */
     private String matchExpectingInsuatry() {
         String industry = "";
         StringBuffer expectingIndustry = new StringBuffer();//期待行业
-        Elements industrys = root.getElementsMatchingOwnText("求职意向");
+        Elements industrys = root.getElementsMatchingOwnText("^求职意向$");
         if (industrys.size() > 0) {
             Element parent = industrys.first().parent().parent();
             if (StringUtils.isNotBlank(parent.tagName()) && parent.tagName().toLowerCase().equals("tbody")) {
@@ -69,32 +66,53 @@ public class CareerObjectiveParser extends BaseParser {
             }
 
         }
-        Elements elements = root.getElementsMatchingOwnText("^行业：");
-        if (elements.size() > 0) {
-            return elements.get(0).nextElementSibling().text();
+        //51
+        Elements elementsBy51Job = root.getElementsMatchingOwnText("^行业：$");
+        if (elementsBy51Job.size() > 0) {
+            return elementsBy51Job.get(0).nextElementSibling().text();
         }
-
-        Elements tds = root.getElementsByTag("td");
-        for (Element ele : tds){
-            if( ele.getElementsMatchingOwnText("^期望从事行业：").size() > 0){
-                Element element = ele.nextElementSibling();
-                if( !Objects.isNull(element)){
-                    return element.text();
-                }
-            }
+        //智联
+        Elements elementsByZhiLian = root.getElementsMatchingOwnText("^期望从事行业：$");
+        if (elementsByZhiLian.size() > 0) {
+            return elementsByZhiLian.get(0).parent().parent().nextElementSiblings().text();
+        }
+        //卓聘
+        Elements elementsByZhuoPin = root.getElementsMatchingOwnText("^期望行业：$");
+        if (elementsByZhuoPin.size() > 0) {
+            return elementsByZhuoPin.get(0).nextElementSiblings().text();
         }
         return "";
+
     }
 
 
     /**
      * @return java.lang.String
-     * @Param []
-     * @Description 返回期望薪资
+     * @Description: // 匹配期望薪资
      * @author Murray Law
      * @date 2019/12/6 14:00
      */
     private String matchExpectingSalary() {
+        //卓聘
+        Elements expectedSalaryElementsByZhuoPin = root.getElementsMatchingOwnText("^期望薪资（税前）：$");
+        if (expectedSalaryElementsByZhuoPin.size() > 0) {
+            return expectedSalaryElementsByZhuoPin.get(0).nextElementSibling().text();
+        }
+        //人才热线
+        Elements renCaiEle = root.getElementsByAttributeValue("style", "font:14px/20px Arial; color:#333333;");
+        if (renCaiEle.size() > 0) {
+            return renCaiEle.first().text();
+        }
+        //51和部分卓聘
+        Elements expectedSalaryElementsBy51Job = root.getElementsMatchingOwnText("^期望薪资：$");
+        if (expectedSalaryElementsBy51Job.size() > 0) {
+            return expectedSalaryElementsBy51Job.get(0).nextElementSibling().text();
+        }
+        //智联
+        Elements expectedSalaryElementsByZhiLian = root.getElementsMatchingOwnText("^期望月薪：$");
+        if (expectedSalaryElementsByZhiLian.size() > 0) {
+            return expectedSalaryElementsByZhiLian.get(0).parent().parent().nextElementSibling().text();
+        }
         String expectingSalary = "";
         String expectingYearSalaryRegEx = "\\d{1,4}-\\d{1,4}万元/年";
 
@@ -108,72 +126,89 @@ public class CareerObjectiveParser extends BaseParser {
                 }
             }
         }
-        Elements salaryEles = root.getElementsMatchingOwnText("期望薪资：");
-        if( salaryEles.size() > 0){
-            return salaryEles.get(0).nextElementSibling().text();
-        }
-        Elements tds = root.getElementsByTag("td");
-        for (Element ele : tds){
-            if( ele.getElementsMatchingOwnText("^期望月薪：").size() > 0){
-                Element element = ele.nextElementSibling();
-                if( !Objects.isNull(element)){
-                    return element.text();
-                }
-            }
-        }
         return "";
     }
 
     /**
      * @return java.lang.String
-     * @Param []
-     * @Description: 期望职位
+     * @Description: // 匹配期望职位
      * @author Murray Law
      * @date 2019/12/6 13:59
      */
     private String matchExpectingPosition() {
+        //51
+        Elements expectingPositionElementsBy51Job = root.getElementsMatchingOwnText("^职能/职位：$");
+        if (expectingPositionElementsBy51Job.size() > 0) {
+            return expectingPositionElementsBy51Job.first().nextElementSibling().text();
+        }
+        //智联
+        Elements expectingPositionElementsByZhiLian = root.getElementsMatchingOwnText("^期望从事职业：$");
+        if (expectingPositionElementsByZhiLian.size() > 0) {
+            return expectingPositionElementsByZhiLian.first().parent().parent().nextElementSibling().text();
+        }
+        //卓聘
+        Elements expectingPositionElementsByZhuoPin = root.getElementsMatchingOwnText("^期望职位：$");
+        if (expectingPositionElementsByZhuoPin.size() > 0) {
+            return expectingPositionElementsByZhuoPin.first().nextElementSibling().text();
+        }
+        //人才热线
+        Elements expectingPositionElementsByRenCai = root.getElementsMatchingOwnText("^意向岗位：$");
+        if (expectingPositionElementsByRenCai.size() > 0) {
+            return expectingPositionElementsByRenCai.first().nextElementSibling().text();
+        }
         return Job.getJobTitles(content);
     }
 
     /**
      * @return java.lang.String
-     * @Param []
-     * @Description: 期望工作地点
+     * @Description: //
      * @author Murray Law
      * @date 2019/12/6 15:07
      */
     private String matchExpectingLocation() {
+        //51
+        Elements expectingLocationElementBy51Job = root.getElementsMatchingOwnText("^地点：$");
+        if (expectingLocationElementBy51Job.size() > 0) {
+            return expectingLocationElementBy51Job.get(0).nextElementSibling().text();
+        }
+        //智联
+        Elements expectingLocationElementByZhiLian = root.getElementsMatchingOwnText("^期望工作地区：$");
+        if (expectingLocationElementByZhiLian.size() > 0) {
+            return expectingLocationElementByZhiLian.get(0).parent().parent().nextElementSibling().text();
+        }
+        //卓聘
+        Elements expectingLocationElementByZhuoPin = root.getElementsMatchingOwnText("^工作地点：$");
+        if (expectingLocationElementByZhuoPin.size() > 0) {
+            return expectingLocationElementByZhuoPin.get(0).nextElementSibling().text();
+        }
         String location = Location.getOneLocation(content);
         if (StringUtils.isNotBlank(location)) {
             return location;
         }
-        Elements locationEles = root.getElementsMatchingOwnText("地点：");
-        if( locationEles.size() > 0 ){
-            return locationEles.first().nextElementSibling().text();
-        }
         return "";
     }
 
     /**
      * @return java.lang.String
-     * @Param []
      * @Description: 到岗时间
      * @author Murray Law
      * @date 2019/12/8 22:12
      */
-    private String matchHiredate() {
-        Elements elements = root.getElementsMatchingOwnText("到岗时间：");
-        if (elements.size() > 0) {
-            return elements.get(0).nextElementSibling().text();
+    private String matchHireDate() {
+        //51Job
+        Elements hireDateElementsBy51Job = root.getElementsMatchingOwnText("^到岗时间：$");
+        if (hireDateElementsBy51Job.size() > 0) {
+            return hireDateElementsBy51Job.first().nextElementSibling().text();
         }
-        Elements tds = root.getElementsByTag("td");
-        for (Element ele : tds){
-            if( ele.getElementsMatchingOwnText("^目前状况：").size() > 0){
-                Element element = ele.nextElementSibling();
-                if( !Objects.isNull(element)){
-                    return element.text();
-                }
-            }
+        //智联
+        Elements hireDateElementsByZhiLian = root.getElementsMatchingOwnText("^目前状况：$");
+        if (hireDateElementsByZhiLian.size() > 0) {
+            return hireDateElementsByZhiLian.first().parent().parent().nextElementSibling().text();
+        }
+        //人才热线
+        Elements hireDateElementsByRenCai = root.getElementsMatchingOwnText("^可到岗时间：$");
+        if (hireDateElementsByRenCai.size() > 0) {
+            return hireDateElementsByRenCai.first().nextElementSibling().text();
         }
         return "";
     }
@@ -181,15 +216,32 @@ public class CareerObjectiveParser extends BaseParser {
     /**
      * @return java.lang.String
      * @Param []
-     * @Description: 期望工作类型
+     * @Description: // 匹配期望工作类型
      * @author Murray Law
      * @date 2019/12/8 22:57
      */
     private String matchJobType() {
-        Elements elements = root.getElementsMatchingOwnText("工作类型：");
-        if (elements.size() > 0) {
-            return elements.get(0).nextElementSibling().text();
+        //51Job
+        Elements JobTypeEementsBy51 = root.getElementsMatchingOwnText("^工作类型：$");
+        if (JobTypeEementsBy51.size() > 0) {
+            return JobTypeEementsBy51.first().nextElementSibling().text();
+        }
+        //智联
+        Elements JobTypeEementsByZhiLian = root.getElementsMatchingOwnText("^期望工作性质：$");
+        if (JobTypeEementsByZhiLian.size() > 0) {
+            return JobTypeEementsByZhiLian.first().parent().parent().nextElementSibling().text();
+        }
+        return "全职";
+    }
+
+    private String matchRequireApartment() {
+        //人才热线
+        Elements requireApartmentElesByRenCai = root.getElementsMatchingOwnText("^提供住房：$");
+        if (requireApartmentElesByRenCai.size() > 0) {
+            return requireApartmentElesByRenCai.first().nextElementSibling().text();
         }
         return "";
     }
 }
+
+

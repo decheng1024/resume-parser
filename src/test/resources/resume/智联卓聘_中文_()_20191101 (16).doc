@@ -1,0 +1,556 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="http://image5.highpin.cn/Css/Seeker/reset.min.css?version=20191024214359" rel="stylesheet"/>
+
+    <link href="http://image1.highpin.cn/Css/Seeker/detail-new.css?version=20191024214359" rel="stylesheet"/>
+
+
+    <link href="http://image2.highpin.cn/css/seeker/footer.css?version=20191024214359" rel="stylesheet"/>
+
+    <link href="http://image3.highpin.cn/css/shared/suggestion.css?version=20191024214359" rel="stylesheet"/>
+
+    <link href="http://image4.highpin.cn/css/shared/layer/customlayer.css?version=20191024214359" rel="stylesheet"/>
+
+    <link href="http://image5.highpin.cn/css/Shared/grade.css?version=20191024214359" rel="stylesheet"/>
+
+</head>
+<body>
+    <table width="710" align="center" style="font-size: 12px; word-break: break-all; margin-top: -40px;">
+        <!--个人简历-->
+        <tr>
+            <td>
+                <img src="http://image1.highpin.cn/Image/Shared/downresume/top.jpg"  style="border: none; display: block;" /></td>
+        </tr>
+        <!--个人信息-->
+        <tr>
+            <td style="padding: 2px 0 16px 16px; border-bottom: 1px dotted #d2d2d2;">
+                <table width="694">
+                    <tr>
+                        <td width="582">
+                            <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                <tr>
+                                    <td style="font-size: 24px; line-height: 44px; font-family: SimHei">
+叶成                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>男 | 30岁 | 1989年1月 |  
+未婚                                        8 年工作经验 | 大专 </td>
+                                </tr>
+                                <tr>
+                                    <td>广东  深圳
+                                    </td>
+                                </tr>
+
+
+                                                                
+                                <tr>
+                                    <td>手机：18575502762</td>
+                                </tr>
+                                <tr>
+                                    <td>邮箱：ye-ching@163.com</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            
+                            <img src="http://image4.highpin.cn/image/seeker/resumeview/head-picture.jpg" width="70" height="100" style="display: block; width: 70px; height: 100px; padding: 3px; border: 1px solid #f0f0f0; overflow:hidden;" />
+                            
+                           
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!--目前状态-->
+            <tr>
+                <td>
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px;">
+                        <tr>
+                            <td width="18">
+                                <img src="http://image2.highpin.cn/Image/Shared/downresume/red-square.jpg"  /></td>
+                            <td style="font-size: 14px; padding-top: 5px;">目前状态</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 5px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                        <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                            <tr>
+                                <td width="110" style="vertical-align: top; line-height: 18px;">目前状态：</td>
+                                <td>我目前处于离职状态，可立即上岗</td>
+                            </tr>
+                                <tr>
+                                    <td width="110" style="vertical-align: top; line-height: 18px;">期望薪资：</td>
+                                    <td>保密</td>
+                                </tr>
+                        </table>
+                </td>
+            </tr>
+                    <!--职业意向-->
+            <tr>
+                <td style="font-size: 14px; line-height: 28px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px;">
+                        <tr>
+                            <td width="18">
+                                <img src="http://image3.highpin.cn/Image/Shared/downresume/red-square.jpg" /></td>
+                            <td style="font-size: 14px;">职业意向</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 5px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                        <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                <tr>
+                                    <td width="110" style="vertical-align: top; line-height: 18px;">期望行业：</td>
+                                    <td>互联网/移动互联网/电子商务</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="vertical-align: top; line-height: 18px;">期望职位：</td>
+                                    <td>计算机/网络技术</td>
+                                </tr>
+                            <tr>
+                                <td style="vertical-align: top; line-height: 18px;">工作地点：</td>
+                                <td>广东-深圳</td>
+                            </tr>
+                                                    </table>
+                </td>
+            </tr>
+                            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image4.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">工作经验</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image5.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">2016年8月&nbsp;&nbsp;--&nbsp;&nbsp;2019年10月 | 易联科技(深圳)有限公司 |  
+                                web前端工程师</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：互联网/移动互联网/电子商务</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：计算机/网络技术-研发工程师</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+10000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>1.熟练HTML\HTML5\CSS\Javascript等前端开发相关技术，熟悉W3C网页标准；<br/>3.熟练VueJS框架，熟悉AngularJS、ReactJS框架，有前后端分离开发经验；<br/>4.熟悉NodeJS开发，有一定的NodeJS后端开发能力及经验；<br/>5.熟悉微信小程序开发流程，有微信小程序开发经验；<br/>6.了解Android开发，了解Android开发环境；<br/>7.精通响应式布局；<br/>8、熟悉各主流浏览器间的差异，能很好的解决跨浏览器的问题；<br/>9、了解服务器端的技术实施细节，有针对性的协助服务器端开发人员开展业务逻辑开发工作；<br/>10、具备开发团队管理经验；<br/>11、具备良好的服务意识及自我管理能力，较强的责任心及学习能力，优秀的团队沟通与协作能力。</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image1.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">2011年9月&nbsp;&nbsp;--&nbsp;&nbsp;2015年7月 | 深圳市智威智能科技开发有限公司 |  
+                                测试工程师</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+公司性质：股份制企业;
+                                    |
+
+公司规模：100-499人
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：互联网/移动互联网/电子商务</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：计算机/网络技术-研发工程师</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+6000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>1.编写测试计划、规划详细的测试方案、编写测试用例；<br/>2. 执行测试工作，提交测试报告，包括编写用于测试的自动测试脚本，完整地记录测试结果等相关的技术文档；<br/>3. 合理全面发现产品的电子，软/硬件，结构，散热及可靠性等缺陷 ；<br/>4.协助工程师debug,直到问题解决 ；<br/>5.提出对产品的进一步改进的建议，并评估改进方案是否合理；对测试结果进行总结与统计分析，对测试进行跟踪，并提出反馈意见。</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+
+            <!--项目经历-->
+            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image2.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">项目经验</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image3.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:8px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2018年7月&nbsp;&nbsp;--&nbsp;&nbsp;2019年10月 | 区块链易币网</td>
+
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                                                            <tr>
+                                <td>项目描述：</td>
+                            </tr>
+                            <tr>
+                                <td>易币网致力于打造面向全球的、真正高效便捷、安全稳定的虚拟货币交易平台。在国内交易平台参差不齐的现状下易币网厚积薄发，即将引领虚拟货币市场进入崭新的发展潮流。</td>
+
+                            </tr>
+                                                    <tr>
+                                <td>项目职责：</td>
+                            </tr>
+                            <tr>
+                                <td>开发技术：vue、vuex、vux框架等vue全家桶、git、Less、Webpack模块。<br/>移动端：1、使用wabpack构建工程化、组件化vue-cli脚手架进行开发；<br/>2、使用Mock.js进行数据模拟，stylus编写css；<br/>3、使用vuex进行状态管理；<br/>4、使用postman进行接口测试；<br/>5、使用better-scroll插件实现滚动效果；<br/>6、使用Moment.js插件进行时间的处理；<br/>7、使用vux-ui组件库进行项目开发；<br/>8、使用vue-lazyload实现图片懒加载。 </td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image4.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:8px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2018年2月&nbsp;&nbsp;--&nbsp;&nbsp;2018年7月 | 一米市集电商平台</td>
+
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                                                            <tr>
+                                <td>项目描述：</td>
+                            </tr>
+                            <tr>
+                                <td>本项目为是一家专注让城市消费群和中小农场群体互助共生、推广在地农耕价值的新创企业，由来自IDEO、联合利华、BCG、百胜等前优质成员和连续创业家、互联网资深咖共同打造的生鲜电商平台。</td>
+
+                            </tr>
+                                                    <tr>
+                                <td>项目职责：</td>
+                            </tr>
+                            <tr>
+                                <td>1.使用create-react-app脚手架搭建环境以及安装项目依赖库；<br/>2.使用React对登录丶客服丶购物丶分类、个人中心五个页面进行网页组件式开发；<br/>3.使用Less完成局部样式修改编写；<br/>4.使用react-router前端路由组件实现页面间的路由跳转；<br/>5. 对登录页面的登录按钮点击事件进行响应函数代码编写；<br/>6.使用ant-design前端UI框架。<br/>开发技术：React、Redux、react-router，ES6，Webpack、create-react-app。<br/>我在项目中扮演前端开发师角色，主要负责开发页面、页面交互、客户沟通过程。。。 </td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image5.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:8px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2017年6月&nbsp;&nbsp;--&nbsp;&nbsp;2017年11月 | 华联超市后台管理系统</td>
+
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                                                            <tr>
+                                <td>项目描述：</td>
+                            </tr>
+                            <tr>
+                                <td>本项目是为超市开发的一款仓库管理系统。其中主要功能：管理员注册，登陆，增加，删除，查询。以及出入库管理，财务管理，进货计划表，单位管理，供应商管理等功能模块实现。</td>
+
+                            </tr>
+                                                    <tr>
+                                <td>项目职责：</td>
+                            </tr>
+                            <tr>
+                                <td>项目流程：<br/>1.Bootstrap布局页面；<br/>2.搭建node.js环境.使用express搭建框架环境；<br/>3.完成用户管理CRUD功能； <br/>4.AJAX请求数据，artTemplate渲染页面 。<br/>开发技术：jQuery，Bootstrap，Less，Node.js，Mongodb、ElementUI。<br/>我在项目中扮演Web前端开发师角色，主要负责前端网页的制作、前端交互效果的实现。 </td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image1.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:8px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2017年2月&nbsp;&nbsp;--&nbsp;&nbsp;2017年6月 | 品诺格诚</td>
+
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                                                            <tr>
+                                <td>项目描述：</td>
+                            </tr>
+                            <tr>
+                                <td>本项目是品诺格诚有限责任公司开发的一款集项目展示、开发团队、新闻中心等为一体的企业网站,项目主要功能有:用户信息的填写、专家团队展示、新闻详情页、企业项目以及课程中心、联系我们。</td>
+
+                            </tr>
+                                                    <tr>
+                                <td>项目职责：</td>
+                            </tr>
+                            <tr>
+                                <td>项目流程：<br/>1.负责与UI进行交流合作确定设计图,ps切图获取到相应的素材。<br/>2.与后台交流,确定获取数据的格式以及交互<br/>3.使用HTM+CSS+JS+JQuery实现动态页面的完成。<br/>4.实现功能:二级菜单的无延迟效果,选项卡的切换。<br/>5.提供与后台交互的数据接口。<br/>开发技术：HTML，CSS，jQuery，Less、Bootstrap、Javascript。<br/>我在项目中扮演前端开发师角色，负责前端开发工作、能与后端程序有效配合。 </td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image2.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:8px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2016年8月&nbsp;&nbsp;--&nbsp;&nbsp;2017年1月 | 解放号软件众包平台</td>
+
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                                                            <tr>
+                                <td>项目描述：</td>
+                            </tr>
+                            <tr>
+                                <td>解放号软件众包平台为企业提供专业一站式软件定制开发服务、行业解决方案、工业设计智能制造、品牌创意等，高质量服务商上门服务，好、省、无忧的软件外包服务,尽在可信的IT服务众包平台解放号！</td>
+
+                            </tr>
+                                                    <tr>
+                                <td>项目职责：</td>
+                            </tr>
+                            <tr>
+                                <td>项目流程:<br/>1.HTML+Less完成页面制作；<br/>2.jQuery+JavaScript完成动态效果及交互；<br/>3.使用Less完成部分样式修改编写；<br/>4. BootstrapValidator插件完成登录页面验证功能；<br/>5.使用AJAX向后台请求数据，就收数据后使用artTemplate模板渲染到页面。<br/>使用技术：jQuery，JavaScript，Less，Gulp、Bootstarp。<br/>我在项目中负责前端开发师角色，负责撰写页面以及页面交互、与后端程序有效配合。 </td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>
+
+            <!--教育背景-->
+            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image3.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">教育背景</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 26px; padding-top: 8px; padding-bottom: 4px;">
+                    <table style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image4.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2008年9月&nbsp;&nbsp;--&nbsp;&nbsp;2011年7月 | 十堰职业技术学院 | 汽车运用技术 | 大专
+                                     | 全日制统招
+</td>
+                        </tr>
+                    </table>
+
+
+                </td>
+            </tr>
+
+            <!--培训经历 模块-->
+            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image5.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">培训经历</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image1.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2010年4月&nbsp;&nbsp;--&nbsp;&nbsp;2010年9月 | 计算机二级VB</td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+            <tr>
+                <td style="line-height: 18px; padding-left: 19px; font-size: 12px; padding-bottom: 10px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>培训机构：湖北省十堰市智勇计算机培训中心</td>
+                        </tr>
+                            <tr>
+                                <td>获得证书：计算机二级VB证书</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>
+
+            <!--其他能力-->
+            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image2.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">其他能力</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size:12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image3.highpin.cn/Image/Shared/downresume/gray-square.jpg"   style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold;font-size:12px;">语言能力</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table style="font-size: 12px; line-height: 18px; word-break: break-all;" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>语种：英语 | 听说能力：良好 | 读写能力：良好 </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>  
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size:12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image4.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;" /></td>
+                            <td style="font-weight: bold;font-size:12px;">计算机/IT技能</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="line-height: 18px; padding-left: 19px; font-size: 12px; padding-bottom: 8px;">
+                    <table style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                            <tr>
+                                <td>专业技能：计算机／IT | 使用时间：24 个月 | 掌握程度：熟练 </td>
+                            </tr>
+                    </table>
+                </td>
+            </tr>
+
+
+            <!--补充信息-->
+            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px; margin-top: 8px;">
+                    <table style="font-size: 14px; line-height: 18px; word-break: break-all;" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <img src="http://image5.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size:14px;">补充信息</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size:12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image1.highpin.cn/Image/Shared/downresume/gray-square.jpg"   style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold;font-size:12px">兴趣爱好</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>游泳、爬山、听歌。</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+    </table>
+    <script src="http://image2.highpin.cn/js/shared/common/sea.js?version=20191024214359"></script>
+
+    <script src="http://image3.highpin.cn/js/modules/common/base_init.js?version=20191024214359"></script>
+
+</body>
+</html>

@@ -17,8 +17,11 @@ public class ProjectExperience {
     private String projectName;
     //项目link
     private String projectLink;
+    //项目角色
     private String projectRole;
+    //开始日期
     private String beginDate;
+    //结束日期
     private String endDate;
     //公司名称
     private String companyName;

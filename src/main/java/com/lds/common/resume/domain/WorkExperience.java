@@ -34,7 +34,7 @@ public class WorkExperience {
     private String department;
     //月薪
     @Label(keys ="月薪")
-    private double salary;
+    private String salary;
     //详细描述
     @Label(keys ="详细描述")
     private String description;

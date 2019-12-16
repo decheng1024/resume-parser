@@ -30,25 +30,25 @@ public class EmlConvertProcessor extends AbstractConvertProcessor {
     }
 
     @Override
-    protected String convertProcessor(InputStream in,String charset) throws IOException {
-        String text = super.read(in,charset);
-        if(!Objects.isNull(text) && text.indexOf(MESSAGE_RFC822_FLAG) > -1){
+    protected String convertProcessor(InputStream in, String charset) throws IOException {
+        String text = super.read(in, charset);
+        if (!Objects.isNull(text) && text.indexOf(MESSAGE_RFC822_FLAG) > -1) {
 
-            String  content = text.substring(text.indexOf(MESSAGE_RFC822_FLAG) + MESSAGE_RFC822_FLAG.length());
+            String content = text.substring(text.indexOf(MESSAGE_RFC822_FLAG) + MESSAGE_RFC822_FLAG.length());
             String boundary = "";
             Matcher matcher = Pattern.compile("\"--boundary(.*?)\"").matcher(content);
-            if( !matcher.find()){
+            if (!matcher.find()) {
                 return "";
             }
-            boundary = matcher.group().replaceAll("\"","");
+            boundary = matcher.group().replaceAll("\"", "");
             //System.out.println("boundary = " + boundary);
-            if(text.indexOf("--" + boundary) != -1){
+            if (text.indexOf("--" + boundary) != -1) {
                 boundary = "--" + boundary;
             }
             String paragraph = content.split(boundary)[1];
-            if( paragraph.indexOf(MESSAGE_RFC822_TRANSFER_ENCODING) != -1 ){
+            if (paragraph.indexOf(MESSAGE_RFC822_TRANSFER_ENCODING) != -1) {
                 String html = paragraph.substring(paragraph.indexOf(MESSAGE_RFC822_TRANSFER_ENCODING) + MESSAGE_RFC822_TRANSFER_ENCODING.length());
-                return Jsoup.parse(Base64Utils.decode(html,charset)).html();
+                return Jsoup.parse(Base64Utils.decode(html, charset)).html();
             }
         }
         return Jsoup.parse(text).body().html();

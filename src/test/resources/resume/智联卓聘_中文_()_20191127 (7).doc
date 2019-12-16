@@ -1,0 +1,469 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="http://image3.highpin.cn/Css/Seeker/reset.min.css?version=20191125125251" rel="stylesheet"/>
+
+    <link href="http://image4.highpin.cn/Css/Seeker/detail-new.css?version=20191125125251" rel="stylesheet"/>
+
+
+    <link href="http://image5.highpin.cn/css/seeker/footer.css?version=20191125125251" rel="stylesheet"/>
+
+    <link href="http://image1.highpin.cn/css/shared/suggestion.css?version=20191125125251" rel="stylesheet"/>
+
+    <link href="http://image2.highpin.cn/css/shared/layer/customlayer.css?version=20191125125251" rel="stylesheet"/>
+
+    <link href="http://image3.highpin.cn/css/Shared/grade.css?version=20191125125251" rel="stylesheet"/>
+
+</head>
+<body>
+    <table width="710" align="center" style="font-size: 12px; word-break: break-all; margin-top: -40px;">
+        <!--个人简历-->
+        <tr>
+            <td>
+                <img src="http://image4.highpin.cn/Image/Shared/downresume/top.jpg"  style="border: none; display: block;" /></td>
+        </tr>
+        <!--个人信息-->
+        <tr>
+            <td style="padding: 2px 0 16px 16px; border-bottom: 1px dotted #d2d2d2;">
+                <table width="694">
+                    <tr>
+                        <td width="582">
+                            <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                <tr>
+                                    <td style="font-size: 24px; line-height: 44px; font-family: SimHei">
+王鹤云                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>男 | 39岁 | 1980年6月 |  
+已婚                                        15 年工作经验 | 本科 </td>
+                                </tr>
+                                <tr>
+                                    <td>广东  深圳
+                                    </td>
+                                </tr>
+
+
+                                                                
+                                <tr>
+                                    <td>手机：13704261628</td>
+                                </tr>
+                                <tr>
+                                    <td>邮箱：wangheyun521@163.com</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            
+                            <img src="http://image4.highpin.cn/image/seeker/resumeview/head-picture.jpg" width="70" height="100" style="display: block; width: 70px; height: 100px; padding: 3px; border: 1px solid #f0f0f0; overflow:hidden;" />
+                            
+                           
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!--目前状态-->
+            <tr>
+                <td>
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px;">
+                        <tr>
+                            <td width="18">
+                                <img src="http://image5.highpin.cn/Image/Shared/downresume/red-square.jpg"  /></td>
+                            <td style="font-size: 14px; padding-top: 5px;">目前状态</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 5px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                        <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                            <tr>
+                                <td width="110" style="vertical-align: top; line-height: 18px;">目前状态：</td>
+                                <td>我目前在职，正考虑换个新环境（如有合适的工作机会，到岗时间一个月左右）</td>
+                            </tr>
+                                <tr>
+                                    <td width="110" style="vertical-align: top; line-height: 18px;">期望薪资：</td>
+                                    <td>保密</td>
+                                </tr>
+                        </table>
+                </td>
+            </tr>
+                    <!--职业意向-->
+            <tr>
+                <td style="font-size: 14px; line-height: 28px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px;">
+                        <tr>
+                            <td width="18">
+                                <img src="http://image1.highpin.cn/Image/Shared/downresume/red-square.jpg" /></td>
+                            <td style="font-size: 14px;">职业意向</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 5px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                        <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                                <tr>
+                                    <td width="110" style="vertical-align: top; line-height: 18px;">期望行业：</td>
+                                    <td>金融/银行/投资/基金/证券/期货,保险,专业服务(咨询/财会/法律/翻译等)</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="vertical-align: top; line-height: 18px;">期望职位：</td>
+                                    <td>计算机/网络技术-网站运营管理,其他-其他</td>
+                                </tr>
+                            <tr>
+                                <td style="vertical-align: top; line-height: 18px;">工作地点：</td>
+                                <td>广东,广东-深圳</td>
+                            </tr>
+                                <tr>
+                                    <td style="vertical-align: top; line-height: 18px;">期望薪资（税前）：</td>
+                                    <td>35000RMB/Month</td>
+                                </tr>
+                                                    </table>
+                </td>
+            </tr>
+                            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image2.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">工作经验</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image3.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">2017年9月&nbsp;&nbsp;--&nbsp;&nbsp;至今 | 银谷普惠信息咨询北京有限公司 |  
+                                普惠金融事业群运营管理总监</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：金融/银行/投资/基金/证券/期货</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：计算机/网络技术-网站运营管理</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+50000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>1.	全流程标准化管理。<br/>2.	业务系统功能优化、创新。<br/>3.	互联网信息化项目、业务无纸化项目、全流程流程时效优化等项目实施。<br/>4.	精益六西格玛推广与实施。</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image4.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">2014年5月&nbsp;&nbsp;--&nbsp;&nbsp;2017年9月 | 北京恒昌惠诚信息咨询有限公司 |  
+                                普惠金融事业群运营管理总监兼合规管理总监</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：金融/银行/投资/基金/证券/期货</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：计算机/网络技术-网站运营管理</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+35000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>1.	搭建并实施互联网金融普惠端业务全流程标准化管理体系。<br/>2.	流程持续优化，业务系统功能优化、创新。<br/>3.	互联网信息化项目实施。<br/>4.	精益六西格玛推广与实施。<br/>5.	合规体系化管理与实施</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image5.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">2013年5月&nbsp;&nbsp;--&nbsp;&nbsp;2014年5月 | 宜信普惠信息咨询北京有限公司 |  
+                                战略支持中心流程优化经理</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：金融/银行/投资/基金/证券/期货</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：其他-其他</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+25000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>1.	负责集团层面跨部门流程优化及项目实施。<br/>2.	精益六西格玛绿带项目推广，包括培训、辅导、认证及实施等。</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image1.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">2012年10月&nbsp;&nbsp;--&nbsp;&nbsp;2013年5月 | 马士基信息处理成都有限公司 |  
+                                流程改善黑带</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：交通/运输/物流</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：其他-其他</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+15000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>1.	作为项目领导者，负责评估并实施马士基全球其他GSC分配下来的流程改善项目以及最佳案例。<br/>2.	根据成都马士基OTCS部门6个Cluster(PRN/PRE/PRS/JOR/JPN/TWN)业务移管时段，制定业务流程改善实施计划，管理并监控实施过程，确保在规定时间完成项目并达到预期改善目标。<br/>3.	作为PCO(Process Contingency Officer)，与其他国家建立BCMS (Business Contingency Management System)，完善风险管理并保证业务可持续性</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image2.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">2006年9月&nbsp;&nbsp;--&nbsp;&nbsp;2010年10月 | 简柏特大连有限公司（原通用电气GE） |  
+                                BB Leader</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：专业服务(咨询/财会/法律/翻译等)</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：其他-其他</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+10000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>1.	ITO部门BB Lead，带领3个质量黑带，针对ITO 4个业务部门(ITMS/Oracle/ADM/SAP)推动流程标准化、KPI管理、客户满意度提升及流程生产力提高。<br/>2.	作为BPR（Business Process Re-engineering）咨询顾问，在2011年3月到12月参与并领导了针对中国移动公司东莞分公司的客户服务业务流程再造项目，通过客户现场咨询服务，对移动业务流程制定并部署优化方案，提升移动公司市场竞争力并提高客户满意度。<br/>3.	负责昆山市花桥分公司BPO业务的流程改善，建立并实施流程质量管理体系 <br/>4.	负责GE客户GDC质量体系季度、年度审核，涉及信息安全、资产管理、可持续发展、基础管理等审核，以满足GE服务供应商的审核要求并保持与GE的长期合作关系。</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image3.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold; font-size: 12px">2004年8月&nbsp;&nbsp;--&nbsp;&nbsp;2006年9月 | 上海惠普大连分公司 |  
+                                技术支持工程师</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px; line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 12px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：专业服务(咨询/财会/法律/翻译等)</td>
+                        </tr>
+                            <tr>
+                                <td>职位类别：客户服务-售前/售后技术支持工程师</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    税前收入（税前）：
+6000RMB/Month                                                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>工作描述：</td>
+                            </tr>
+                            <tr>
+                                <td>1.	提供惠普PC产品的售后电话技术支持，客户投诉处理及新员工业务培训。<br/>2.	在06年1月转入客户服务改善部门，通过电话服务过程分析制定改善计划来提升客户服务质量。</td>
+                            </tr>
+                                            </table>
+                </td>
+            </tr>                       
+
+
+            <!--教育背景-->
+            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image4.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">教育背景</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 26px; padding-top: 8px; padding-bottom: 4px;">
+                    <table style="font-size: 12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image5.highpin.cn/Image/Shared/downresume/gray-square.jpg"  style="padding-top:14px;" /></td>
+                            <td style="font-weight: bold; font-size: 12px;">2000年9月&nbsp;&nbsp;--&nbsp;&nbsp;2004年7月 | 大连工业大学 | 计算机科学与技术（应用技术） | 本科
+                                     | 全日制统招
+</td>
+                        </tr>
+                    </table>
+
+
+                </td>
+            </tr>
+
+
+            <!--其他能力-->
+            <tr>
+                <td bgcolor="#f0f0f0" style="height: 30px; line-height: 30px; font-size: 14px; width: 710px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size: 14px; line-height: 18px; word-break: break-all;">
+                        <tr>
+                            <td>
+                                <img src="http://image1.highpin.cn/Image/Shared/downresume/title-gray.jpg" style="width: 16px; height: 8px; display: block; border: none;" /></td>
+                            <td style="font-size: 14px;">其他能力</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #000; font-weight: bold; font-size: 12px; line-height: 20px; padding-top: 8px; padding-bottom: 2px;">
+                    <table cellpadding="0" cellspacing="0" style="font-size:12px;">
+                        <tr>
+                            <td width="20" style="vertical-align: top;">
+                                <img  src="http://image2.highpin.cn/Image/Shared/downresume/gray-square.jpg"   style="padding-top:14px;"/></td>
+                            <td style="font-weight: bold;font-size:12px;">语言能力</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="line-height: 18px; padding-left: 19px; font-size: 12px;">
+                    <table style="font-size: 12px; line-height: 18px; word-break: break-all;" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>语种：英语 | 听说能力：熟练 | 读写能力：熟练 </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>  
+
+
+
+    </table>
+    <script src="http://image3.highpin.cn/js/shared/common/sea.js?version=20191125125251"></script>
+
+    <script src="http://image4.highpin.cn/js/modules/common/base_init.js?version=20191125125251"></script>
+
+</body>
+</html>
